@@ -2,5 +2,6 @@
 /kosowski/introduction/build
 
 #All cmake-build-debug directories.
+.idea
 cmake-build-debug
 
