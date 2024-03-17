@@ -60,10 +60,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/introduction
+CMAKE_SOURCE_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/workshop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build
+CMAKE_BINARY_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,9 +100,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build/CMakeFiles /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/CMakeFiles /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -130,17 +130,17 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named MathLibrary
+# Target rules for targets named Library
 
 # Build rule for target.
-MathLibrary: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 MathLibrary
-.PHONY : MathLibrary
+Library: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 Library
+.PHONY : Library
 
 # fast build rule for target.
-MathLibrary/fast:
-	$(MAKE) $(MAKESILENT) -f library/CMakeFiles/MathLibrary.dir/build.make library/CMakeFiles/MathLibrary.dir/build
-.PHONY : MathLibrary/fast
+Library/fast:
+	$(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/build
+.PHONY : Library/fast
 
 #=============================================================================
 # Target rules for targets named Program
@@ -164,7 +164,7 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... MathLibrary"
+	@echo "... Library"
 	@echo "... Program"
 .PHONY : help
 

@@ -60,10 +60,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/introduction
+CMAKE_SOURCE_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/workshop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build
+CMAKE_BINARY_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,14 +100,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build/CMakeFiles /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build/library//CMakeFiles/progress.marks
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build/CMakeFiles 0
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/CMakeFiles /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/library//CMakeFiles/progress.marks
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/clean
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,56 +116,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/preinstall
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/preinstall
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-library/CMakeFiles/MathLibrary.dir/rule:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/CMakeFiles/MathLibrary.dir/rule
-.PHONY : library/CMakeFiles/MathLibrary.dir/rule
+library/CMakeFiles/Library.dir/rule:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/CMakeFiles/Library.dir/rule
+.PHONY : library/CMakeFiles/Library.dir/rule
 
 # Convenience name for target.
-MathLibrary: library/CMakeFiles/MathLibrary.dir/rule
-.PHONY : MathLibrary
+Library: library/CMakeFiles/Library.dir/rule
+.PHONY : Library
 
 # fast build rule for target.
-MathLibrary/fast:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/MathLibrary.dir/build.make library/CMakeFiles/MathLibrary.dir/build
-.PHONY : MathLibrary/fast
+Library/fast:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/build
+.PHONY : Library/fast
 
-src/math_helpers.o: src/math_helpers.cpp.o
-.PHONY : src/math_helpers.o
+src/model/Client.o: src/model/Client.cpp.o
+.PHONY : src/model/Client.o
 
 # target to build an object file
-src/math_helpers.cpp.o:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/MathLibrary.dir/build.make library/CMakeFiles/MathLibrary.dir/src/math_helpers.cpp.o
-.PHONY : src/math_helpers.cpp.o
+src/model/Client.cpp.o:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.o
+.PHONY : src/model/Client.cpp.o
 
-src/math_helpers.i: src/math_helpers.cpp.i
-.PHONY : src/math_helpers.i
+src/model/Client.i: src/model/Client.cpp.i
+.PHONY : src/model/Client.i
 
 # target to preprocess a source file
-src/math_helpers.cpp.i:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/MathLibrary.dir/build.make library/CMakeFiles/MathLibrary.dir/src/math_helpers.cpp.i
-.PHONY : src/math_helpers.cpp.i
+src/model/Client.cpp.i:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.i
+.PHONY : src/model/Client.cpp.i
 
-src/math_helpers.s: src/math_helpers.cpp.s
-.PHONY : src/math_helpers.s
+src/model/Client.s: src/model/Client.cpp.s
+.PHONY : src/model/Client.s
 
 # target to generate assembly for a file
-src/math_helpers.cpp.s:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/MathLibrary.dir/build.make library/CMakeFiles/MathLibrary.dir/src/math_helpers.cpp.s
-.PHONY : src/math_helpers.cpp.s
+src/model/Client.cpp.s:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.s
+.PHONY : src/model/Client.cpp.s
 
 # Help Target
 help:
@@ -176,10 +176,10 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
-	@echo "... MathLibrary"
-	@echo "... src/math_helpers.o"
-	@echo "... src/math_helpers.i"
-	@echo "... src/math_helpers.s"
+	@echo "... Library"
+	@echo "... src/model/Client.o"
+	@echo "... src/model/Client.i"
+	@echo "... src/model/Client.s"
 .PHONY : help
 
 
@@ -191,6 +191,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

@@ -56,10 +56,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/introduction
+CMAKE_SOURCE_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/workshop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build
+CMAKE_BINARY_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build
 
 # Include any dependencies generated for this target.
 include program/CMakeFiles/Program.dir/depend.make
@@ -73,18 +73,18 @@ include program/CMakeFiles/Program.dir/progress.make
 include program/CMakeFiles/Program.dir/flags.make
 
 program/CMakeFiles/Program.dir/src/main.cpp.o: program/CMakeFiles/Program.dir/flags.make
-program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/Pulpit/CLionProjects/start/kosowski/introduction/program/src/main.cpp
+program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/Pulpit/CLionProjects/start/kosowski/workshop/program/src/main.cpp
 program/CMakeFiles/Program.dir/src/main.cpp.o: program/CMakeFiles/Program.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Pulpit/CLionProjects/start/kosowski/introduction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object program/CMakeFiles/Program.dir/src/main.cpp.o"
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build/program && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT program/CMakeFiles/Program.dir/src/main.cpp.o -MF CMakeFiles/Program.dir/src/main.cpp.o.d -o CMakeFiles/Program.dir/src/main.cpp.o -c /home/student/Pulpit/CLionProjects/start/kosowski/introduction/program/src/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object program/CMakeFiles/Program.dir/src/main.cpp.o"
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/program && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT program/CMakeFiles/Program.dir/src/main.cpp.o -MF CMakeFiles/Program.dir/src/main.cpp.o.d -o CMakeFiles/Program.dir/src/main.cpp.o -c /home/student/Pulpit/CLionProjects/start/kosowski/workshop/program/src/main.cpp
 
 program/CMakeFiles/Program.dir/src/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Program.dir/src/main.cpp.i"
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build/program && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Pulpit/CLionProjects/start/kosowski/introduction/program/src/main.cpp > CMakeFiles/Program.dir/src/main.cpp.i
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/program && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/Pulpit/CLionProjects/start/kosowski/workshop/program/src/main.cpp > CMakeFiles/Program.dir/src/main.cpp.i
 
 program/CMakeFiles/Program.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Program.dir/src/main.cpp.s"
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build/program && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Pulpit/CLionProjects/start/kosowski/introduction/program/src/main.cpp -o CMakeFiles/Program.dir/src/main.cpp.s
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/program && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/Pulpit/CLionProjects/start/kosowski/workshop/program/src/main.cpp -o CMakeFiles/Program.dir/src/main.cpp.s
 
 # Object files for target Program
 Program_OBJECTS = \
@@ -95,20 +95,20 @@ Program_EXTERNAL_OBJECTS =
 
 program/Program: program/CMakeFiles/Program.dir/src/main.cpp.o
 program/Program: program/CMakeFiles/Program.dir/build.make
-program/Program: library/libMathLibrary.a
+program/Program: library/libLibrary.a
 program/Program: program/CMakeFiles/Program.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Pulpit/CLionProjects/start/kosowski/introduction/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Program"
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build/program && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Program.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Program"
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/program && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Program.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 program/CMakeFiles/Program.dir/build: program/Program
 .PHONY : program/CMakeFiles/Program.dir/build
 
 program/CMakeFiles/Program.dir/clean:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build/program && $(CMAKE_COMMAND) -P CMakeFiles/Program.dir/cmake_clean.cmake
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/program && $(CMAKE_COMMAND) -P CMakeFiles/Program.dir/cmake_clean.cmake
 .PHONY : program/CMakeFiles/Program.dir/clean
 
 program/CMakeFiles/Program.dir/depend:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Pulpit/CLionProjects/start/kosowski/introduction /home/student/Pulpit/CLionProjects/start/kosowski/introduction/program /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build/program /home/student/Pulpit/CLionProjects/start/kosowski/introduction/build/program/CMakeFiles/Program.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Pulpit/CLionProjects/start/kosowski/workshop /home/student/Pulpit/CLionProjects/start/kosowski/workshop/program /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/program /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/program/CMakeFiles/Program.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : program/CMakeFiles/Program.dir/depend
 

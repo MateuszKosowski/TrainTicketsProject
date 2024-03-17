@@ -1,4 +1,4 @@
-# Install script for directory: /home/student/Pulpit/CLionProjects/start/kosowski/introduction/program
+# Install script for directory: /home/student/Pulpit/CLionProjects/start/kosowski/workshop/program
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

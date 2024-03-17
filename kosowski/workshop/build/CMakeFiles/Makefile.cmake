@@ -7,12 +7,12 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
-  "/home/student/Pulpit/CLionProjects/start/kosowski/introduction/CMakeLists.txt"
+  "/home/student/Pulpit/CLionProjects/start/kosowski/workshop/CMakeLists.txt"
   "CMakeFiles/3.25.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.1/CMakeSystem.cmake"
-  "/home/student/Pulpit/CLionProjects/start/kosowski/introduction/library/CMakeLists.txt"
-  "/home/student/Pulpit/CLionProjects/start/kosowski/introduction/program/CMakeLists.txt"
+  "/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/CMakeLists.txt"
+  "/home/student/Pulpit/CLionProjects/start/kosowski/workshop/program/CMakeLists.txt"
   "/usr/share/cmake-3.25/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.25/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.25/Modules/CMakeCommonLanguageInclude.cmake"
@@ -47,6 +47,6 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "library/CMakeFiles/MathLibrary.dir/DependInfo.cmake"
+  "library/CMakeFiles/Library.dir/DependInfo.cmake"
   "program/CMakeFiles/Program.dir/DependInfo.cmake"
   )
