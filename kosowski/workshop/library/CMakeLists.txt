@@ -1,10 +1,13 @@
 cmake_minimum_required(VERSION 3.4)
 project(Library)
 
+#Pliki do kompilacji aby powstały .obj
 set(SOURCE_FILES
-    src/math_helpers.cpp
+    src/model/Client.cpp
+    include/model/Client.h
 )
-# Utwórz bibliotekę typu STATIC, SHARED albo MODULE ze wskazanych źródeł
-add_library(MathLibrary ${SOURCE_FILES})
+# Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h
+add_library(Library ${SOURCE_FILES})
 
-target_include_directories(MathLibrary PUBLIC include)
+#Ta lini mówi, że katalog include będzie zawierał nagłówki dostępne dla użytkowników biblioteki Client a Client.cpp należy do tego projektu, więc wie, żeby szukać w /include i dalej trzeba podać
+target_include_directories(Library PUBLIC include)

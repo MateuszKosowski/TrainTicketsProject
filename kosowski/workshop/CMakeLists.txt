@@ -31,10 +31,8 @@ enable_language(CXX)
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON) 
 set(CMAKE_VERBOSE_MAKEFILE TRUE) 
 
-# Uwzględnij podprojekt znajdujący się w podkatalogu program. Musi być w nim plik CMakeLists.txt
+# Uwzględnij podprojekty znajdujący się w podkatalogu program. Musi być w nim plik CMakeLists.txt
 add_subdirectory(library)
-
-# Uwzględnij podprojekt znajdujący się w podkatalogu program. Musi być w nim plik CMakeLists.txt
 add_subdirectory(program)
 
 # Włączenie testów powoduje pojawienie się celu test w Makefiles

@@ -3,11 +3,8 @@
 #include <iostream>
 using namespace std;
 
-#include "math_helpers.h"
-
 int main()
 {
-	cout << "Hello, World!" << endl;
-	cout << "factorial(5) = " << factorial(5) << endl;
+	cout << "Hello, World! Tak dla testu czy CMAKE dobrze działa" << endl;
 	return 0;
 }
