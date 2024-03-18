@@ -19,7 +19,7 @@ public:
     void setLastName(const std::string& id);
 
     // constructor
-    Client();
+    Client(const std::string& str1 = "Imie", const std::string& str2 = "Nazwiko", const std::string& str3="ID");
     // destructor
     ~Client();
 };

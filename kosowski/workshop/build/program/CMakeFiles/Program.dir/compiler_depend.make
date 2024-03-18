@@ -3,6 +3,7 @@
 
 program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/Pulpit/CLionProjects/start/kosowski/workshop/program/src/main.cpp \
   /usr/include/stdc-predef.h \
+  /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Client.h \
   /usr/include/c++/12/iostream \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -183,8 +184,15 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/Pulpit/CLionProject
   /usr/include/c++/12/bits/basic_ios.tcc \
   /usr/include/c++/12/bits/ostream.tcc \
   /usr/include/c++/12/istream \
-  /usr/include/c++/12/bits/istream.tcc
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h
 
+
+/usr/include/string.h:
+
+/usr/include/c++/12/cstring:
 
 /usr/include/c++/12/bits/basic_ios.tcc:
 
@@ -252,6 +260,8 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/Pulpit/CLionProject
 
 /usr/include/c++/12/bits/alloc_traits.h:
 
+/usr/include/c++/12/ext/alloc_traits.h:
+
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/c++/12/bits/hash_bytes.h:
@@ -300,32 +310,6 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/Pulpit/CLionProject
 
 /usr/include/x86_64-linux-gnu/bits/timesize.h:
 
-/usr/include/x86_64-linux-gnu/sys/select.h:
-
-/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
-
-/usr/include/c++/12/new:
-
-/usr/include/c++/12/exception:
-
-/usr/include/c++/12/bits/std_abs.h:
-
-/usr/include/c++/12/debug/assertions.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
-
-/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
-
-/usr/include/c++/12/bits/stringfwd.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
-
-/usr/include/x86_64-linux-gnu/bits/wchar.h:
-
-/usr/include/c++/12/type_traits:
-
-/usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h:
-
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
 /usr/include/x86_64-linux-gnu/bits/types.h:
@@ -340,7 +324,31 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/Pulpit/CLionProject
 
 /usr/include/x86_64-linux-gnu/bits/types/locale_t.h:
 
-/usr/include/c++/12/ext/alloc_traits.h:
+/usr/include/x86_64-linux-gnu/sys/select.h:
+
+/usr/include/x86_64-linux-gnu/bits/stdint-uintn.h:
+
+/usr/include/c++/12/new:
+
+/usr/include/c++/12/exception:
+
+/usr/include/c++/12/bits/std_abs.h:
+
+/usr/include/c++/12/debug/assertions.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/cookie_io_functions_t.h:
+
+/usr/include/x86_64-linux-gnu/bits/wchar.h:
+
+/usr/include/c++/12/type_traits:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h:
+
+/usr/include/x86_64-linux-gnu/gnu/stubs-64.h:
+
+/usr/include/c++/12/bits/stringfwd.h:
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h:
 
@@ -388,6 +396,12 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/Pulpit/CLionProject
 
 /usr/include/pthread.h:
 
+/usr/include/c++/12/cwchar:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h:
+
+/usr/include/wchar.h:
+
 /usr/include/c++/12/ostream:
 
 /usr/include/c++/12/ios:
@@ -412,13 +426,9 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/Pulpit/CLionProject
 
 /usr/include/c++/12/bits/ios_base.h:
 
+/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Client.h:
+
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
-
-/usr/include/c++/12/cwchar:
-
-/usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h:
-
-/usr/include/wchar.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/wint_t.h:
 
@@ -483,6 +493,8 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/Pulpit/CLionProject
 /usr/include/x86_64-linux-gnu/bits/struct_mutex.h:
 
 /usr/include/c++/12/initializer_list:
+
+/usr/include/strings.h:
 
 /usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h:
 
