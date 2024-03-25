@@ -20,15 +20,22 @@ std::string Client::getInfo() {
 
 // Setter implementation
 void Client::setFirstName(const std::string& fName) {
-    firstName = fName;
+
+    if(!fName.empty()){
+        firstName = fName;
+    }
 }
 
 void Client::setLastName(const std::string& lName) {
-    lastName = lName;
+    if(!lName.empty()) {
+        lastName = lName;
+    }
 }
 
 void Client::setPersonalID(const std::string& id) {
-    personalID = id;
+    if(!id.empty()){
+        personalID = id;
+    }
 }
 
 // Constructor implementation

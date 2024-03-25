@@ -15,8 +15,8 @@ public:
 
     // setters
     void setFirstName(const std::string& fName);
-    void setPersonalID(const std::string& lName);
-    void setLastName(const std::string& id);
+    void setPersonalID(const std::string& id);
+    void setLastName(const std::string& lName);
 
     // constructor
     Client(const std::string& str1 = "Imie", const std::string& str2 = "Nazwiko", const std::string& str3="ID");
