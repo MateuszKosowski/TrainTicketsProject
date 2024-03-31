@@ -18,4 +18,4 @@ struct TestConfig {
     }
 };
 
-BOOST_GLOBAL_FIXTURE(TestConfig);e BOOST_AUTO_TEST_MAIN //root of all tests suites and cases
+BOOST_GLOBAL_FIXTURE(TestConfig);

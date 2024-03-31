@@ -143,6 +143,34 @@ Library/fast:
 	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/build
 .PHONY : Library/fast
 
+# Convenience name for target.
+library/CMakeFiles/LibraryTester.dir/rule:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/CMakeFiles/LibraryTester.dir/rule
+.PHONY : library/CMakeFiles/LibraryTester.dir/rule
+
+# Convenience name for target.
+LibraryTester: library/CMakeFiles/LibraryTester.dir/rule
+.PHONY : LibraryTester
+
+# fast build rule for target.
+LibraryTester/fast:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/build
+.PHONY : LibraryTester/fast
+
+# Convenience name for target.
+library/CMakeFiles/check.dir/rule:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/CMakeFiles/check.dir/rule
+.PHONY : library/CMakeFiles/check.dir/rule
+
+# Convenience name for target.
+check: library/CMakeFiles/check.dir/rule
+.PHONY : check
+
+# fast build rule for target.
+check/fast:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/check.dir/build.make library/CMakeFiles/check.dir/build
+.PHONY : check/fast
+
 src/model/Address.o: src/model/Address.cpp.o
 .PHONY : src/model/Address.o
 
@@ -191,6 +219,54 @@ src/model/Client.cpp.s:
 	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.s
 .PHONY : src/model/Client.cpp.s
 
+test/ClientTest.o: test/ClientTest.cpp.o
+.PHONY : test/ClientTest.o
+
+# target to build an object file
+test/ClientTest.cpp.o:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.o
+.PHONY : test/ClientTest.cpp.o
+
+test/ClientTest.i: test/ClientTest.cpp.i
+.PHONY : test/ClientTest.i
+
+# target to preprocess a source file
+test/ClientTest.cpp.i:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.i
+.PHONY : test/ClientTest.cpp.i
+
+test/ClientTest.s: test/ClientTest.cpp.s
+.PHONY : test/ClientTest.s
+
+# target to generate assembly for a file
+test/ClientTest.cpp.s:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.s
+.PHONY : test/ClientTest.cpp.s
+
+test/master.o: test/master.cpp.o
+.PHONY : test/master.o
+
+# target to build an object file
+test/master.cpp.o:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/master.cpp.o
+.PHONY : test/master.cpp.o
+
+test/master.i: test/master.cpp.i
+.PHONY : test/master.i
+
+# target to preprocess a source file
+test/master.cpp.i:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/master.cpp.i
+.PHONY : test/master.cpp.i
+
+test/master.s: test/master.cpp.s
+.PHONY : test/master.s
+
+# target to generate assembly for a file
+test/master.cpp.s:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/master.cpp.s
+.PHONY : test/master.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -200,13 +276,21 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... check"
 	@echo "... Library"
+	@echo "... LibraryTester"
 	@echo "... src/model/Address.o"
 	@echo "... src/model/Address.i"
 	@echo "... src/model/Address.s"
 	@echo "... src/model/Client.o"
 	@echo "... src/model/Client.i"
 	@echo "... src/model/Client.s"
+	@echo "... test/ClientTest.o"
+	@echo "... test/ClientTest.i"
+	@echo "... test/ClientTest.s"
+	@echo "... test/master.o"
+	@echo "... test/master.i"
+	@echo "... test/master.s"
 .PHONY : help
 
 

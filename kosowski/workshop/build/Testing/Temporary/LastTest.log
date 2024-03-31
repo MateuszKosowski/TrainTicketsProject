@@ -1,0 +1,60 @@
+Start testing: Mar 31 16:05 CEST
+----------------------------------------------------------
+1/1 Testing: LibraryTest
+1/1 Test: LibraryTest
+Command: "/home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/library/LibraryTester" "--report_level=detailed" "--log_level=all" "--color_output=yes"
+Directory: /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/library
+"LibraryTest" start time: Mar 31 16:05 CEST
+Output:
+----------------------------------------------------------
+Running 3 test cases...
+[1;34;49mEntering test module "Master Test Suite"
+[0;39;49m[1;34;49m/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(6): Entering test suite "TestSuiteClient"
+[0;39;49m[1;34;49m/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(8): Entering test case "MyFirstTests"
+[0;39;49m/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(12): [1;32;49minfo: check 1.0/3.0 == 0.333 has passed[0;39;49m
+/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(16): [1;32;49minfo: check true has passed[0;39;49m
+/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(18): [1;32;49minfo: check Tester.getFirstName() == "Jacek" has passed[0;39;49m
+
+Destruktor tutaj działa - Client
+[1;34;49m/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(8): Leaving test case "MyFirstTests"; testing time: 70us
+[0;39;49m[1;34;49m/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(23): Entering test case "SetFirstNameTest"
+[0;39;49m/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(28): [1;32;49minfo: check TesterTwo.getFirstName() == "Tomek" has passed[0;39;49m
+/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(33): [1;32;49minfo: check TesterTwo.getFirstName() == "Tomek" has passed[0;39;49m
+
+Destruktor tutaj działa - Client
+[1;34;49m/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(23): Leaving test case "SetFirstNameTest"; testing time: 46us
+[0;39;49m[1;34;49m/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(39): Entering test case "SetLastNameTest"
+[0;39;49m/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(44): [1;32;49minfo: check TesterThree.getLastName() == "Budka" has passed[0;39;49m
+/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(49): [1;32;49minfo: check TesterThree.getLastName() == "Budka" has passed[0;39;49m
+
+Destruktor tutaj działa - Client
+[1;34;49m/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(39): Leaving test case "SetLastNameTest"; testing time: 189us
+[0;39;49m[1;34;49m/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(6): Leaving test suite "TestSuiteClient"; testing time: 314us
+[0;39;49m[1;34;49mLeaving test module "Master Test Suite"; testing time: 318us
+[0;39;49m
+Test module "Master Test Suite" has passed with:
+  3 test cases out of 3 passed
+  7 assertions out of 7 passed
+
+  Test suite "TestSuiteClient" has passed with:
+    3 test cases out of 3 passed
+    7 assertions out of 7 passed
+
+    Test case "TestSuiteClient/MyFirstTests" has passed with:
+      3 assertions out of 3 passed
+
+    Test case "TestSuiteClient/SetFirstNameTest" has passed with:
+      2 assertions out of 2 passed
+
+    Test case "TestSuiteClient/SetLastNameTest" has passed with:
+      2 assertions out of 2 passed
+
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"LibraryTest" end time: Mar 31 16:05 CEST
+"LibraryTest" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Mar 31 16:05 CEST

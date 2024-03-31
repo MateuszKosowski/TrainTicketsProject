@@ -143,6 +143,32 @@ Library/fast:
 .PHONY : Library/fast
 
 #=============================================================================
+# Target rules for targets named LibraryTester
+
+# Build rule for target.
+LibraryTester: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 LibraryTester
+.PHONY : LibraryTester
+
+# fast build rule for target.
+LibraryTester/fast:
+	$(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/build
+.PHONY : LibraryTester/fast
+
+#=============================================================================
+# Target rules for targets named check
+
+# Build rule for target.
+check: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 check
+.PHONY : check
+
+# fast build rule for target.
+check/fast:
+	$(MAKE) $(MAKESILENT) -f library/CMakeFiles/check.dir/build.make library/CMakeFiles/check.dir/build
+.PHONY : check/fast
+
+#=============================================================================
 # Target rules for targets named Program
 
 # Build rule for target.
@@ -164,7 +190,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... test"
+	@echo "... check"
 	@echo "... Library"
+	@echo "... LibraryTester"
 	@echo "... Program"
 .PHONY : help
 

@@ -2,6 +2,8 @@
 /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/CMakeFiles/edit_cache.dir
 /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/CMakeFiles/rebuild_cache.dir
 /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/library/CMakeFiles/Library.dir
+/home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/library/CMakeFiles/LibraryTester.dir
+/home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/library/CMakeFiles/check.dir
 /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/library/CMakeFiles/test.dir
 /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/library/CMakeFiles/edit_cache.dir
 /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/library/CMakeFiles/rebuild_cache.dir
