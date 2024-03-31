@@ -143,6 +143,30 @@ Library/fast:
 	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/build
 .PHONY : Library/fast
 
+src/model/Address.o: src/model/Address.cpp.o
+.PHONY : src/model/Address.o
+
+# target to build an object file
+src/model/Address.cpp.o:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Address.cpp.o
+.PHONY : src/model/Address.cpp.o
+
+src/model/Address.i: src/model/Address.cpp.i
+.PHONY : src/model/Address.i
+
+# target to preprocess a source file
+src/model/Address.cpp.i:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Address.cpp.i
+.PHONY : src/model/Address.cpp.i
+
+src/model/Address.s: src/model/Address.cpp.s
+.PHONY : src/model/Address.s
+
+# target to generate assembly for a file
+src/model/Address.cpp.s:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Address.cpp.s
+.PHONY : src/model/Address.cpp.s
+
 src/model/Client.o: src/model/Client.cpp.o
 .PHONY : src/model/Client.o
 
@@ -177,6 +201,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... test"
 	@echo "... Library"
+	@echo "... src/model/Address.o"
+	@echo "... src/model/Address.i"
+	@echo "... src/model/Address.s"
 	@echo "... src/model/Client.o"
 	@echo "... src/model/Client.i"
 	@echo "... src/model/Client.s"

@@ -43,9 +43,8 @@ Client::Client(const std::string& str1, const std::string& str2, const std::stri
     firstName = str1;
     lastName = str2;
     personalID = str3;
-    std::cout<<std::endl<< "Utworzono klienta o ID: "<< personalID;
 }
 
 Client::~Client() {
-    std::cout << std::endl << "Destruktor tutaj działa" << std::endl;
+    std::cout << std::endl << "Destruktor tutaj działa - Client" << std::endl;
 }
