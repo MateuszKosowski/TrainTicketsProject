@@ -4,21 +4,10 @@
 using namespace std;
 int main()
 {
-    // Zmienna lokalna
-    Client personOne("Daniel", "Kowalski", "1");
-    cout << endl << personOne.getInfo();
+    Address* address1 = new Address("Wroclaw", "Malownicza", "55");
+    Client *person = new Client("Marek", "Kozak", "2", address1);
+    cout << endl << person->getInfo();
 
-    // Zmienna dynamiczna
-    Client *personTwo = new Client("Marek", "Kozak", "2");
-    cout << endl << personTwo->getInfo();
-
-    cout << endl << "Zmieniam LastName na pusty ciag";
-    personOne.setLastName("");
-    cout << endl << personOne.getInfo();
-    cout << endl << "Zmieniam LastName na Smolinski";
-    personOne.setLastName("Smolinski");
-    cout << endl << personOne.getInfo();
-
-    delete personTwo;
+    delete person;
 	return 0;
 }

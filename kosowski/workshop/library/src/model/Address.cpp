@@ -38,7 +38,7 @@ void Address::setNumber(std::string &sNumber) {
     }
 }
 
-// Constructor implementation
+// Constructor and Destructor implementation
 Address::Address(const std::string &str1, const std::string &str2, const std::string str3) {
     city = str1;
     street = str2;

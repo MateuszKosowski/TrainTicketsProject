@@ -149,4 +149,5 @@ library/CMakeFiles/Library.dir/src/model/Client.cpp.o: \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
  /usr/include/c++/12/bits/istream.tcc \
  /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Client.h \
- /usr/include/c++/12/cstring /usr/include/string.h /usr/include/strings.h
+ /usr/include/c++/12/cstring /usr/include/string.h /usr/include/strings.h \
+ /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Address.h

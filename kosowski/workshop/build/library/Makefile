@@ -219,6 +219,30 @@ src/model/Client.cpp.s:
 	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.s
 .PHONY : src/model/Client.cpp.s
 
+test/AddressTest.o: test/AddressTest.cpp.o
+.PHONY : test/AddressTest.o
+
+# target to build an object file
+test/AddressTest.cpp.o:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/AddressTest.cpp.o
+.PHONY : test/AddressTest.cpp.o
+
+test/AddressTest.i: test/AddressTest.cpp.i
+.PHONY : test/AddressTest.i
+
+# target to preprocess a source file
+test/AddressTest.cpp.i:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/AddressTest.cpp.i
+.PHONY : test/AddressTest.cpp.i
+
+test/AddressTest.s: test/AddressTest.cpp.s
+.PHONY : test/AddressTest.s
+
+# target to generate assembly for a file
+test/AddressTest.cpp.s:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/AddressTest.cpp.s
+.PHONY : test/AddressTest.cpp.s
+
 test/ClientTest.o: test/ClientTest.cpp.o
 .PHONY : test/ClientTest.o
 
@@ -285,6 +309,9 @@ help:
 	@echo "... src/model/Client.o"
 	@echo "... src/model/Client.i"
 	@echo "... src/model/Client.s"
+	@echo "... test/AddressTest.o"
+	@echo "... test/AddressTest.i"
+	@echo "... test/AddressTest.s"
 	@echo "... test/ClientTest.o"
 	@echo "... test/ClientTest.i"
 	@echo "... test/ClientTest.s"

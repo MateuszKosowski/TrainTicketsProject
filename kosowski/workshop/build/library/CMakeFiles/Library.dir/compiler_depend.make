@@ -375,7 +375,8 @@ library/CMakeFiles/Library.dir/src/model/Client.cpp.o: /home/student/Pulpit/CLio
   /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Client.h \
   /usr/include/c++/12/cstring \
   /usr/include/string.h \
-  /usr/include/strings.h
+  /usr/include/strings.h \
+  /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Address.h
 
 
 /usr/include/string.h:

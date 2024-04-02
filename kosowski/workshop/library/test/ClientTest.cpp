@@ -4,11 +4,9 @@
 namespace btt = boost::test_tools;
 
 BOOST_AUTO_TEST_SUITE(TestSuiteClient)
-
+    Address* Example = new Address("Lodz", "Anielska", "13");
+    Client Tester("Jacek", "Rambo", "3", Example);
     BOOST_AUTO_TEST_CASE(MyFirstTests) {
-
-        Client Tester("Jacek", "Rambo", "3");
-
         BOOST_TEST(
                 1.0/3.0 == 0.333,
                 btt::tolerance(0.002)
@@ -21,34 +19,46 @@ BOOST_AUTO_TEST_SUITE(TestSuiteClient)
     }
 
     BOOST_AUTO_TEST_CASE(SetFirstNameTest) {
-        Client TesterTwo("Andrzej", "Makowski", "4");
 
-        TesterTwo.setFirstName("Tomek");
+        Tester.setFirstName("Tomek");
         BOOST_TEST(
-                TesterTwo.getFirstName() == "Tomek"
+                Tester.getFirstName() == "Tomek"
         );
 
-        TesterTwo.setFirstName("");
+        Tester.setFirstName("");
         BOOST_TEST(
-                TesterTwo.getFirstName() == "Tomek"
+                Tester.getFirstName() == "Tomek"
         );
 
     }
 
     BOOST_AUTO_TEST_CASE(SetLastNameTest) {
-        Client TesterThree("Bededykt", "Polnicki", "5");
-
-
-        TesterThree.setLastName("Budka");
+        Tester.setLastName("Budka");
         BOOST_TEST(
-                TesterThree.getLastName() == "Budka"
+                Tester.getLastName() == "Budka"
         );
 
-        TesterThree.setLastName("");
+        Tester.setLastName("");
         BOOST_TEST(
-                TesterThree.getLastName() == "Budka"
+                Tester.getLastName() == "Budka"
         );
 
     }
+
+    BOOST_AUTO_TEST_CASE(SetAddressTest) {
+        Address* Example2 = new Address("Gdynia", "Widzewska", "18");
+        Tester.setAddress(Example2);
+        BOOST_TEST(
+                Tester.getAddress() == "Address: City: Gdynia, Street: Widzewska, Number: 18"
+        );
+
+        Tester.setAddress(nullptr);
+        BOOST_TEST(
+                Tester.getAddress() == "Address: City: Gdynia, Street: Widzewska, Number: 18"
+        );
+
+    }
+
+
 
 BOOST_AUTO_TEST_SUITE_END()

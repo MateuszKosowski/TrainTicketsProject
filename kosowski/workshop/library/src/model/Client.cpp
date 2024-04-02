@@ -14,9 +14,14 @@ std::string Client::getPersonalID() {
     return personalID;
 }
 
-std::string Client::getInfo() {
-    return "First Name: " + firstName + ", Last Name: " + lastName + ", Personal ID: " + personalID;
+std::string Client::getAddress(){
+    return "Address: " + address->getInfo();
 }
+
+std::string Client::getInfo() {
+    return "First Name: " + firstName + ", Last Name: " + lastName + ", Personal ID: " + personalID + ", Address: " + address->getInfo();
+}
+//----------------------------------------------
 
 // Setter implementation
 void Client::setFirstName(const std::string& fName) {
@@ -38,13 +43,22 @@ void Client::setPersonalID(const std::string& id) {
     }
 }
 
-// Constructor implementation
-Client::Client(const std::string& str1, const std::string& str2, const std::string& str3){
+void Client::setAddress(Address *addr) {
+
+    if(addr != nullptr){
+        address = addr;
+    }
+}
+//----------------------------------------------------
+
+// Constructor and Destructor implementation
+Client::Client(const std::string& str1, const std::string& str2, const std::string& str3, Address *addr){
     firstName = str1;
     lastName = str2;
     personalID = str3;
+    address = addr;
 }
 
 Client::~Client() {
-    std::cout << std::endl << "Destruktor tutaj działa - Client" << std::endl;
+    delete address;
 }

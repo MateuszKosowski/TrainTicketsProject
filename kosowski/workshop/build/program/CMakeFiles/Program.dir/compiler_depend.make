@@ -187,8 +187,11 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/Pulpit/CLionProject
   /usr/include/c++/12/bits/istream.tcc \
   /usr/include/c++/12/cstring \
   /usr/include/string.h \
-  /usr/include/strings.h
+  /usr/include/strings.h \
+  /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Address.h
 
+
+/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Address.h:
 
 /usr/include/string.h:
 
