@@ -2,20 +2,20 @@
 #include "model/Client.h"
 
 // Getter implementation
-std::string Client::getFirstName() {
+const std::string &Client::getFirstName() const{
     return firstName;
 }
 
-std::string Client::getLastName() {
+const std::string &Client::getLastName() const{
     return lastName;
 }
 
-std::string Client::getPersonalID() {
+const std::string &Client::getPersonalID() const{
     return personalID;
 }
 
-std::string Client::getAddress(){
-    return "Address: " + address->getInfo();
+const Address *Client::getAddress() const{
+    return address;
 }
 
 std::string Client::getInfo() {

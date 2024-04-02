@@ -2,15 +2,15 @@
 #include "model/Address.h"
 
 // Getter implementation
-std::string Address::getCity() {
+const std::string &Address::getCity() const{
     return city;
 }
 
-std::string Address::getStreet() {
+const std::string &Address::getStreet() const{
     return street;
 }
 
-std::string Address::getNumber() {
+const std::string &Address::getNumber() const{
     return number;
 }
 
@@ -19,20 +19,20 @@ std::string Address::getInfo() {
 }
 
 // Setter implementation
-void Address::setCity(std::string &sCity) {
+void Address::setCity(const std::string &sCity) {
 
     if(!sCity.empty()){
         city = sCity;
     }
 }
 
-void Address::setStreet(std::string &sStreet) {
+void Address::setStreet(const std::string &sStreet) {
     if(!sStreet.empty()) {
         street = sStreet;
     }
 }
 
-void Address::setNumber(std::string &sNumber) {
+void Address::setNumber(const std::string &sNumber) {
     if(!sNumber.empty()){
         number = sNumber;
     }
@@ -44,6 +44,4 @@ Address::Address(const std::string &str1, const std::string &str2, const std::st
     street = str2;
     number = str3;
 }
-Address::~Address() {
-    std::cout << std::endl << "Destruktor tutaj działa - Address" << std::endl;
-}
+Address::~Address() {};

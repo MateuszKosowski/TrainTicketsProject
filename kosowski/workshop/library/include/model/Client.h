@@ -11,11 +11,11 @@ private:
 
 public:
     // getters
-    std::string getFirstName();
-    std::string getLastName();
-    std::string getPersonalID();
-    std::string getAddress();
-    std::string getInfo();
+    const std::string &getFirstName() const;
+    const std::string &getLastName() const;
+    const std::string &getPersonalID() const;
+    const Address *getAddress() const;
+     std::string getInfo();
 
     // setters
     void setFirstName(const std::string& fName);

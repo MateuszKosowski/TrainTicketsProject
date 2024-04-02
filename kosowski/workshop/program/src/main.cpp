@@ -4,10 +4,14 @@
 using namespace std;
 int main()
 {
-    Address* address1 = new Address("Wroclaw", "Malownicza", "55");
-    Client *person = new Client("Marek", "Kozak", "2", address1);
-    cout << endl << person->getInfo();
+    string fname1 = "Jon";
+    Client c(fname1, "Arbuckle", "0123456789", nullptr);
+    fname1.assign("Doc Boy");
+    cout << c.getFirstName() << endl;
 
-    delete person;
+    string fname2 = "Garfield";
+    c.setFirstName(fname2);
+    fname2.assign("Liz");
+    cout << c.getFirstName() << endl;
 	return 0;
 }

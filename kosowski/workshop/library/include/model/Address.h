@@ -9,18 +9,18 @@ private:
 
 public:
     // getterss
-    std::string getCity();
-    std::string getStreet();
-    std::string getNumber();
+    const std::string &getCity() const;
+    const std::string &getStreet() const;
+    const std::string &getNumber() const;
     std::string getInfo();
 
     // setters
-    void setCity(std::string& sCity);
-    void setStreet(std::string& sStreet);
-    void setNumber(std::string& sNumber);
+    void setCity(const std::string& sCity);
+    void setStreet(const std::string& sStreet);
+    void setNumber(const std::string& sNumber);
 
     // constructor
-    Address(const std::string& str1 = "Miasto", const std::string& str2 = "Ulica", const std:: string str3="Numer");
+    Address(const std::string& str1 , const std::string& str2 , const std:: string str3);
     // destructor
     ~Address();
 };

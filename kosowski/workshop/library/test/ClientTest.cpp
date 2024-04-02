@@ -3,9 +3,11 @@
 
 namespace btt = boost::test_tools;
 
-BOOST_AUTO_TEST_SUITE(TestSuiteClient)
+BOOST_AUTO_TEST_SUITE(ClientTest)
+
     Address* Example = new Address("Lodz", "Anielska", "13");
     Client Tester("Jacek", "Rambo", "3", Example);
+
     BOOST_AUTO_TEST_CASE(MyFirstTests) {
         BOOST_TEST(
                 1.0/3.0 == 0.333,
@@ -49,12 +51,12 @@ BOOST_AUTO_TEST_SUITE(TestSuiteClient)
         Address* Example2 = new Address("Gdynia", "Widzewska", "18");
         Tester.setAddress(Example2);
         BOOST_TEST(
-                Tester.getAddress() == "Address: City: Gdynia, Street: Widzewska, Number: 18"
+                Tester.getAddress() == Example2
         );
 
         Tester.setAddress(nullptr);
         BOOST_TEST(
-                Tester.getAddress() == "Address: City: Gdynia, Street: Widzewska, Number: 18"
+                Tester.getAddress() == Example2
         );
 
     }
