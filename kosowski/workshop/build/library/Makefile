@@ -219,6 +219,54 @@ src/model/Client.cpp.s:
 	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.s
 .PHONY : src/model/Client.cpp.s
 
+src/model/Rent.o: src/model/Rent.cpp.o
+.PHONY : src/model/Rent.o
+
+# target to build an object file
+src/model/Rent.cpp.o:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Rent.cpp.o
+.PHONY : src/model/Rent.cpp.o
+
+src/model/Rent.i: src/model/Rent.cpp.i
+.PHONY : src/model/Rent.i
+
+# target to preprocess a source file
+src/model/Rent.cpp.i:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Rent.cpp.i
+.PHONY : src/model/Rent.cpp.i
+
+src/model/Rent.s: src/model/Rent.cpp.s
+.PHONY : src/model/Rent.s
+
+# target to generate assembly for a file
+src/model/Rent.cpp.s:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Rent.cpp.s
+.PHONY : src/model/Rent.cpp.s
+
+src/model/Vehicle.o: src/model/Vehicle.cpp.o
+.PHONY : src/model/Vehicle.o
+
+# target to build an object file
+src/model/Vehicle.cpp.o:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o
+.PHONY : src/model/Vehicle.cpp.o
+
+src/model/Vehicle.i: src/model/Vehicle.cpp.i
+.PHONY : src/model/Vehicle.i
+
+# target to preprocess a source file
+src/model/Vehicle.cpp.i:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.i
+.PHONY : src/model/Vehicle.cpp.i
+
+src/model/Vehicle.s: src/model/Vehicle.cpp.s
+.PHONY : src/model/Vehicle.s
+
+# target to generate assembly for a file
+src/model/Vehicle.cpp.s:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.s
+.PHONY : src/model/Vehicle.cpp.s
+
 test/AddressTest.o: test/AddressTest.cpp.o
 .PHONY : test/AddressTest.o
 
@@ -309,6 +357,12 @@ help:
 	@echo "... src/model/Client.o"
 	@echo "... src/model/Client.i"
 	@echo "... src/model/Client.s"
+	@echo "... src/model/Rent.o"
+	@echo "... src/model/Rent.i"
+	@echo "... src/model/Rent.s"
+	@echo "... src/model/Vehicle.o"
+	@echo "... src/model/Vehicle.i"
+	@echo "... src/model/Vehicle.s"
 	@echo "... test/AddressTest.o"
 	@echo "... test/AddressTest.i"
 	@echo "... test/AddressTest.s"

@@ -18,9 +18,29 @@ const Address *Client::getAddress() const{
     return address;
 }
 
-std::string Client::getInfo() {
+const Rent *Client::getCurrentRents() const {
+    return currentRents.back();
+}
+
+const std::string Client::getInfo() const{
     return "First Name: " + firstName + ", Last Name: " + lastName + ", Personal ID: " + personalID + ", Address: " + address->getInfo();
 }
+
+const std::string Client::getFullInfo() const {
+    if (!currentRents.empty()) {
+
+        std::string rentInfo;
+        for (auto x : currentRents){
+            rentInfo.append(x->getInfo());
+        }
+
+        return firstName + " " + lastName+ " " + personalID + " " +address->getInfo() + "\n" + rentInfo;
+    }
+    if (address != nullptr) {
+        return firstName + " " + lastName + " " + personalID + " " + address->getInfo();
+    }
+    return  firstName + " " + lastName + " " + personalID;
+};
 //----------------------------------------------
 
 // Setter implementation
@@ -49,6 +69,13 @@ void Client::setAddress(Address *addr) {
         address = addr;
     }
 }
+
+void Client::pushCurrentRents(Rent *varCurrentRents) {
+    if (varCurrentRents != nullptr){
+        currentRents.push_back(varCurrentRents);
+    }
+
+};
 //----------------------------------------------------
 
 // Constructor and Destructor implementation

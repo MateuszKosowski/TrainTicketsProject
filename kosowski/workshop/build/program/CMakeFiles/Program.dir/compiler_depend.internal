@@ -5,6 +5,7 @@ program/CMakeFiles/Program.dir/src/main.cpp.o
  /home/student/Pulpit/CLionProjects/start/kosowski/workshop/program/src/main.cpp
  /usr/include/stdc-predef.h
  /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Client.h
+ /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Address.h
  /usr/include/c++/12/iostream
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h
@@ -189,5 +190,11 @@ program/CMakeFiles/Program.dir/src/main.cpp.o
  /usr/include/c++/12/cstring
  /usr/include/string.h
  /usr/include/strings.h
- /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Address.h
+ /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h
+ /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Vehicle.h
+ /usr/include/c++/12/vector
+ /usr/include/c++/12/bits/stl_uninitialized.h
+ /usr/include/c++/12/bits/stl_vector.h
+ /usr/include/c++/12/bits/stl_bvector.h
+ /usr/include/c++/12/bits/vector.tcc
 

@@ -5,8 +5,12 @@ project(Library)
 set(SOURCE_FILES
     src/model/Client.cpp
     src/model/Address.cpp
+    src/model/Rent.cpp
+    src/model/Vehicle.cpp
     include/model/Client.h
     include/model/Address.h
+    include/model/Vehicle.h
+    include/model/Rent.h
 )
 # Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h
 add_library(Library ${SOURCE_FILES})

@@ -591,4 +591,6 @@ library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.o: \
  /usr/include/boost/core/swap.hpp \
  /usr/include/boost/test/tree/global_fixture.hpp \
  /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Client.h \
- /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Address.h
+ /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Address.h \
+ /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
+ /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Vehicle.h

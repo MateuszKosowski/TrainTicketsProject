@@ -1332,7 +1332,9 @@ library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.o: /home/student/Pulpit
   /usr/include/boost/core/swap.hpp \
   /usr/include/boost/test/tree/global_fixture.hpp \
   /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Client.h \
-  /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Address.h
+  /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Address.h \
+  /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
+  /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Vehicle.h
 
 library/CMakeFiles/LibraryTester.dir/test/master.cpp.o: /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/master.cpp \
   /usr/include/stdc-predef.h \
@@ -2162,6 +2164,8 @@ library/CMakeFiles/LibraryTester.dir/test/master.cpp.o: /home/student/Pulpit/CLi
 
 /usr/include/pthread.h:
 
+/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Vehicle.h:
+
 /usr/include/c++/12/bits/stl_iterator_base_funcs.h:
 
 /usr/include/c++/12/cstdio:
@@ -2249,6 +2253,8 @@ library/CMakeFiles/LibraryTester.dir/test/master.cpp.o: /home/student/Pulpit/CLi
 /usr/include/c++/12/pstl/glue_algorithm_defs.h:
 
 /usr/include/features.h:
+
+/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h:
 
 /usr/include/stdint.h:
 

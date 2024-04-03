@@ -1,5 +1,5 @@
-program/CMakeFiles/Program.dir/src/main.cpp.o: \
- /home/student/Pulpit/CLionProjects/start/kosowski/workshop/program/src/main.cpp \
+library/CMakeFiles/Library.dir/src/model/Rent.cpp.o: \
+ /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/src/model/Rent.cpp \
  /usr/include/stdc-predef.h \
  /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Client.h \
  /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Address.h \
