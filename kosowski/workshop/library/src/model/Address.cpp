@@ -15,7 +15,7 @@ const std::string &Address::getNumber() const{
 }
 
 std::string Address::getInfo() {
-    return "\nCity: " + city + ",\nStreet: " + street + ",\nNumber: " + number + "\n";
+    return "\nCity: " + city + ",\nStreet: " + street + ",\nNumber: " + number;
 }
 
 // Setter implementation

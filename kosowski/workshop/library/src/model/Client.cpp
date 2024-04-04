@@ -35,7 +35,7 @@ const std::string Client::getFullInfo() const {
             rentInfo.append(("\nPlate Number: " +x->getVehicle()->getPlateNumber()));
         }
 
-        return this->getInfo() + "Rents: " + rentInfo;
+        return this->getInfo() + "\nRents: " + rentInfo;
     }
     else{
         return this->getInfo() + "Rents: No exists";

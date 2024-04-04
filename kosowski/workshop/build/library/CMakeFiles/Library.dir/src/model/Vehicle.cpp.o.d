@@ -1,7 +1,7 @@
 library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: \
- /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/src/model/Vehicle.cpp \
+ /home/student/CLionProjects/start/kosowski/workshop/library/src/model/Vehicle.cpp \
  /usr/include/stdc-predef.h \
- /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Vehicle.h \
+ /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Vehicle.h \
  /usr/include/c++/12/string \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \

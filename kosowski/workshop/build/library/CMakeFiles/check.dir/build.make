@@ -56,10 +56,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/workshop
+CMAKE_SOURCE_DIR = /home/student/CLionProjects/start/kosowski/workshop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build
+CMAKE_BINARY_DIR = /home/student/CLionProjects/start/kosowski/workshop/build
 
 # Utility rule file for check.
 
@@ -81,10 +81,10 @@ library/CMakeFiles/check.dir/build: check
 .PHONY : library/CMakeFiles/check.dir/build
 
 library/CMakeFiles/check.dir/clean:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/library && $(CMAKE_COMMAND) -P CMakeFiles/check.dir/cmake_clean.cmake
+	cd /home/student/CLionProjects/start/kosowski/workshop/build/library && $(CMAKE_COMMAND) -P CMakeFiles/check.dir/cmake_clean.cmake
 .PHONY : library/CMakeFiles/check.dir/clean
 
 library/CMakeFiles/check.dir/depend:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/Pulpit/CLionProjects/start/kosowski/workshop /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/library /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/library/CMakeFiles/check.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/student/CLionProjects/start/kosowski/workshop /home/student/CLionProjects/start/kosowski/workshop/library /home/student/CLionProjects/start/kosowski/workshop/build /home/student/CLionProjects/start/kosowski/workshop/build/library /home/student/CLionProjects/start/kosowski/workshop/build/library/CMakeFiles/check.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : library/CMakeFiles/check.dir/depend
 

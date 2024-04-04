@@ -1,5 +1,5 @@
 library/CMakeFiles/Library.dir/src/model/Address.cpp.o: \
- /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/src/model/Address.cpp \
+ /home/student/CLionProjects/start/kosowski/workshop/library/src/model/Address.cpp \
  /usr/include/stdc-predef.h /usr/include/c++/12/iostream \
  /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
  /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
@@ -148,5 +148,5 @@ library/CMakeFiles/Library.dir/src/model/Address.cpp.o: \
  /usr/include/c++/12/bits/basic_ios.tcc \
  /usr/include/c++/12/bits/ostream.tcc /usr/include/c++/12/istream \
  /usr/include/c++/12/bits/istream.tcc \
- /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Address.h \
+ /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Address.h \
  /usr/include/c++/12/cstring /usr/include/string.h /usr/include/strings.h

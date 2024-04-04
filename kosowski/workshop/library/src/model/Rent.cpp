@@ -24,10 +24,10 @@ Vehicle const *Rent::getVehicle() const {
 
 const std::string Rent::getInfo() const {
 
-    return "Rent ID: " + std::to_string(id) + " " + client->getInfo() + " " + vehicle->getInfo();
+    return "\nRent ID: " + std::to_string(id) + " " + client->getInfo() + vehicle->getInfo();
 }
 
-//----------------------------------------------u-------------------------------
+//-----------------------------------------------------------------------------
 // Constructor and destructor
 Rent::Rent(const unsigned &number, const Client *obj_client, Vehicle *obj_vehicle) {
     id = number;

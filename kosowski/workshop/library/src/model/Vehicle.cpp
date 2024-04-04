@@ -29,7 +29,7 @@ const bool &Vehicle::isRented() const{
 
 const std::string Vehicle::getInfo() const{
 
-    return "Plate Number: " + plateNumber + "\nPrice: " + std::to_string(basePrice) + "\nIs rented? " + std::to_string(rented);
+    return "\nPlate Number: " + plateNumber + "\nPrice: " + std::to_string(basePrice) + "\nIs rented: " + std::to_string(rented);
 }
 
 //---------------------------------------------------------------------------

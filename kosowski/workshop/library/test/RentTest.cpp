@@ -23,18 +23,19 @@ BOOST_AUTO_TEST_SUITE(RentTest)
 
     BOOST_AUTO_TEST_CASE(GetInfoTest) {
         BOOST_TEST(
-                A->getInfo() =="Rent ID: 2 \n"
-                               "First Name: Jacek,\n"
-                               "Last Name: Rambo,\n"
-                               "Personal ID: 3,\n"
-                               "Address: \n"
-                               "City: Lodz,\n"
-                               "Street: Anielska,\n"
-                               "Number: 13\n"
-                               "Plate Number: JD 4290\n"
-                               "Price: 3999\n"
-                               "Is rented? 1"
-        );
+                A->getInfo() == "\nRent ID: 2 \n"
+                                "First Name: Jacek,\n"
+                                "Last Name: Rambo,\n"
+                                "Personal ID: 3,\n"
+                                "Address: \n"
+                                "City: Lodz,\n"
+                                "Street: Anielska,\n"
+                                "Number: 13\n"
+                                "Plate Number: JD 4290\n"
+                                "Price: 3999\n"
+                                "Is rented: 1"
+                );
+
     }
 
 BOOST_AUTO_TEST_SUITE_END()

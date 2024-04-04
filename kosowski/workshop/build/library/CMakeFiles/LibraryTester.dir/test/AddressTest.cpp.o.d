@@ -1,5 +1,5 @@
 library/CMakeFiles/LibraryTester.dir/test/AddressTest.cpp.o: \
- /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp \
+ /home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp \
  /usr/include/stdc-predef.h /usr/include/boost/test/unit_test.hpp \
  /usr/include/boost/test/test_tools.hpp /usr/include/boost/config.hpp \
  /usr/include/boost/config/user.hpp \
@@ -590,4 +590,4 @@ library/CMakeFiles/LibraryTester.dir/test/AddressTest.cpp.o: \
  /usr/include/boost/utility/value_init.hpp /usr/include/boost/swap.hpp \
  /usr/include/boost/core/swap.hpp \
  /usr/include/boost/test/tree/global_fixture.hpp \
- /home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/include/model/Address.h
+ /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Address.h

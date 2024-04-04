@@ -60,10 +60,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/workshop
+CMAKE_SOURCE_DIR = /home/student/CLionProjects/start/kosowski/workshop
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build
+CMAKE_BINARY_DIR = /home/student/CLionProjects/start/kosowski/workshop/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -100,14 +100,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/CMakeFiles /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/library//CMakeFiles/progress.marks
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build/CMakeFiles 0
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/student/CLionProjects/start/kosowski/workshop/build/CMakeFiles /home/student/CLionProjects/start/kosowski/workshop/build/library//CMakeFiles/progress.marks
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/student/CLionProjects/start/kosowski/workshop/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/clean
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/clean
 .PHONY : clean
 
 # The main clean target
@@ -116,22 +116,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/preinstall
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/preinstall
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 library/CMakeFiles/Library.dir/rule:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/CMakeFiles/Library.dir/rule
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/CMakeFiles/Library.dir/rule
 .PHONY : library/CMakeFiles/Library.dir/rule
 
 # Convenience name for target.
@@ -140,12 +140,12 @@ Library: library/CMakeFiles/Library.dir/rule
 
 # fast build rule for target.
 Library/fast:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/build
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/build
 .PHONY : Library/fast
 
 # Convenience name for target.
 library/CMakeFiles/LibraryTester.dir/rule:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/CMakeFiles/LibraryTester.dir/rule
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/CMakeFiles/LibraryTester.dir/rule
 .PHONY : library/CMakeFiles/LibraryTester.dir/rule
 
 # Convenience name for target.
@@ -154,12 +154,12 @@ LibraryTester: library/CMakeFiles/LibraryTester.dir/rule
 
 # fast build rule for target.
 LibraryTester/fast:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/build
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/build
 .PHONY : LibraryTester/fast
 
 # Convenience name for target.
 library/CMakeFiles/check.dir/rule:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/CMakeFiles/check.dir/rule
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 library/CMakeFiles/check.dir/rule
 .PHONY : library/CMakeFiles/check.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ check: library/CMakeFiles/check.dir/rule
 
 # fast build rule for target.
 check/fast:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/check.dir/build.make library/CMakeFiles/check.dir/build
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/check.dir/build.make library/CMakeFiles/check.dir/build
 .PHONY : check/fast
 
 src/model/Address.o: src/model/Address.cpp.o
@@ -176,7 +176,7 @@ src/model/Address.o: src/model/Address.cpp.o
 
 # target to build an object file
 src/model/Address.cpp.o:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Address.cpp.o
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Address.cpp.o
 .PHONY : src/model/Address.cpp.o
 
 src/model/Address.i: src/model/Address.cpp.i
@@ -184,7 +184,7 @@ src/model/Address.i: src/model/Address.cpp.i
 
 # target to preprocess a source file
 src/model/Address.cpp.i:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Address.cpp.i
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Address.cpp.i
 .PHONY : src/model/Address.cpp.i
 
 src/model/Address.s: src/model/Address.cpp.s
@@ -192,7 +192,7 @@ src/model/Address.s: src/model/Address.cpp.s
 
 # target to generate assembly for a file
 src/model/Address.cpp.s:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Address.cpp.s
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Address.cpp.s
 .PHONY : src/model/Address.cpp.s
 
 src/model/Client.o: src/model/Client.cpp.o
@@ -200,7 +200,7 @@ src/model/Client.o: src/model/Client.cpp.o
 
 # target to build an object file
 src/model/Client.cpp.o:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.o
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.o
 .PHONY : src/model/Client.cpp.o
 
 src/model/Client.i: src/model/Client.cpp.i
@@ -208,7 +208,7 @@ src/model/Client.i: src/model/Client.cpp.i
 
 # target to preprocess a source file
 src/model/Client.cpp.i:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.i
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.i
 .PHONY : src/model/Client.cpp.i
 
 src/model/Client.s: src/model/Client.cpp.s
@@ -216,7 +216,7 @@ src/model/Client.s: src/model/Client.cpp.s
 
 # target to generate assembly for a file
 src/model/Client.cpp.s:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.s
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.s
 .PHONY : src/model/Client.cpp.s
 
 src/model/Rent.o: src/model/Rent.cpp.o
@@ -224,7 +224,7 @@ src/model/Rent.o: src/model/Rent.cpp.o
 
 # target to build an object file
 src/model/Rent.cpp.o:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Rent.cpp.o
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Rent.cpp.o
 .PHONY : src/model/Rent.cpp.o
 
 src/model/Rent.i: src/model/Rent.cpp.i
@@ -232,7 +232,7 @@ src/model/Rent.i: src/model/Rent.cpp.i
 
 # target to preprocess a source file
 src/model/Rent.cpp.i:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Rent.cpp.i
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Rent.cpp.i
 .PHONY : src/model/Rent.cpp.i
 
 src/model/Rent.s: src/model/Rent.cpp.s
@@ -240,7 +240,7 @@ src/model/Rent.s: src/model/Rent.cpp.s
 
 # target to generate assembly for a file
 src/model/Rent.cpp.s:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Rent.cpp.s
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Rent.cpp.s
 .PHONY : src/model/Rent.cpp.s
 
 src/model/Vehicle.o: src/model/Vehicle.cpp.o
@@ -248,7 +248,7 @@ src/model/Vehicle.o: src/model/Vehicle.cpp.o
 
 # target to build an object file
 src/model/Vehicle.cpp.o:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o
 .PHONY : src/model/Vehicle.cpp.o
 
 src/model/Vehicle.i: src/model/Vehicle.cpp.i
@@ -256,7 +256,7 @@ src/model/Vehicle.i: src/model/Vehicle.cpp.i
 
 # target to preprocess a source file
 src/model/Vehicle.cpp.i:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.i
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.i
 .PHONY : src/model/Vehicle.cpp.i
 
 src/model/Vehicle.s: src/model/Vehicle.cpp.s
@@ -264,7 +264,7 @@ src/model/Vehicle.s: src/model/Vehicle.cpp.s
 
 # target to generate assembly for a file
 src/model/Vehicle.cpp.s:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.s
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.s
 .PHONY : src/model/Vehicle.cpp.s
 
 test/AddressTest.o: test/AddressTest.cpp.o
@@ -272,7 +272,7 @@ test/AddressTest.o: test/AddressTest.cpp.o
 
 # target to build an object file
 test/AddressTest.cpp.o:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/AddressTest.cpp.o
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/AddressTest.cpp.o
 .PHONY : test/AddressTest.cpp.o
 
 test/AddressTest.i: test/AddressTest.cpp.i
@@ -280,7 +280,7 @@ test/AddressTest.i: test/AddressTest.cpp.i
 
 # target to preprocess a source file
 test/AddressTest.cpp.i:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/AddressTest.cpp.i
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/AddressTest.cpp.i
 .PHONY : test/AddressTest.cpp.i
 
 test/AddressTest.s: test/AddressTest.cpp.s
@@ -288,7 +288,7 @@ test/AddressTest.s: test/AddressTest.cpp.s
 
 # target to generate assembly for a file
 test/AddressTest.cpp.s:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/AddressTest.cpp.s
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/AddressTest.cpp.s
 .PHONY : test/AddressTest.cpp.s
 
 test/ClientTest.o: test/ClientTest.cpp.o
@@ -296,7 +296,7 @@ test/ClientTest.o: test/ClientTest.cpp.o
 
 # target to build an object file
 test/ClientTest.cpp.o:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.o
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.o
 .PHONY : test/ClientTest.cpp.o
 
 test/ClientTest.i: test/ClientTest.cpp.i
@@ -304,7 +304,7 @@ test/ClientTest.i: test/ClientTest.cpp.i
 
 # target to preprocess a source file
 test/ClientTest.cpp.i:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.i
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.i
 .PHONY : test/ClientTest.cpp.i
 
 test/ClientTest.s: test/ClientTest.cpp.s
@@ -312,7 +312,7 @@ test/ClientTest.s: test/ClientTest.cpp.s
 
 # target to generate assembly for a file
 test/ClientTest.cpp.s:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.s
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.s
 .PHONY : test/ClientTest.cpp.s
 
 test/RentTest.o: test/RentTest.cpp.o
@@ -320,7 +320,7 @@ test/RentTest.o: test/RentTest.cpp.o
 
 # target to build an object file
 test/RentTest.cpp.o:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.o
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.o
 .PHONY : test/RentTest.cpp.o
 
 test/RentTest.i: test/RentTest.cpp.i
@@ -328,7 +328,7 @@ test/RentTest.i: test/RentTest.cpp.i
 
 # target to preprocess a source file
 test/RentTest.cpp.i:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.i
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.i
 .PHONY : test/RentTest.cpp.i
 
 test/RentTest.s: test/RentTest.cpp.s
@@ -336,15 +336,39 @@ test/RentTest.s: test/RentTest.cpp.s
 
 # target to generate assembly for a file
 test/RentTest.cpp.s:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.s
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.s
 .PHONY : test/RentTest.cpp.s
+
+test/VehicleTest.o: test/VehicleTest.cpp.o
+.PHONY : test/VehicleTest.o
+
+# target to build an object file
+test/VehicleTest.cpp.o:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/VehicleTest.cpp.o
+.PHONY : test/VehicleTest.cpp.o
+
+test/VehicleTest.i: test/VehicleTest.cpp.i
+.PHONY : test/VehicleTest.i
+
+# target to preprocess a source file
+test/VehicleTest.cpp.i:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/VehicleTest.cpp.i
+.PHONY : test/VehicleTest.cpp.i
+
+test/VehicleTest.s: test/VehicleTest.cpp.s
+.PHONY : test/VehicleTest.s
+
+# target to generate assembly for a file
+test/VehicleTest.cpp.s:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/VehicleTest.cpp.s
+.PHONY : test/VehicleTest.cpp.s
 
 test/master.o: test/master.cpp.o
 .PHONY : test/master.o
 
 # target to build an object file
 test/master.cpp.o:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/master.cpp.o
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/master.cpp.o
 .PHONY : test/master.cpp.o
 
 test/master.i: test/master.cpp.i
@@ -352,7 +376,7 @@ test/master.i: test/master.cpp.i
 
 # target to preprocess a source file
 test/master.cpp.i:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/master.cpp.i
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/master.cpp.i
 .PHONY : test/master.cpp.i
 
 test/master.s: test/master.cpp.s
@@ -360,7 +384,7 @@ test/master.s: test/master.cpp.s
 
 # target to generate assembly for a file
 test/master.cpp.s:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/master.cpp.s
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/master.cpp.s
 .PHONY : test/master.cpp.s
 
 # Help Target
@@ -396,6 +420,9 @@ help:
 	@echo "... test/RentTest.o"
 	@echo "... test/RentTest.i"
 	@echo "... test/RentTest.s"
+	@echo "... test/VehicleTest.o"
+	@echo "... test/VehicleTest.i"
+	@echo "... test/VehicleTest.s"
 	@echo "... test/master.o"
 	@echo "... test/master.i"
 	@echo "... test/master.s"
@@ -410,6 +437,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
