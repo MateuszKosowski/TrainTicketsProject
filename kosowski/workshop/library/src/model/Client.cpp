@@ -75,7 +75,7 @@ void Client::pushCurrentRents(Rent *varCurrentRents) {
         currentRents.push_back(varCurrentRents);
     }
 
-};
+}
 //----------------------------------------------------
 
 // Constructor and Destructor implementation
