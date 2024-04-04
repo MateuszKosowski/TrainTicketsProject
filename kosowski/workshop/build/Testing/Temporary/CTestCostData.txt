@@ -1,2 +1,3 @@
-LibraryTest 15 0.000584942
+LibraryTest 15 0
 ---
+LibraryTest

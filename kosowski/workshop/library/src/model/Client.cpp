@@ -23,7 +23,7 @@ const Rent *Client::getCurrentRents() const {
 }
 
 const std::string Client::getInfo() const{
-    return "First Name: " + firstName + ", Last Name: " + lastName + ", Personal ID: " + personalID + ", Address: " + address->getInfo();
+    return "\nFirst Name: " + firstName + ",\nLast Name: " + lastName + ",\nPersonal ID: " + personalID + ",\nAddress: " + address->getInfo();
 }
 
 const std::string Client::getFullInfo() const {
@@ -31,16 +31,16 @@ const std::string Client::getFullInfo() const {
 
         std::string rentInfo;
         for (auto x : currentRents){
-            rentInfo.append(x->getInfo());
+            rentInfo.append("\nRent ID: " +std::to_string(x->getId()));
+            rentInfo.append(("\nPlate Number: " +x->getVehicle()->getPlateNumber()));
         }
 
-        return firstName + " " + lastName+ " " + personalID + " " +address->getInfo() + "\n" + rentInfo;
+        return this->getInfo() + "Rents: " + rentInfo;
     }
-    if (address != nullptr) {
-        return firstName + " " + lastName + " " + personalID + " " + address->getInfo();
+    else{
+        return this->getInfo() + "Rents: No exists";
     }
-    return  firstName + " " + lastName + " " + personalID;
-};
+}
 //----------------------------------------------
 
 // Setter implementation

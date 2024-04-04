@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp" "library/CMakeFiles/LibraryTester.dir/test/AddressTest.cpp.o" "gcc" "library/CMakeFiles/LibraryTester.dir/test/AddressTest.cpp.o.d"
   "/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp" "library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.o" "gcc" "library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.o.d"
+  "/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp" "library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.o" "gcc" "library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.o.d"
   "/home/student/Pulpit/CLionProjects/start/kosowski/workshop/library/test/master.cpp" "library/CMakeFiles/LibraryTester.dir/test/master.cpp.o" "gcc" "library/CMakeFiles/LibraryTester.dir/test/master.cpp.o.d"
   )
 

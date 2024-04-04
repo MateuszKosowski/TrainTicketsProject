@@ -4,7 +4,9 @@
 //--------------------------------------------------------------------------------
 // Setter
 void Rent::setId(const unsigned &number) {
-    id = number;
+    if(number >= 1){
+        id = number;
+    }
 }
 
 //--------------------------------------------------------------------------------------
@@ -22,7 +24,7 @@ Vehicle const *Rent::getVehicle() const {
 
 const std::string Rent::getInfo() const {
 
-    return std::to_string(id) + " " + client->getInfo() + " " + vehicle->getInfo();
+    return "Rent ID: " + std::to_string(id) + " " + client->getInfo() + " " + vehicle->getInfo();
 }
 
 //----------------------------------------------u-------------------------------

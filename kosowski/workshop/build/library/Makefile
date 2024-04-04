@@ -315,6 +315,30 @@ test/ClientTest.cpp.s:
 	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.s
 .PHONY : test/ClientTest.cpp.s
 
+test/RentTest.o: test/RentTest.cpp.o
+.PHONY : test/RentTest.o
+
+# target to build an object file
+test/RentTest.cpp.o:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.o
+.PHONY : test/RentTest.cpp.o
+
+test/RentTest.i: test/RentTest.cpp.i
+.PHONY : test/RentTest.i
+
+# target to preprocess a source file
+test/RentTest.cpp.i:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.i
+.PHONY : test/RentTest.cpp.i
+
+test/RentTest.s: test/RentTest.cpp.s
+.PHONY : test/RentTest.s
+
+# target to generate assembly for a file
+test/RentTest.cpp.s:
+	cd /home/student/Pulpit/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.s
+.PHONY : test/RentTest.cpp.s
+
 test/master.o: test/master.cpp.o
 .PHONY : test/master.o
 
@@ -369,6 +393,9 @@ help:
 	@echo "... test/ClientTest.o"
 	@echo "... test/ClientTest.i"
 	@echo "... test/ClientTest.s"
+	@echo "... test/RentTest.o"
+	@echo "... test/RentTest.i"
+	@echo "... test/RentTest.s"
 	@echo "... test/master.o"
 	@echo "... test/master.i"
 	@echo "... test/master.s"
