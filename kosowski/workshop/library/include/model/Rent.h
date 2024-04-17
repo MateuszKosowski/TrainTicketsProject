@@ -57,7 +57,7 @@ public:
      */
     const std::string getInfo() const;
 
-    
+    void endRent(pt::ptime eTime);
 
     /**
     * @brief Konstruktor inicjujący obiekt klasy Rent.
