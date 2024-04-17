@@ -27,12 +27,25 @@ const std::string Rent::getInfo() const {
     return "\nRent ID: " + std::to_string(id) + " " + client->getInfo() + vehicle->getInfo();
 }
 
+const pt::ptime &Rent::getBeginTime() const {
+    return beginTime;
+}
+
+const pt::ptime &Rent::getEndTime() const {
+    return endTime;
+}
+
 //-----------------------------------------------------------------------------
 // Constructor and destructor
-Rent::Rent(const unsigned &number, const Client *obj_client, Vehicle *obj_vehicle) {
+Rent::Rent(const unsigned &number, const Client *obj_client, Vehicle *obj_vehicle, pt::ptime begTime) {
     id = number;
     client = obj_client;
     vehicle = obj_vehicle;
     vehicle->setRented(true);
+    if(begTime != pt::not_a_date_time){
+        beginTime = pt::second_clock::local_time();
+    }
+    endTime = pt::not_a_date_time;
+    rentCost = 0;
 }
-Rent::~Rent(){};
+Rent::~Rent(){}

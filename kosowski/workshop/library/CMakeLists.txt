@@ -22,9 +22,11 @@ target_include_directories(Library PUBLIC include)
 
 enable_testing()
 
-#A to kazali przekopiować
+#Daje znać CMake, że szukam biblioteki Boost i chce użyć komponentu unit_test_framework
 find_package (Boost 1.60.0 COMPONENTS "unit_test_framework" REQUIRED)
+find_package(Boost 1.60.0 COMPONENTS date_time REQUIRED)
 
+#To sprawia, że nagłówki Boost są uwzględniane podczas kompilacji
 include_directories(
         ${CMAKE_CURRENT_SOURCE_DIR}/include
         ${Boost_INCLUDE_DIRS}

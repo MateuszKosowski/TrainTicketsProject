@@ -1,5 +1,9 @@
 #include <cstring>
 #include "model/Vehicle.h"
+#include <boost/date_time.hpp>
+
+namespace pt = boost::posix_time;
+namespace gr = boost::gregorian;
 
 // Deklaracja wstępna klasy Client
 class Client;
@@ -12,6 +16,9 @@ private:
     unsigned id;        /**< Numer identyfikacyjny wypożyczenia */
     const Client *client;   /**< Klient dokonujący wypożyczenia */
     const Vehicle *vehicle;      /**< Pojazd, który jest wynajmowany */
+    pt::ptime beginTime;
+    pt::ptime endTime;
+    int rentCost;
 
 public:
     /**
@@ -36,6 +43,12 @@ public:
      * @brief Ustawia numer identyfikacyjny wypożyczenia.
      * @param number Numer identyfikacyjny wypożyczenia.
      */
+
+    const pt::ptime &getBeginTime() const;
+
+    const pt::ptime &getEndTime() const;
+
+
     void setId(const unsigned &number);
 
     /**
@@ -44,13 +57,15 @@ public:
      */
     const std::string getInfo() const;
 
+    
+
     /**
     * @brief Konstruktor inicjujący obiekt klasy Rent.
     * @param number Numer identyfikacyjny wypożyczenia.
     * @param obj_client Wskaźnik do obiektu klasy Client reprezentującego klienta.
     * @param obj_vehicle Wskaźnik do obiektu klasy Vehicle reprezentującego wynajmowany pojazd.
     */
-    Rent(const unsigned &number, const Client *obj_client, Vehicle *obj_vehicle);
+    Rent(const unsigned &number, const Client *obj_client, Vehicle *obj_vehicle, pt::ptime begTime);
 
     /**
      * @brief Destruktor klasy Rent.

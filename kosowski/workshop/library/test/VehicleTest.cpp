@@ -43,7 +43,7 @@ BOOST_AUTO_TEST_SUITE(VehicleTest)
         car->setRented(false);
         Address* Example = new Address("Lodz", "Anielska", "13");
         Client* Tester = new Client("Jacek", "Rambo", "3", Example);
-        Rent* A = new Rent(1, Tester, car);
+        Rent* A = new Rent(1, Tester, car, pt::not_a_date_time);
         BOOST_TEST(
                 car->isRented() == true
         );

@@ -5,7 +5,7 @@ BOOST_AUTO_TEST_SUITE(RentTest)
     Vehicle* Car = new Vehicle("JD 4290", 3999);
     Address* Example = new Address("Lodz", "Anielska", "13");
     Client* Tester = new Client("Jacek", "Rambo", "3", Example);
-    Rent* A = new Rent(1, Tester, Car);
+    Rent* A = new Rent(1, Tester, Car, pt::not_a_date_time);
 
     BOOST_AUTO_TEST_CASE(SettersTest) {
         A->setId(2);
