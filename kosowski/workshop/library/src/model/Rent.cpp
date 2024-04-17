@@ -1,16 +1,12 @@
 #include "model/Client.h"
 #include <string>
 
-//--------------------------------------------------------------------------------
-// Setter
 void Rent::setId(const unsigned &number) {
     if(number >= 1){
         id = number;
     }
 }
 
-//--------------------------------------------------------------------------------------
-// Getters
 unsigned const &Rent::getId() const {
     return id;
 }
@@ -23,8 +19,12 @@ Vehicle const *Rent::getVehicle() const {
 }
 
 const std::string Rent::getInfo() const {
-
-    return "\nRent ID: " + std::to_string(id) + " " + client->getInfo() + vehicle->getInfo();
+    std::stringstream ss, zz;
+    ss << beginTime;
+    zz << endTime;
+    std::string s = ss.str();
+    std::string z = zz.str();
+    return "\nRent ID: " + std::to_string(id) + " " + client->getInfo() + vehicle->getInfo() + "\n Poczatek wypozyczenia: " + s + "\n Koniec wypozyczenia: " + z;
 }
 
 const pt::ptime &Rent::getBeginTime() const {
@@ -51,8 +51,14 @@ void Rent::endRent(pt::ptime eTime) {
     }
 
 }
+const pt::time_period Rent::getRentDays() const{
+    if((beginTime!=pt::not_a_date_time)&&(endTime!=pt::not_a_date_time)){
+        pt::time_period period(beginTime, endTime);
+        return period;
+    }
+    throw std::logic_error("Rent days are not available.");
+}
 
-//-----------------------------------------------------------------------------
 // Constructor and destructor
 Rent::Rent(const unsigned &number, const Client *obj_client, Vehicle *obj_vehicle, pt::ptime begTime) {
     id = number;

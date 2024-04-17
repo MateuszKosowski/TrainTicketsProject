@@ -44,11 +44,6 @@ public:
      * @param number Numer identyfikacyjny wypożyczenia.
      */
 
-    const pt::ptime &getBeginTime() const;
-
-    const pt::ptime &getEndTime() const;
-
-
     void setId(const unsigned &number);
 
     /**
@@ -58,6 +53,12 @@ public:
     const std::string getInfo() const;
 
     void endRent(pt::ptime eTime);
+
+     const pt::time_period getRentDays() const;
+
+    const pt::ptime &getBeginTime() const;
+
+    const pt::ptime &getEndTime() const;
 
     /**
     * @brief Konstruktor inicjujący obiekt klasy Rent.
