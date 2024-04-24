@@ -40,15 +40,33 @@ void Rent::endRent(pt::ptime eTime) {
         if(eTime == pt::not_a_date_time){
             endTime = pt::second_clock::local_time();
             vehicle->setRented(false);
+            for (auto it = client->getAllRents().begin(); it != client->getAllRents().end();) {
+                if ((*it)->getId() == getId())
+                    it = client->getAllRents().erase(it);
+                else
+                    ++it;
+            }
         }
         else{
             if(eTime <= beginTime){
                 endTime = beginTime;
                 vehicle->setRented(false);
+                for (auto it = client->getAllRents().begin(); it != client->getAllRents().end();) {
+                    if ((*it)->getId() == getId())
+                        it = client->getAllRents().erase(it);
+                    else
+                        ++it;
+                }
             }
             else{
                 endTime = eTime;
                 vehicle->setRented(false);
+                for (auto it = client->getAllRents().begin(); it != client->getAllRents().end();) {
+                    if ((*it)->getId() == getId())
+                        it = client->getAllRents().erase(it);
+                    else
+                        ++it;
+                }
             }
         }
     }

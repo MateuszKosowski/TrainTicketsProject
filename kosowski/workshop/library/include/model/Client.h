@@ -48,6 +48,8 @@ public:
      */
     const Rent *getCurrentRents() const;
 
+    std::vector<Rent*>& getAllRents();
+
     /**
      * @brief Ustawia imię klienta.
      * @param fName Imię klienta.

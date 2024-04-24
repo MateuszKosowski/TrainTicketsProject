@@ -19,8 +19,18 @@ const Address *Client::getAddress() const{
 }
 
 const Rent *Client::getCurrentRents() const {
-    return currentRents.back();
+    if (currentRents.empty()) {
+        return nullptr;
+    }
+    else{
+        return currentRents.back();
+    }
 }
+
+std::vector<Rent*>& Client::getAllRents() {
+    return currentRents;
+}
+
 
 const std::string Client::getInfo() const{
     return "\nFirst Name: " + firstName + ",\nLast Name: " + lastName + ",\nPersonal ID: " + personalID + ",\nAddress: " + address->getInfo();

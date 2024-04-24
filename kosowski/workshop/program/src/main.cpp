@@ -33,9 +33,10 @@ int main()
     Address* Example = new Address("Lodz", "Anielska", "13");
     Client* Tester = new Client("Jacek", "Rambo", "3", Example);
     Rent* A = new Rent(1, Tester, Car, pt::ptime(gr::date(2024,04,24),pt::hours(20)+pt::minutes(0)));
-    cout << "Obecne wypożyczenia: " << Tester->getCurrentRents()->getId() << endl;
+    cout << "Obecne wypożyczenia: " << Tester->getCurrentRents() << endl;
     cout << "Start: " << A->getBeginTime() << endl;
     A->endRent(pt::ptime(gr::date(2024,04,25),pt::hours(20)+pt::minutes(1 )));
+    cout << endl << "Obecne wypożyczenia: " << Tester->getCurrentRents() << endl;
     cout <<"Koniec: "<< A->getEndTime() << endl;
     cout << "Czas wypożyczenia to: " << A->getRentDays() << endl;
 
