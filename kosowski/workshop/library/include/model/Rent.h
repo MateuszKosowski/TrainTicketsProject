@@ -15,7 +15,7 @@ class Client;
 class Rent {
 private:
     unsigned id;        /**< Numer identyfikacyjny wypożyczenia */
-    const Client *client;   /**< Klient dokonujący wypożyczenia */
+    Client *client;   /**< Klient dokonujący wypożyczenia */
     const Vehicle *vehicle;      /**< Pojazd, który jest wynajmowany */
     pt::ptime beginTime;
     pt::ptime endTime;
@@ -67,7 +67,7 @@ public:
     * @param obj_client Wskaźnik do obiektu klasy Client reprezentującego klienta.
     * @param obj_vehicle Wskaźnik do obiektu klasy Vehicle reprezentującego wynajmowany pojazd.
     */
-    Rent(const unsigned &number, const Client *obj_client, Vehicle *obj_vehicle, pt::ptime begTime);
+    Rent(const unsigned &number, Client *obj_client, Vehicle *obj_vehicle, pt::ptime begTime);
 
     /**
      * @brief Destruktor klasy Rent.

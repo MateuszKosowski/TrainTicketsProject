@@ -39,13 +39,16 @@ void Rent::endRent(pt::ptime eTime) {
     if(endTime == pt::not_a_date_time){
         if(eTime == pt::not_a_date_time){
             endTime = pt::second_clock::local_time();
+            vehicle->setRented(false);
         }
         else{
             if(eTime <= beginTime){
                 endTime = beginTime;
+                vehicle->setRented(false);
             }
             else{
                 endTime = eTime;
+                vehicle->setRented(false);
             }
         }
     }
@@ -63,7 +66,7 @@ const long Rent::getRentDays() const{
 }
 
 // Constructor and destructor
-Rent::Rent(const unsigned &number, const Client *obj_client, Vehicle *obj_vehicle, pt::ptime begTime) {
+Rent::Rent(const unsigned &number, Client *obj_client, Vehicle *obj_vehicle, pt::ptime begTime) {
     id = number;
     client = obj_client;
     vehicle = obj_vehicle;
@@ -76,5 +79,6 @@ Rent::Rent(const unsigned &number, const Client *obj_client, Vehicle *obj_vehicl
     }
     endTime = pt::not_a_date_time;
     rentCost = 0;
+    client->pushCurrentRents(this);
 }
 Rent::~Rent(){}
