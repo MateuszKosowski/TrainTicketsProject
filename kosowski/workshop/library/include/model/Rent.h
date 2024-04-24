@@ -1,6 +1,7 @@
 #include <cstring>
 #include "model/Vehicle.h"
 #include <boost/date_time.hpp>
+#include <cmath>
 
 namespace pt = boost::posix_time;
 namespace gr = boost::gregorian;
@@ -54,7 +55,7 @@ public:
 
     void endRent(pt::ptime eTime);
 
-     const pt::time_period getRentDays() const;
+     const long getRentDays() const;
 
     const pt::ptime &getBeginTime() const;
 

@@ -51,12 +51,15 @@ void Rent::endRent(pt::ptime eTime) {
     }
 
 }
-const pt::time_period Rent::getRentDays() const{
+const long Rent::getRentDays() const{
     if((beginTime!=pt::not_a_date_time)&&(endTime!=pt::not_a_date_time)){
-        pt::time_period period(beginTime, endTime);
-        return period;
+        pt::time_duration td = endTime - beginTime;
+        long duration_in_minutes = td.hours() * 60 + td.minutes();
+        return std::ceil(static_cast<double>(duration_in_minutes)/1440);
     }
-    throw std::logic_error("Rent days are not available.");
+    else{
+        return 0;
+    }
 }
 
 // Constructor and destructor
