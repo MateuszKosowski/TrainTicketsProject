@@ -10,6 +10,9 @@ void Rent::setId(const unsigned &number) {
 unsigned const &Rent::getId() const {
     return id;
 }
+unsigned const &Rent::getRentCost() const {
+    return rentCost;
+}
 Client const *Rent::getClient() const {
     return client;
 }
@@ -46,6 +49,7 @@ void Rent::endRent(pt::ptime eTime) {
                 else
                     ++it;
             }
+            rentCost = (this->getRentDays()*vehicle->getBasePrice());
         }
         else{
             if(eTime <= beginTime){
@@ -57,6 +61,7 @@ void Rent::endRent(pt::ptime eTime) {
                     else
                         ++it;
                 }
+                rentCost = (this->getRentDays()*vehicle->getBasePrice());
             }
             else{
                 endTime = eTime;
@@ -67,6 +72,7 @@ void Rent::endRent(pt::ptime eTime) {
                     else
                         ++it;
                 }
+                rentCost = (this->getRentDays()*vehicle->getBasePrice());
             }
         }
     }

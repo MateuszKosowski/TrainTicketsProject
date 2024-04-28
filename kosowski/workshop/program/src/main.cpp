@@ -39,6 +39,7 @@ int main()
     cout << endl << "Obecne wypożyczenia: " << Tester->getCurrentRents() << endl;
     cout <<"Koniec: "<< A->getEndTime() << endl;
     cout << "Czas wypożyczenia to: " << A->getRentDays() << endl;
+    cout << "Koszt wypożyczenia: " << A->getRentCost();
 
     return 0;
 }

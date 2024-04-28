@@ -19,7 +19,7 @@ private:
     const Vehicle *vehicle;      /**< Pojazd, który jest wynajmowany */
     pt::ptime beginTime;
     pt::ptime endTime;
-    int rentCost;
+    unsigned int rentCost = 0;
 
 public:
     /**
@@ -27,6 +27,8 @@ public:
      * @return Referencja do numeru identyfikacyjnego wypożyczenia.
      */
     const unsigned &getId() const;
+
+    const unsigned &getRentCost() const;
 
     /**
     * @brief Pobiera wskaźnik do klienta dokonującego wypożyczenia.
