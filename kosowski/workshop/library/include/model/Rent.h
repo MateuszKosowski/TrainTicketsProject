@@ -17,9 +17,9 @@ private:
     unsigned id;        /**< Numer identyfikacyjny wypożyczenia */
     Client *client;   /**< Klient dokonujący wypożyczenia */
     const Vehicle *vehicle;      /**< Pojazd, który jest wynajmowany */
-    pt::ptime beginTime;
-    pt::ptime endTime;
-    unsigned int rentCost = 0;
+    pt::ptime beginTime;    /**< Początek wypożyczenia */
+    pt::ptime endTime;      /**< Koniec wypożyczenia */
+    unsigned int rentCost = 0; /**< Koszt wypożyczenia*/
 
 public:
     /**
@@ -28,6 +28,10 @@ public:
      */
     const unsigned &getId() const;
 
+    /**
+     * @brief Pobiera całkowity koszt wypożyczenia
+     * @return unsigned int.
+     */
     const unsigned &getRentCost() const;
 
     /**
@@ -46,7 +50,6 @@ public:
      * @brief Ustawia numer identyfikacyjny wypożyczenia.
      * @param number Numer identyfikacyjny wypożyczenia.
      */
-
     void setId(const unsigned &number);
 
     /**
@@ -55,12 +58,28 @@ public:
      */
     const std::string getInfo() const;
 
+    /**
+     * @brief Zakańcza wypożyczenie oraz wylicza jego koszt.
+     * @param eTime jest to data i godzina, którą można podać jako czas zakończenie wypożyczenia.
+     */
     void endRent(pt::ptime eTime);
 
-     const long getRentDays() const;
+    /**
+     * @brief Oblicza ile rozpoczętych dni trwało wypożyczenie w momencie kiedy jest już ono zakończone
+     * @return typ long - ilość dni
+     */
+    const long getRentDays() const;
 
+    /**
+     * @brief Zwraca czas rozpoczęcia wypożyczenia
+     * @return obiekt ptime z datą
+     */
     const pt::ptime &getBeginTime() const;
 
+    /**
+     * @brief Zwraca czas zakończenia wypożyczenia
+     * @return obiekt ptime z datą
+     */
     const pt::ptime &getEndTime() const;
 
     /**
@@ -68,6 +87,7 @@ public:
     * @param number Numer identyfikacyjny wypożyczenia.
     * @param obj_client Wskaźnik do obiektu klasy Client reprezentującego klienta.
     * @param obj_vehicle Wskaźnik do obiektu klasy Vehicle reprezentującego wynajmowany pojazd.
+    * @param begTime czas rozpoczęcia wypożyczenia.
     */
     Rent(const unsigned &number, Client *obj_client, Vehicle *obj_vehicle, pt::ptime begTime);
 

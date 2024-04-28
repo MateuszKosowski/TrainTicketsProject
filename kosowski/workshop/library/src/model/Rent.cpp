@@ -27,7 +27,7 @@ const std::string Rent::getInfo() const {
     zz << endTime;
     std::string s = ss.str();
     std::string z = zz.str();
-    return "\nRent ID: " + std::to_string(id) + " " + client->getInfo() + vehicle->getInfo() + "\n Poczatek wypozyczenia: " + s + "\n Koniec wypozyczenia: " + z;
+    return "\nRent ID: " + std::to_string(id) + " " + client->getInfo() + vehicle->getInfo() + "\nPoczatek wypozyczenia: " + s + "\nKoniec wypozyczenia: " + z;
 }
 
 const pt::ptime &Rent::getBeginTime() const {

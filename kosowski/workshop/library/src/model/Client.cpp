@@ -96,6 +96,4 @@ Client::Client(const std::string& str1, const std::string& str2, const std::stri
     address = addr;
 }
 
-Client::~Client() {
-    delete address;
-}
+Client::~Client() {}
