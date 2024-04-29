@@ -4,6 +4,7 @@
 program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start/kosowski/workshop/program/src/main.cpp \
   /usr/include/stdc-predef.h \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Client.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/typedefs.h \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Address.h \
   /usr/include/c++/12/iostream \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
@@ -189,8 +190,8 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start
   /usr/include/c++/12/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Vehicle.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
   /usr/include/boost/date_time.hpp \
   /usr/include/boost/date_time/local_time/local_time.hpp \
   /usr/include/boost/date_time/posix_time/posix_time.hpp \
@@ -1743,21 +1744,15 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start
 
 /usr/include/boost/range/end.hpp:
 
+/usr/include/boost/preprocessor/slot/detail/shared.hpp:
+
+/usr/include/boost/range/const_iterator.hpp:
+
 /usr/include/c++/12/bits/basic_ios.tcc:
 
 /usr/include/boost/date_time/time_duration.hpp:
 
 /usr/include/c++/12/tr1/poly_laguerre.tcc:
-
-/usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp:
-
-/usr/include/c++/12/bits/stream_iterator.h:
-
-/usr/include/boost/preprocessor/arithmetic/mod.hpp:
-
-/usr/include/c++/12/ios:
-
-/usr/include/boost/preprocessor/empty.hpp:
 
 /usr/include/c++/12/tr1/modified_bessel_func.tcc:
 
@@ -1973,10 +1968,6 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
-/usr/include/c++/12/bits/new_allocator.h:
-
-/usr/include/x86_64-linux-gnu/bits/errno.h:
-
 /usr/include/errno.h:
 
 /usr/include/boost/date_time/date_formatting.hpp:
@@ -2107,6 +2098,8 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start
 
 /usr/include/c++/12/bits/exception_ptr.h:
 
+/home/student/CLionProjects/start/kosowski/workshop/library/include/typedefs.h:
+
 /usr/include/boost/preprocessor/variadic/size.hpp:
 
 /usr/include/boost/mpl/identity.hpp:
@@ -2137,13 +2130,9 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start
 
 /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h:
 
-/usr/include/boost/mpl/contains_fwd.hpp:
+/usr/include/asm-generic/errno-base.h:
 
-/usr/include/x86_64-linux-gnu/bits/timesize.h:
-
-/usr/include/c++/12/map:
-
-/usr/include/boost/type_traits/is_base_of.hpp:
+/usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h:
 
 /usr/include/boost/date_time/string_convert.hpp:
 
@@ -2151,9 +2140,13 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start
 
 /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h:
 
-/usr/include/asm-generic/errno-base.h:
+/usr/include/boost/mpl/contains_fwd.hpp:
 
-/usr/lib/gcc/x86_64-linux-gnu/12/include/stddef.h:
+/usr/include/x86_64-linux-gnu/bits/timesize.h:
+
+/usr/include/c++/12/map:
+
+/usr/include/boost/type_traits/is_base_of.hpp:
 
 /usr/include/boost/mpl/aux_/na_fwd.hpp:
 
@@ -2201,6 +2194,10 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start
 
 /usr/include/c++/12/tr1/beta_function.tcc:
 
+/usr/include/c++/12/initializer_list:
+
+/usr/include/boost/type_traits/detail/yes_no_type.hpp:
+
 /usr/include/boost/mpl/list/list10.hpp:
 
 /usr/include/boost/range/has_range_iterator.hpp:
@@ -2229,15 +2226,17 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start
 
 /usr/include/boost/mpl/apply.hpp:
 
+/usr/include/c++/12/bits/new_allocator.h:
+
+/usr/include/x86_64-linux-gnu/bits/errno.h:
+
+/usr/include/c++/12/bits/stl_algobase.h:
+
 /usr/include/c++/12/cmath:
 
 /usr/include/boost/range/detail/misc_concept.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h:
-
-/usr/include/c++/12/version:
-
-/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/boost/mpl/aux_/numeric_op.hpp:
 
@@ -2270,6 +2269,10 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start
 /usr/include/boost/mpl/aux_/yes_no.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/libc-header-start.h:
+
+/usr/include/c++/12/version:
+
+/usr/include/x86_64-linux-gnu/bits/long-double.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdint-intn.h:
 
@@ -2306,6 +2309,16 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start
 /usr/include/boost/mpl/sequence_tag_fwd.hpp:
 
 /usr/include/c++/12/ostream:
+
+/usr/include/boost/preprocessor/arithmetic/mod.hpp:
+
+/usr/include/c++/12/ios:
+
+/usr/include/boost/smart_ptr/detail/sp_counted_base_gcc_atomic.hpp:
+
+/usr/include/c++/12/bits/stream_iterator.h:
+
+/usr/include/boost/preprocessor/empty.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/quote.hpp:
 
@@ -2390,8 +2403,6 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start
 /usr/include/x86_64-linux-gnu/bits/posix1_lim.h:
 
 /usr/include/x86_64-linux-gnu/bits/locale.h:
-
-/usr/include/c++/12/bits/stl_algobase.h:
 
 /usr/include/boost/utility/result_of.hpp:
 
@@ -2542,10 +2553,6 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start
 /usr/include/boost/algorithm/string/formatter.hpp:
 
 /usr/include/boost/type_traits/add_rvalue_reference.hpp:
-
-/usr/include/boost/type_traits/detail/yes_no_type.hpp:
-
-/usr/include/c++/12/initializer_list:
 
 /usr/include/strings.h:
 
@@ -3226,7 +3233,3 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start
 /usr/include/c++/12/ext/numeric_traits.h:
 
 /usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp:
-
-/usr/include/boost/preprocessor/slot/detail/shared.hpp:
-
-/usr/include/boost/range/const_iterator.hpp:

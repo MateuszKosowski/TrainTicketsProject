@@ -7,10 +7,7 @@ set(SOURCE_FILES
     src/model/Address.cpp
     src/model/Rent.cpp
     src/model/Vehicle.cpp
-    include/model/Client.h
-    include/model/Address.h
-    include/model/Vehicle.h
-    include/model/Rent.h
+    src/model/Bicycle.cpp
 )
 # Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h
 add_library(Library ${SOURCE_FILES})
