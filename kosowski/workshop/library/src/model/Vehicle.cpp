@@ -34,8 +34,8 @@ const std::string Vehicle::getInfo() const{
 
 //---------------------------------------------------------------------------
 // Constructor and destructor
-Vehicle::Vehicle(const std::string &str1, const unsigned &int1) {
-    plateNumber = str1;
-    basePrice = int1;
+Vehicle::Vehicle(const std::string &vehPNumber, const unsigned &vehBPrise) {
+    plateNumber = vehPNumber;
+    basePrice = vehBPrise;
 }
 Vehicle::~Vehicle(){};

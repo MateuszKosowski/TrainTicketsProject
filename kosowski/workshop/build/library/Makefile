@@ -195,6 +195,30 @@ src/model/Address.cpp.s:
 	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Address.cpp.s
 .PHONY : src/model/Address.cpp.s
 
+src/model/Bicycle.o: src/model/Bicycle.cpp.o
+.PHONY : src/model/Bicycle.o
+
+# target to build an object file
+src/model/Bicycle.cpp.o:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Bicycle.cpp.o
+.PHONY : src/model/Bicycle.cpp.o
+
+src/model/Bicycle.i: src/model/Bicycle.cpp.i
+.PHONY : src/model/Bicycle.i
+
+# target to preprocess a source file
+src/model/Bicycle.cpp.i:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Bicycle.cpp.i
+.PHONY : src/model/Bicycle.cpp.i
+
+src/model/Bicycle.s: src/model/Bicycle.cpp.s
+.PHONY : src/model/Bicycle.s
+
+# target to generate assembly for a file
+src/model/Bicycle.cpp.s:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Bicycle.cpp.s
+.PHONY : src/model/Bicycle.cpp.s
+
 src/model/Client.o: src/model/Client.cpp.o
 .PHONY : src/model/Client.o
 
@@ -218,6 +242,54 @@ src/model/Client.s: src/model/Client.cpp.s
 src/model/Client.cpp.s:
 	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.s
 .PHONY : src/model/Client.cpp.s
+
+src/model/Moped.o: src/model/Moped.cpp.o
+.PHONY : src/model/Moped.o
+
+# target to build an object file
+src/model/Moped.cpp.o:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Moped.cpp.o
+.PHONY : src/model/Moped.cpp.o
+
+src/model/Moped.i: src/model/Moped.cpp.i
+.PHONY : src/model/Moped.i
+
+# target to preprocess a source file
+src/model/Moped.cpp.i:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Moped.cpp.i
+.PHONY : src/model/Moped.cpp.i
+
+src/model/Moped.s: src/model/Moped.cpp.s
+.PHONY : src/model/Moped.s
+
+# target to generate assembly for a file
+src/model/Moped.cpp.s:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Moped.cpp.s
+.PHONY : src/model/Moped.cpp.s
+
+src/model/MotorVehicle.o: src/model/MotorVehicle.cpp.o
+.PHONY : src/model/MotorVehicle.o
+
+# target to build an object file
+src/model/MotorVehicle.cpp.o:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/MotorVehicle.cpp.o
+.PHONY : src/model/MotorVehicle.cpp.o
+
+src/model/MotorVehicle.i: src/model/MotorVehicle.cpp.i
+.PHONY : src/model/MotorVehicle.i
+
+# target to preprocess a source file
+src/model/MotorVehicle.cpp.i:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/MotorVehicle.cpp.i
+.PHONY : src/model/MotorVehicle.cpp.i
+
+src/model/MotorVehicle.s: src/model/MotorVehicle.cpp.s
+.PHONY : src/model/MotorVehicle.s
+
+# target to generate assembly for a file
+src/model/MotorVehicle.cpp.s:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/MotorVehicle.cpp.s
+.PHONY : src/model/MotorVehicle.cpp.s
 
 src/model/Rent.o: src/model/Rent.cpp.o
 .PHONY : src/model/Rent.o
@@ -402,9 +474,18 @@ help:
 	@echo "... src/model/Address.o"
 	@echo "... src/model/Address.i"
 	@echo "... src/model/Address.s"
+	@echo "... src/model/Bicycle.o"
+	@echo "... src/model/Bicycle.i"
+	@echo "... src/model/Bicycle.s"
 	@echo "... src/model/Client.o"
 	@echo "... src/model/Client.i"
 	@echo "... src/model/Client.s"
+	@echo "... src/model/Moped.o"
+	@echo "... src/model/Moped.i"
+	@echo "... src/model/Moped.s"
+	@echo "... src/model/MotorVehicle.o"
+	@echo "... src/model/MotorVehicle.i"
+	@echo "... src/model/MotorVehicle.s"
 	@echo "... src/model/Rent.o"
 	@echo "... src/model/Rent.i"
 	@echo "... src/model/Rent.s"

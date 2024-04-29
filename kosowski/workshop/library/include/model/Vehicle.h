@@ -61,7 +61,7 @@ public:
      * @param str1 Numer rejestracyjny pojazdu.
      * @param int1 Cena bazowa pojazdu.
      */
-    Vehicle(const std::string &str1, const unsigned &int1);
+    Vehicle(const std::string &vehPNumber, const unsigned &vehBPrise);
 
     /**
      * @brief Destruktor klasy Vehicle.
