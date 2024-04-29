@@ -10,6 +10,7 @@ set(SOURCE_FILES
     src/model/Bicycle.cpp
         src/model/MotorVehicle.cpp
         src/model/Moped.cpp
+        src/model/Car.cpp
 )
 # Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h
 add_library(Library ${SOURCE_FILES})

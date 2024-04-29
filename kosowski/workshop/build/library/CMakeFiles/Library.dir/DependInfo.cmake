@@ -10,6 +10,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/student/CLionProjects/start/kosowski/workshop/library/src/model/Address.cpp" "library/CMakeFiles/Library.dir/src/model/Address.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/model/Address.cpp.o.d"
   "/home/student/CLionProjects/start/kosowski/workshop/library/src/model/Bicycle.cpp" "library/CMakeFiles/Library.dir/src/model/Bicycle.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/model/Bicycle.cpp.o.d"
+  "/home/student/CLionProjects/start/kosowski/workshop/library/src/model/Car.cpp" "library/CMakeFiles/Library.dir/src/model/Car.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/model/Car.cpp.o.d"
   "/home/student/CLionProjects/start/kosowski/workshop/library/src/model/Client.cpp" "library/CMakeFiles/Library.dir/src/model/Client.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/model/Client.cpp.o.d"
   "/home/student/CLionProjects/start/kosowski/workshop/library/src/model/Moped.cpp" "library/CMakeFiles/Library.dir/src/model/Moped.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/model/Moped.cpp.o.d"
   "/home/student/CLionProjects/start/kosowski/workshop/library/src/model/MotorVehicle.cpp" "library/CMakeFiles/Library.dir/src/model/MotorVehicle.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/model/MotorVehicle.cpp.o.d"

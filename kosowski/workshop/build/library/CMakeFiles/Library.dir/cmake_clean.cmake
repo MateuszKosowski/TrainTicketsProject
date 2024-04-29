@@ -3,6 +3,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Library.dir/src/model/Address.cpp.o.d"
   "CMakeFiles/Library.dir/src/model/Bicycle.cpp.o"
   "CMakeFiles/Library.dir/src/model/Bicycle.cpp.o.d"
+  "CMakeFiles/Library.dir/src/model/Car.cpp.o"
+  "CMakeFiles/Library.dir/src/model/Car.cpp.o.d"
   "CMakeFiles/Library.dir/src/model/Client.cpp.o"
   "CMakeFiles/Library.dir/src/model/Client.cpp.o.d"
   "CMakeFiles/Library.dir/src/model/Moped.cpp.o"
