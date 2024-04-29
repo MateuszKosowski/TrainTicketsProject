@@ -373,12 +373,13 @@ library/CMakeFiles/Library.dir/src/model/Client.cpp.o: /home/student/CLionProjec
   /usr/include/c++/12/istream \
   /usr/include/c++/12/bits/istream.tcc \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Client.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/typedefs.h \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Address.h \
   /usr/include/c++/12/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Vehicle.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
   /usr/include/boost/date_time.hpp \
   /usr/include/boost/date_time/local_time/local_time.hpp \
   /usr/include/boost/date_time/posix_time/posix_time.hpp \
@@ -1269,6 +1270,7 @@ library/CMakeFiles/Library.dir/src/model/Client.cpp.o: /home/student/CLionProjec
 library/CMakeFiles/Library.dir/src/model/Rent.cpp.o: /home/student/CLionProjects/start/kosowski/workshop/library/src/model/Rent.cpp \
   /usr/include/stdc-predef.h \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Client.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/typedefs.h \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Address.h \
   /usr/include/c++/12/iostream \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
@@ -1454,8 +1456,8 @@ library/CMakeFiles/Library.dir/src/model/Rent.cpp.o: /home/student/CLionProjects
   /usr/include/c++/12/cstring \
   /usr/include/string.h \
   /usr/include/strings.h \
-  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Vehicle.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
   /usr/include/boost/date_time.hpp \
   /usr/include/boost/date_time/local_time/local_time.hpp \
   /usr/include/boost/date_time/posix_time/posix_time.hpp \
@@ -2346,7 +2348,9 @@ library/CMakeFiles/Library.dir/src/model/Rent.cpp.o: /home/student/CLionProjects
 library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProjects/start/kosowski/workshop/library/src/model/Vehicle.cpp \
   /usr/include/stdc-predef.h \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Vehicle.h \
-  /usr/include/c++/12/string \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/typedefs.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Address.h \
+  /usr/include/c++/12/iostream \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++config.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h \
   /usr/include/features.h \
@@ -2359,9 +2363,11 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
   /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/cpu_defines.h \
   /usr/include/c++/12/pstl/pstl_config.h \
+  /usr/include/c++/12/ostream \
+  /usr/include/c++/12/ios \
+  /usr/include/c++/12/iosfwd \
   /usr/include/c++/12/bits/stringfwd.h \
   /usr/include/c++/12/bits/memoryfwd.h \
-  /usr/include/c++/12/bits/char_traits.h \
   /usr/include/c++/12/bits/postypes.h \
   /usr/include/c++/12/cwchar \
   /usr/include/wchar.h \
@@ -2378,7 +2384,18 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
   /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+  /usr/include/c++/12/exception \
+  /usr/include/c++/12/bits/exception.h \
+  /usr/include/c++/12/bits/exception_ptr.h \
+  /usr/include/c++/12/bits/exception_defines.h \
+  /usr/include/c++/12/bits/cxxabi_init_exception.h \
+  /usr/include/c++/12/typeinfo \
+  /usr/include/c++/12/bits/hash_bytes.h \
+  /usr/include/c++/12/new \
+  /usr/include/c++/12/bits/move.h \
   /usr/include/c++/12/type_traits \
+  /usr/include/c++/12/bits/nested_exception.h \
+  /usr/include/c++/12/bits/char_traits.h \
   /usr/include/c++/12/cstdint \
   /usr/lib/gcc/x86_64-linux-gnu/12/include/stdint.h \
   /usr/include/stdint.h \
@@ -2387,25 +2404,54 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
   /usr/include/x86_64-linux-gnu/bits/time64.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-intn.h \
   /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
-  /usr/include/c++/12/bits/allocator.h \
-  /usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h \
-  /usr/include/c++/12/bits/new_allocator.h \
-  /usr/include/c++/12/new \
-  /usr/include/c++/12/bits/exception.h \
-  /usr/include/c++/12/bits/functexcept.h \
-  /usr/include/c++/12/bits/exception_defines.h \
-  /usr/include/c++/12/bits/move.h \
-  /usr/include/c++/12/bits/cpp_type_traits.h \
   /usr/include/c++/12/bits/localefwd.h \
   /usr/include/x86_64-linux-gnu/c++/12/bits/c++locale.h \
   /usr/include/c++/12/clocale \
   /usr/include/locale.h \
   /usr/include/x86_64-linux-gnu/bits/locale.h \
-  /usr/include/c++/12/iosfwd \
   /usr/include/c++/12/cctype \
   /usr/include/ctype.h \
   /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/endianness.h \
+  /usr/include/c++/12/bits/ios_base.h \
+  /usr/include/c++/12/ext/atomicity.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/gthr-default.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
+  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/atomic_word.h \
+  /usr/include/x86_64-linux-gnu/sys/single_threaded.h \
+  /usr/include/c++/12/bits/locale_classes.h \
+  /usr/include/c++/12/string \
+  /usr/include/c++/12/bits/allocator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/c++allocator.h \
+  /usr/include/c++/12/bits/new_allocator.h \
+  /usr/include/c++/12/bits/functexcept.h \
+  /usr/include/c++/12/bits/cpp_type_traits.h \
   /usr/include/c++/12/bits/ostream_insert.h \
   /usr/include/c++/12/bits/cxxabi_forced.h \
   /usr/include/c++/12/bits/stl_iterator_base_types.h \
@@ -2433,7 +2479,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
   /usr/include/c++/12/bits/stl_construct.h \
   /usr/include/c++/12/string_view \
   /usr/include/c++/12/bits/functional_hash.h \
-  /usr/include/c++/12/bits/hash_bytes.h \
   /usr/include/c++/12/bits/string_view.tcc \
   /usr/include/c++/12/ext/string_conversions.h \
   /usr/include/c++/12/cstdlib \
@@ -2441,25 +2486,12 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
   /usr/include/x86_64-linux-gnu/bits/waitflags.h \
   /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
   /usr/include/x86_64-linux-gnu/sys/types.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
   /usr/include/endian.h \
   /usr/include/x86_64-linux-gnu/bits/byteswap.h \
   /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
   /usr/include/x86_64-linux-gnu/sys/select.h \
   /usr/include/x86_64-linux-gnu/bits/select.h \
   /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
-  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
-  /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
-  /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
-  /usr/include/x86_64-linux-gnu/bits/atomic_wide_counter.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_mutex.h \
-  /usr/include/x86_64-linux-gnu/bits/struct_rwlock.h \
   /usr/include/alloca.h \
   /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
   /usr/include/c++/12/bits/std_abs.h \
@@ -2479,7 +2511,29 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
   /usr/include/asm-generic/errno-base.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/c++/12/bits/charconv.h \
-  /usr/include/c++/12/bits/basic_string.tcc
+  /usr/include/c++/12/bits/basic_string.tcc \
+  /usr/include/c++/12/bits/locale_classes.tcc \
+  /usr/include/c++/12/system_error \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/error_constants.h \
+  /usr/include/c++/12/stdexcept \
+  /usr/include/c++/12/streambuf \
+  /usr/include/c++/12/bits/streambuf.tcc \
+  /usr/include/c++/12/bits/basic_ios.h \
+  /usr/include/c++/12/bits/locale_facets.h \
+  /usr/include/c++/12/cwctype \
+  /usr/include/wctype.h \
+  /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_base.h \
+  /usr/include/c++/12/bits/streambuf_iterator.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/ctype_inline.h \
+  /usr/include/c++/12/bits/locale_facets.tcc \
+  /usr/include/c++/12/bits/basic_ios.tcc \
+  /usr/include/c++/12/bits/ostream.tcc \
+  /usr/include/c++/12/istream \
+  /usr/include/c++/12/bits/istream.tcc \
+  /usr/include/c++/12/cstring \
+  /usr/include/string.h \
+  /usr/include/strings.h
 
 
 /usr/include/boost/core/no_exceptions_support.hpp:
@@ -3376,6 +3430,20 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h:
 
+/home/student/CLionProjects/start/kosowski/workshop/library/include/typedefs.h:
+
+/usr/include/boost/mpl/size_fwd.hpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:
+
+/usr/include/c++/12/bits/exception_ptr.h:
+
+/usr/include/boost/preprocessor/variadic/size.hpp:
+
+/usr/include/boost/mpl/identity.hpp:
+
+/usr/include/boost/mpl/aux_/template_arity.hpp:
+
 /usr/include/c++/12/bits/new_allocator.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
@@ -3506,17 +3574,11 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
 
-/usr/include/boost/mpl/size_fwd.hpp:
+/usr/include/boost/numeric/conversion/detail/converter.hpp:
 
-/usr/include/boost/mpl/aux_/preprocessed/gcc/equal_to.hpp:
+/usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp:
 
-/usr/include/c++/12/bits/exception_ptr.h:
-
-/usr/include/boost/preprocessor/variadic/size.hpp:
-
-/usr/include/boost/mpl/identity.hpp:
-
-/usr/include/boost/mpl/aux_/template_arity.hpp:
+/usr/include/c++/12/ext/numeric_traits.h:
 
 /usr/include/boost/assert.hpp:
 
@@ -3765,12 +3827,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 /usr/include/boost/date_time/gregorian/greg_duration_types.hpp:
 
 /usr/include/wchar.h:
-
-/usr/include/boost/predef/detail/_cassert.h:
-
-/usr/include/c++/12/iterator:
-
-/usr/include/boost/type_traits/detail/is_function_cxx_11.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/floatn-common.h:
 
@@ -4073,6 +4129,12 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 /usr/include/stdc-predef.h:
 
 /usr/include/c++/12/bits/basic_string.h:
+
+/usr/include/boost/predef/detail/_cassert.h:
+
+/usr/include/c++/12/iterator:
+
+/usr/include/boost/type_traits/detail/is_function_cxx_11.hpp:
 
 /usr/include/boost/core/addressof.hpp:
 
@@ -4633,9 +4695,3 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 /usr/include/c++/12/utility:
 
 /usr/include/c++/12/bits/stl_relops.h:
-
-/usr/include/boost/numeric/conversion/detail/converter.hpp:
-
-/usr/include/c++/12/ext/numeric_traits.h:
-
-/usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp:

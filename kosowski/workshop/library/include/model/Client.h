@@ -1,3 +1,6 @@
+#pragma once
+
+#include "typedefs.h"
 #include "model/Address.h"
 #include "model/Rent.h"
 #include <string>
@@ -14,8 +17,8 @@ private:
     std::string firstName;  /**< Imię klienta */
     std::string lastName;    /**< Nazwisko klienta */
     std::string personalID; /**< Numer identyfikacyjny klienta */
-    Address* address;        /**< Adres zamieszkania klienta */
-    std::vector<Rent *> currentRents;   /**< Aktualne wypożyczenia klienta */
+    AddressPtr  address;        /**< Adres zamieszkania klienta */
+    std::vector<RentPtr> currentRents;   /**< Aktualne wypożyczenia klienta */
 
 public:
     /**
@@ -40,15 +43,15 @@ public:
     * @brief Pobiera wskaźnik do adresu zamieszkania klienta.
     * @return Wskaźnik do obiektu klasy Address reprezentującego adres klienta.
     */
-    const Address *getAddress() const;
+    AddressPtr getAddress() const;
 
     /**
      * @brief Pobiera wskaźnik do aktualnych wypożyczeń klienta.
      * @return Wektor wskaźników do obiektów klasy Rent reprezentujących aktualne wypożyczenia klienta.
      */
-    const Rent *getCurrentRents() const;
+    RentPtr getCurrentRents() const;
 
-    std::vector<Rent*>& getAllRents();
+    std::vector<RentPtr>& getAllRents();
 
     /**
      * @brief Ustawia imię klienta.
@@ -72,13 +75,13 @@ public:
      * @brief Ustawia adres zamieszkania klienta.
      * @param addr Wskaźnik do obiektu klasy Address reprezentującego adres klienta.
      */
-    void setAddress(Address* addr);
+    void setAddress(AddressPtr addr);
 
     /**
     * @brief Dodaje wypożyczenie do listy aktualnych wypożyczeń klienta.
     * @param rent Wskaźnik do obiektu klasy Rent reprezentującego wypożyczenie.
     */
-    void pushCurrentRents(Rent *);
+    void pushCurrentRents(RentPtr);
 
 
     /**
@@ -101,7 +104,7 @@ public:
     * @param str3 Numer identyfikacyjny klienta.
     * @param addr Wskaźnik do obiektu klasy Address reprezentującego adres klienta.
     */
-    Client(const std::string& str1, const std::string& str2, const std::string& str3, Address* addr);
+    Client(const std::string& str1, const std::string& str2, const std::string& str3, AddressPtr addr);
 
     /**
      * @brief Destruktor klasy Client.

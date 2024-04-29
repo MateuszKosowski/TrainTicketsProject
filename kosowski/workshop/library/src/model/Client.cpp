@@ -14,11 +14,11 @@ const std::string &Client::getPersonalID() const{
     return personalID;
 }
 
-const Address *Client::getAddress() const{
+AddressPtr Client::getAddress() const{
     return address;
 }
 
-const Rent *Client::getCurrentRents() const {
+RentPtr Client::getCurrentRents() const {
     if (currentRents.empty()) {
         return nullptr;
     }

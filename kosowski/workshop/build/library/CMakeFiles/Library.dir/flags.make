@@ -6,5 +6,5 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/home/student/CLionProjects/start/kosowski/workshop/library/include
 
-CXX_FLAGS = -g3 -gdwarf-4 -std=gnu++17
+CXX_FLAGS = -g3 -gdwarf-4 -Wall -Wextra -Werror -std=gnu++17
 

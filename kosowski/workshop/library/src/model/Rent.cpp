@@ -13,11 +13,11 @@ unsigned const &Rent::getId() const {
 unsigned const &Rent::getRentCost() const {
     return rentCost;
 }
-Client const *Rent::getClient() const {
+ClientPtr Rent::getClient() const {
     return client;
 }
 
-Vehicle const *Rent::getVehicle() const {
+VehiclePtr Rent::getVehicle() const {
     return vehicle;
 }
 
@@ -78,7 +78,7 @@ void Rent::endRent(pt::ptime eTime) {
     }
 
 }
-const long Rent::getRentDays() const{
+long Rent::getRentDays() const{
     if((beginTime!=pt::not_a_date_time)&&(endTime!=pt::not_a_date_time)){
         pt::time_duration td = endTime - beginTime;
         long duration_in_minutes = td.hours() * 60 + td.minutes();
@@ -90,7 +90,7 @@ const long Rent::getRentDays() const{
 }
 
 // Constructor and destructor
-Rent::Rent(const unsigned &number, Client *obj_client, Vehicle *obj_vehicle, pt::ptime begTime) {
+Rent::Rent(const unsigned &number, ClientPtr obj_client, VehiclePtr obj_vehicle, pt::ptime begTime) {
     id = number;
     client = obj_client;
     vehicle = obj_vehicle;

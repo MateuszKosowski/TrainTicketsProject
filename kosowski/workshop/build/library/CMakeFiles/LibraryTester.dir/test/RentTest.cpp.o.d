@@ -591,9 +591,10 @@ library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.o: \
  /usr/include/boost/core/swap.hpp \
  /usr/include/boost/test/tree/global_fixture.hpp \
  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Client.h \
+ /home/student/CLionProjects/start/kosowski/workshop/library/include/typedefs.h \
  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Address.h \
- /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Vehicle.h \
+ /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
  /usr/include/boost/date_time.hpp \
  /usr/include/boost/date_time/local_time/local_time.hpp \
  /usr/include/boost/date_time/posix_time/posix_time.hpp \

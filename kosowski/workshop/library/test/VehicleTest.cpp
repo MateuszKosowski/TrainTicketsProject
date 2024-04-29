@@ -47,6 +47,9 @@ BOOST_AUTO_TEST_SUITE(VehicleTest)
         BOOST_TEST(
                 car->isRented() == true
         );
+        BOOST_TEST(
+                A->getClient()->getFirstName() == "Jacek"
+        );
     }
 
 BOOST_AUTO_TEST_SUITE_END()

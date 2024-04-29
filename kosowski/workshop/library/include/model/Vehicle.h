@@ -1,3 +1,6 @@
+#pragma once
+
+#include "typedefs.h"
 #include <string>
 
 /**
@@ -65,3 +68,4 @@ public:
      */
     ~Vehicle();
 };
+

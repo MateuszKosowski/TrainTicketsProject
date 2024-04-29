@@ -7,6 +7,9 @@ set(CMAKE_C_COMPILER gcc)   # gcc jako kompilator C
 set(CMAKE_CXX_STANDARD 17)  # Standard C++ 17, bez tego parametru g++ użyje wartości domyślnej. Dla g++ od wersji 8 jest to C++14
 set(CMAKE_CXX_STANDARD_REQUIRED ON) # Określony wyżej standard C++ jest wymagany
 
+# Dodanie opcji kompilatora do wszystkich celów w projekcie
+add_compile_options(-Wall -Wextra -Werror)
+
 # Profil debug i maksymalny poziom debug info g3 oraz format debug info na dwarf-4 (musi być gdb w wersji 7).
 # BUILD_TYPE może być ustawiony na:
 #empty

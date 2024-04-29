@@ -1332,9 +1332,10 @@ library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.o: /home/student/CLionP
   /usr/include/boost/core/swap.hpp \
   /usr/include/boost/test/tree/global_fixture.hpp \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Client.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/typedefs.h \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Address.h \
-  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Vehicle.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
   /usr/include/boost/date_time.hpp \
   /usr/include/boost/date_time/local_time/local_time.hpp \
   /usr/include/boost/date_time/posix_time/posix_time.hpp \
@@ -2483,9 +2484,10 @@ library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.o: /home/student/CLionPro
   /usr/include/boost/core/swap.hpp \
   /usr/include/boost/test/tree/global_fixture.hpp \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Client.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/typedefs.h \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Address.h \
-  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Vehicle.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
   /usr/include/boost/date_time.hpp \
   /usr/include/boost/date_time/local_time/local_time.hpp \
   /usr/include/boost/date_time/posix_time/posix_time.hpp \
@@ -3634,9 +3636,10 @@ library/CMakeFiles/LibraryTester.dir/test/VehicleTest.cpp.o: /home/student/CLion
   /usr/include/boost/core/swap.hpp \
   /usr/include/boost/test/tree/global_fixture.hpp \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Client.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/typedefs.h \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Address.h \
-  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Vehicle.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h \
   /usr/include/boost/date_time.hpp \
   /usr/include/boost/date_time/local_time/local_time.hpp \
   /usr/include/boost/date_time/posix_time/posix_time.hpp \
@@ -5810,8 +5813,6 @@ library/CMakeFiles/LibraryTester.dir/test/master.cpp.o: /home/student/CLionProje
 
 /usr/include/boost/type_traits/function_traits.hpp:
 
-/usr/include/c++/12/bits/new_allocator.h:
-
 /usr/include/c++/12/bits/shared_ptr_base.h:
 
 /usr/include/x86_64-linux-gnu/bits/errno.h:
@@ -6397,6 +6398,10 @@ library/CMakeFiles/LibraryTester.dir/test/master.cpp.o: /home/student/CLionProje
 /usr/include/boost/mpl/list/list20.hpp:
 
 /usr/include/boost/predef/os/bsd/net.h:
+
+/usr/include/c++/12/bits/new_allocator.h:
+
+/home/student/CLionProjects/start/kosowski/workshop/library/include/typedefs.h:
 
 /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Rent.h:
 

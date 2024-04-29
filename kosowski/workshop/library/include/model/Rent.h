@@ -1,7 +1,9 @@
-#include <cstring>
+#pragma once
+
 #include "model/Vehicle.h"
 #include <boost/date_time.hpp>
 #include <cmath>
+#include <cstring>
 
 namespace pt = boost::posix_time;
 namespace gr = boost::gregorian;
@@ -12,11 +14,11 @@ class Client;
 /**
  * @brief Klasa reprezentująca wypożyczenie pojazdu przez klienta.
  */
-class Rent {
+class Rent{
 private:
     unsigned id;        /**< Numer identyfikacyjny wypożyczenia */
-    Client *client;   /**< Klient dokonujący wypożyczenia */
-    const Vehicle *vehicle;      /**< Pojazd, który jest wynajmowany */
+    ClientPtr client;   /**< Klient dokonujący wypożyczenia */
+    VehiclePtr vehicle;      /**< Pojazd, który jest wynajmowany */
     pt::ptime beginTime;    /**< Początek wypożyczenia */
     pt::ptime endTime;      /**< Koniec wypożyczenia */
     unsigned int rentCost = 0; /**< Koszt wypożyczenia*/
@@ -38,13 +40,13 @@ public:
     * @brief Pobiera wskaźnik do klienta dokonującego wypożyczenia.
     * @return Wskaźnik do obiektu klasy Client reprezentującego klienta.
     */
-    const Client *getClient() const;
+    ClientPtr getClient() const;
 
     /**
      * @brief Pobiera wskaźnik do pojazdu, który jest wynajmowany.
      * @return Wskaźnik do obiektu klasy Vehicle reprezentującego wynajmowany pojazd.
      */
-    const Vehicle *getVehicle() const;
+    VehiclePtr getVehicle() const;
 
     /**
      * @brief Ustawia numer identyfikacyjny wypożyczenia.
@@ -68,7 +70,7 @@ public:
      * @brief Oblicza ile rozpoczętych dni trwało wypożyczenie w momencie kiedy jest już ono zakończone
      * @return typ long - ilość dni
      */
-    const long getRentDays() const;
+    long getRentDays() const;
 
     /**
      * @brief Zwraca czas rozpoczęcia wypożyczenia
@@ -89,10 +91,11 @@ public:
     * @param obj_vehicle Wskaźnik do obiektu klasy Vehicle reprezentującego wynajmowany pojazd.
     * @param begTime czas rozpoczęcia wypożyczenia.
     */
-    Rent(const unsigned &number, Client *obj_client, Vehicle *obj_vehicle, pt::ptime begTime);
+    Rent(const unsigned &number, ClientPtr obj_client, VehiclePtr obj_vehicle, pt::ptime begTime);
 
     /**
      * @brief Destruktor klasy Rent.
      */
     ~Rent();
 };
+

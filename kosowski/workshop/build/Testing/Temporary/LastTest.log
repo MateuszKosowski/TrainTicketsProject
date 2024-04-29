@@ -1,10 +1,10 @@
-Start testing: Apr 28 16:42 CEST
+Start testing: Apr 29 18:09 CEST
 ----------------------------------------------------------
 1/1 Testing: LibraryTest
 1/1 Test: LibraryTest
 Command: "/home/student/CLionProjects/start/kosowski/workshop/build/library/LibraryTester" "--report_level=detailed" "--log_level=all" "--color_output=yes"
 Directory: /home/student/CLionProjects/start/kosowski/workshop/build/library
-"LibraryTest" start time: Apr 28 16:42 CEST
+"LibraryTest" start time: Apr 29 18:09 CEST
 Output:
 ----------------------------------------------------------
 Running 18 test cases...
@@ -14,41 +14,41 @@ Running 18 test cases...
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(14): [1;32;49minfo: check 1.0/3.0 == 0.333 has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(18): [1;32;49minfo: check true has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(20): [1;32;49minfo: check Tester->getFirstName() == "Jacek" has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(13): Leaving test case "MyFirstTests"; testing time: 163us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(13): Leaving test case "MyFirstTests"; testing time: 73us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(25): Entering test case "SettersTest"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(27): [1;32;49minfo: check Tester->getFirstName() == "Tomek" has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(32): [1;32;49minfo: check Tester->getLastName() == "Budka" has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(37): [1;32;49minfo: check Tester->getPersonalID() == "12345678900" has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(42): [1;32;49minfo: check Tester->getAddress() == Example2 has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(47): [1;32;49minfo: check Tester->getCurrentRents() == A has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(25): Leaving test case "SettersTest"; testing time: 208us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(25): Leaving test case "SettersTest"; testing time: 65us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(52): Entering test case "EmptySettersTest"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(54): [1;32;49minfo: check Tester->getFirstName() == "Tomek" has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(59): [1;32;49minfo: check Tester->getLastName() == "Budka" has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(64): [1;32;49minfo: check Tester->getPersonalID() == "12345678900" has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(69): [1;32;49minfo: check Tester->getAddress() == Example2 has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(74): [1;32;49minfo: check Tester->getCurrentRents() == A has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(52): Leaving test case "EmptySettersTest"; testing time: 166us
-[0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(6): Leaving test suite "ClientTest"; testing time: 663us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(52): Leaving test case "EmptySettersTest"; testing time: 54us
+[0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp(6): Leaving test suite "ClientTest"; testing time: 232us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp(6): Entering test suite "AddressTest"
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp(9): Entering test case "ConstructorTest"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp(10): [1;32;49minfo: check Example.getCity() == "Warszawa" has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp(13): [1;32;49minfo: check Example.getStreet() == "Kolorowa" has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp(16): [1;32;49minfo: check Example.getNumber() == "71/2" has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp(9): Leaving test case "ConstructorTest"; testing time: 117us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp(9): Leaving test case "ConstructorTest"; testing time: 52us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp(21): Entering test case "EmptySettersTest"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp(23): [1;32;49minfo: check Example.getCity() == "Warszawa" has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp(28): [1;32;49minfo: check Example.getStreet() == "Kolorowa" has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp(33): [1;32;49minfo: check Example.getNumber() == "71/2" has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp(21): Leaving test case "EmptySettersTest"; testing time: 128us
-[0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp(6): Leaving test suite "AddressTest"; testing time: 329us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp(21): Leaving test case "EmptySettersTest"; testing time: 52us
+[0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp(6): Leaving test suite "AddressTest"; testing time: 109us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(30): Entering test suite "RentTest"
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(32): Entering test case "SetIdTest"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(34): [1;32;49minfo: check A->getId() == 2 has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(32): Leaving test case "SetIdTest"; testing time: 85us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(32): Leaving test case "SetIdTest"; testing time: 57us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(39): Entering test case "SetBadIdTest"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(41): [1;32;49minfo: check A->getId() == 1 has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(39): Leaving test case "SetBadIdTest"; testing time: 82us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(39): Leaving test case "SetBadIdTest"; testing time: 64us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(46): Entering test case "OkEndRentTests"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(47): [1;32;49minfo: check A->getVehicle()->isRented() == true has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(53): [1;32;49minfo: check A->getVehicle()->isRented() == false has passed[0;39;49m
@@ -57,7 +57,7 @@ Running 18 test cases...
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(62): [1;32;49minfo: check A->getRentDays() == 2 has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(65): [1;32;49minfo: check A->getVehicle()->getBasePrice() == 3999 has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(68): [1;32;49minfo: check A->getRentCost() == 7998 has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(46): Leaving test case "OkEndRentTests"; testing time: 273us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(46): Leaving test case "OkEndRentTests"; testing time: 109us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(73): Entering test case "ZeroHoursEndRentTests"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(74): [1;32;49minfo: check A->getVehicle()->isRented() == true has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(80): [1;32;49minfo: check A->getVehicle()->isRented() == false has passed[0;39;49m
@@ -66,7 +66,7 @@ Running 18 test cases...
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(89): [1;32;49minfo: check A->getRentDays() == 0 has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(92): [1;32;49minfo: check A->getVehicle()->getBasePrice() == 3999 has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(95): [1;32;49minfo: check A->getRentCost() == 0 has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(73): Leaving test case "ZeroHoursEndRentTests"; testing time: 177us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(73): Leaving test case "ZeroHoursEndRentTests"; testing time: 61us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(100): Entering test case "TwentyFourHoursEndRentTests"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(101): [1;32;49minfo: check A->getVehicle()->isRented() == true has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(107): [1;32;49minfo: check A->getVehicle()->isRented() == false has passed[0;39;49m
@@ -75,7 +75,7 @@ Running 18 test cases...
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(116): [1;32;49minfo: check A->getRentDays() == 1 has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(119): [1;32;49minfo: check A->getVehicle()->getBasePrice() == 3999 has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(122): [1;32;49minfo: check A->getRentCost() == 3999 has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(100): Leaving test case "TwentyFourHoursEndRentTests"; testing time: 180us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(100): Leaving test case "TwentyFourHoursEndRentTests"; testing time: 59us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(127): Entering test case "EndEndedRentTests"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(128): [1;32;49minfo: check A->getVehicle()->isRented() == true has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(135): [1;32;49minfo: check A->getVehicle()->isRented() == false has passed[0;39;49m
@@ -84,40 +84,41 @@ Running 18 test cases...
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(144): [1;32;49minfo: check A->getRentDays() == 1 has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(147): [1;32;49minfo: check A->getVehicle()->getBasePrice() == 3999 has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(150): [1;32;49minfo: check A->getRentCost() == 3999 has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(127): Leaving test case "EndEndedRentTests"; testing time: 199us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(127): Leaving test case "EndEndedRentTests"; testing time: 60us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(155): Entering test case "AutoSetEndRentTests"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(159): [1;32;49minfo: check A->getEndTime() == pt::second_clock::local_time() has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(155): Leaving test case "AutoSetEndRentTests"; testing time: 91us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(155): Leaving test case "AutoSetEndRentTests"; testing time: 270us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(164): Entering test case "MoreThanOneRentTests"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(165): [1;32;49minfo: check Tester->getAllRents().size() == 2 has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(164): Leaving test case "MoreThanOneRentTests"; testing time: 92us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(164): Leaving test case "MoreThanOneRentTests"; testing time: 80us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(170): Entering test case "GetInfoTest"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(171): [1;32;49minfo: check A->getInfo() == "\nRent ID: 1 \n" "First Name: Jacek,\n" "Last Name: Rambo,\n" "Personal ID: 3,\n" "Address: \n" "City: Lodz,\n" "Street: Anielska,\n" "Number: 13\n" "Plate Number: JD 4290\n" "Price: 3999\n" "Is rented: 1\n" "Poczatek wypozyczenia: 2024-Apr-28 20:00:00\n" "Koniec wypozyczenia: not-a-date-time" has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(170): Leaving test case "GetInfoTest"; testing time: 141us
-[0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(30): Leaving test suite "RentTest"; testing time: 1681us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(170): Leaving test case "GetInfoTest"; testing time: 156us
+[0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp(30): Leaving test suite "RentTest"; testing time: 943us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(6): Entering test suite "VehicleTest"
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(9): Entering test case "ConstructorTest"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(10): [1;32;49minfo: check car->isRented() == false has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(13): [1;32;49minfo: check car->getPlateNumber() == "GD 8790" has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(16): [1;32;49minfo: check car->getBasePrice() == 1999 has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(9): Leaving test case "ConstructorTest"; testing time: 107us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(9): Leaving test case "ConstructorTest"; testing time: 77us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(21): Entering test case "GetInfoTest"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(22): [1;32;49minfo: check car->getInfo() == "\nPlate Number: GD 8790\nPrice: 1999\nIs rented: 0" has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(21): Leaving test case "GetInfoTest"; testing time: 75us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(21): Leaving test case "GetInfoTest"; testing time: 99us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(27): Entering test case "SettersTest"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(29): [1;32;49minfo: check car->isRented() == true has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(33): [1;32;49minfo: check car->getPlateNumber() == "AB 1111" has passed[0;39;49m
 /home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(37): [1;32;49minfo: check car->getBasePrice() == 2999 has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(27): Leaving test case "SettersTest"; testing time: 115us
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(27): Leaving test case "SettersTest"; testing time: 72us
 [0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(42): Entering test case "IsRented"
 [0;39;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(47): [1;32;49minfo: check car->isRented() == true has passed[0;39;49m
-[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(42): Leaving test case "IsRented"; testing time: 96us
-[0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(6): Leaving test suite "VehicleTest"; testing time: 544us
-[0;39;49m[1;34;49mLeaving test module "Master Test Suite"; testing time: 3384us
+/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(50): [1;32;49minfo: check A->getClient()->getFirstName() == "Jacek" has passed[0;39;49m
+[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(42): Leaving test case "IsRented"; testing time: 74us
+[0;39;49m[1;34;49m/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp(6): Leaving test suite "VehicleTest"; testing time: 334us
+[0;39;49m[1;34;49mLeaving test module "Master Test Suite"; testing time: 1633us
 [0;39;49m
 Test module "Master Test Suite" has passed with:
   18 test cases out of 18 passed
-  60 assertions out of 60 passed
+  61 assertions out of 61 passed
 
   Test suite "ClientTest" has passed with:
     3 test cases out of 3 passed
@@ -175,7 +176,7 @@ Test module "Master Test Suite" has passed with:
 
   Test suite "VehicleTest" has passed with:
     4 test cases out of 4 passed
-    8 assertions out of 8 passed
+    9 assertions out of 9 passed
 
     Test case "VehicleTest/ConstructorTest" has passed with:
       3 assertions out of 3 passed
@@ -187,14 +188,14 @@ Test module "Master Test Suite" has passed with:
       3 assertions out of 3 passed
 
     Test case "VehicleTest/IsRented" has passed with:
-      1 assertion out of 1 passed
+      2 assertions out of 2 passed
 
 <end of output>
-Test time =   0.02 sec
+Test time =   0.01 sec
 ----------------------------------------------------------
 Test Passed.
-"LibraryTest" end time: Apr 28 16:42 CEST
+"LibraryTest" end time: Apr 29 18:09 CEST
 "LibraryTest" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Apr 28 16:42 CEST
+End testing: Apr 29 18:09 CEST
