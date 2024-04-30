@@ -7,7 +7,7 @@
  * @brief Klasa reprezentująca pojazd.
  */
 class Vehicle {
-private:
+protected:
     std::string plateNumber;    /**< Numer rejestracyjny */
     unsigned basePrice;          /**< Cena bazowa */
     mutable bool rented = false;     /**< Flaga wskazująca, czy pojazd jest wynajęty */
@@ -24,7 +24,7 @@ public:
      * @brief Pobiera cenę bazową pojazdu.
      * @return Referencja do wartości całkowitej reprezentującej cenę bazową.
      */
-   double getBasePrice() const;
+   virtual double getActualRentalPrice() const = 0;
 
     /**
     * @brief Sprawdza, czy pojazd jest wynajęty.
@@ -66,6 +66,6 @@ public:
     /**
      * @brief Destruktor klasy Vehicle.
      */
-    ~Vehicle();
+    virtual ~Vehicle();
 };
 

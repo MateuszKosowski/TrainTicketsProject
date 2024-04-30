@@ -12,5 +12,7 @@ private:
 public:
     SegmentType getSegment() const;
     void setSegment(SegmentType carSegment);
-    Car(const std::string &carPNumber, const double &carBPrice, const int &carEDisplac, SegmentType carSegment);
+    double getActualRentalPrice() const override;
+    Car(const std::string &carPNumber, const unsigned int &carBPrice, const int &carEDisplac, SegmentType carSegment);
+    ~Car() override;
 };

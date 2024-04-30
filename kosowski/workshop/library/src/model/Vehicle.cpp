@@ -20,9 +20,7 @@ void Vehicle::setRented(const bool &boolRent) const{
 const std::string &Vehicle::getPlateNumber() const{
     return plateNumber;
 }
-double Vehicle::getBasePrice() const{
-    return basePrice;
-}
+
 const bool &Vehicle::isRented() const{
     return rented;
 }
@@ -38,4 +36,3 @@ Vehicle::Vehicle(const std::string &vehPNumber, const unsigned &vehBPrise) {
     plateNumber = vehPNumber;
     basePrice = vehBPrise;
 }
-Vehicle::~Vehicle(){};

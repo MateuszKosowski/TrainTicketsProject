@@ -1,27 +1,32 @@
 #include "model/Car.h"
 #include <string>
 
-Car::Car(const std::string &carPNumber, const double &carBPrice, const int &carEDisplac, SegmentType carSegment): MotorVehivle(carPNumber, carBPrice, carEDisplac){
+Car::Car(const std::string &carPNumber, const unsigned int &carBPrice, const int &carEDisplac, SegmentType carSegment): MotorVehivle(carPNumber, carBPrice, carEDisplac){
     segment = carSegment;
-    switch (carSegment) {
+}
+
+double Car::getActualRentalPrice() const{
+    double actualPrice = (engineDisplacement < 1000) ? basePrice : ((engineDisplacement > 2000) ? 1.5 * basePrice : 0.0005 * (engineDisplacement - 1000) * basePrice + basePrice);
+    switch (segment) {
         case A:
-            this->setBasePrice(1.0*this->getBasePrice());
+            actualPrice*=1.0;
             break;
         case B:
-            this->setBasePrice(1.1*this->getBasePrice());
+            actualPrice*=1.1;
             break;
         case C:
-            this->setBasePrice(1.2*this->getBasePrice());
+            actualPrice*=1.2;
             break;
         case D:
-            this->setBasePrice(1.3*this->getBasePrice());
+            actualPrice*=1.3;
             break;
         case E:
-            this->setBasePrice(1.5*this->getBasePrice());
+            actualPrice*=1.5;
             break;
         default:
             break;
     }
+    return actualPrice;
 }
 
 SegmentType Car::getSegment() const {
@@ -31,3 +36,5 @@ SegmentType Car::getSegment() const {
 void Car::setSegment(SegmentType carSegment) {
     Car::segment = carSegment;
 }
+
+Car::~Car(){};

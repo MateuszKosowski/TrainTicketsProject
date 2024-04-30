@@ -5,5 +5,7 @@
 
 class Moped : public MotorVehivle{
 public:
-    Moped(const std::string &mopPNumber, const double &mopBPrice, const int &mopEDisplac);
+    double getActualRentalPrice() const override;
+    Moped(const std::string &mopPNumber, const unsigned int &mopBPrice, const int &mopEDisplac);
+    ~Moped() override;
 };

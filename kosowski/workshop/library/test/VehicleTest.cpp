@@ -8,6 +8,7 @@ namespace btt = boost::test_tools;
 
 struct TestVehicleFixture {
     CarPtr bmw;
+    VehiclePtr audi;
     BicyclePtr bmx;
     MopedPtr romet;
     AddressPtr Example;
@@ -16,6 +17,7 @@ struct TestVehicleFixture {
 
     TestVehicleFixture() {
         bmw = new Car("JD 4290", 3999, 3000, E);
+        audi = new Car("AA 9999", 5999, 4000, D);
         bmx = new Bicycle("UA 2115", 799);
         romet = new Moped("TY 5656", 1599, 1600);
         Example = new Address("Lodz", "Anielska", "13");
@@ -29,6 +31,7 @@ struct TestVehicleFixture {
         delete Example;
         delete romet;
         delete bmx;
+        delete audi;
         delete bmw;
     }
 };
@@ -40,7 +43,7 @@ BOOST_FIXTURE_TEST_SUITE(VehicleTest, TestVehicleFixture)
                 bmx->getPlateNumber() == "UA 2115"
         );
         BOOST_TEST(
-                bmx->getBasePrice() == 799
+                bmx->getActualRentalPrice() == 799
         );
         BOOST_TEST(
                 bmx->isRented() == false
@@ -52,10 +55,10 @@ BOOST_FIXTURE_TEST_SUITE(VehicleTest, TestVehicleFixture)
                 romet->getPlateNumber() == "TY 5656"
         );
         BOOST_TEST(
-                romet->getBasePrice() != 1599
+                romet->getActualRentalPrice() != 1599
         );
         BOOST_TEST(
-                romet->getBasePrice() == 2078
+                romet->getActualRentalPrice() == 2078
         );
         BOOST_TEST(
                 romet->getEngineDisplacement() == 1600
@@ -75,11 +78,11 @@ BOOST_FIXTURE_TEST_SUITE(VehicleTest, TestVehicleFixture)
                 bmw->getPlateNumber() == "JD 4290"
         );
         BOOST_TEST(
-                bmw->getBasePrice() != 3999
+                bmw->getActualRentalPrice() != 3999
         );
         BOOST_TEST(
                 // 3999*1.5*1.5 = 8997,75
-                bmw->getBasePrice() == 8997
+                bmw->getActualRentalPrice() == 8997
         );
         BOOST_TEST(
                 bmw->getEngineDisplacement() == 3000
@@ -100,6 +103,10 @@ BOOST_FIXTURE_TEST_SUITE(VehicleTest, TestVehicleFixture)
                 bmw->getSegment() == D
         );
     }
-
+    BOOST_AUTO_TEST_CASE(CarFromVehiclePtrTest) {
+        BOOST_TEST(
+                audi->getActualRentalPrice() == 11697
+        );
+    }
 
 BOOST_AUTO_TEST_SUITE_END()
