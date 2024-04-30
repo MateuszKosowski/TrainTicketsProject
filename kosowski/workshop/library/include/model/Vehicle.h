@@ -24,7 +24,7 @@ public:
      * @brief Pobiera cenę bazową pojazdu.
      * @return Referencja do wartości całkowitej reprezentującej cenę bazową.
      */
-    const unsigned &getBasePrice() const;
+   double getBasePrice() const;
 
     /**
     * @brief Sprawdza, czy pojazd jest wynajęty.

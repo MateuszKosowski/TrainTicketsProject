@@ -1,55 +1,105 @@
 #include <boost/test/unit_test.hpp>
 #include "model/Client.h"
+#include "model/Car.h"
+#include "model/Bicycle.h"
+#include "model/Moped.h"
 
 namespace btt = boost::test_tools;
 
-BOOST_AUTO_TEST_SUITE(VehicleTest)
-    Vehicle* car = new Vehicle("GD 8790", 1999);
+struct TestVehicleFixture {
+    CarPtr bmw;
+    BicyclePtr bmx;
+    MopedPtr romet;
+    AddressPtr Example;
+    ClientPtr Tester;
+    RentPtr A;
 
-    BOOST_AUTO_TEST_CASE(ConstructorTest) {
+    TestVehicleFixture() {
+        bmw = new Car("JD 4290", 3999, 3000, E);
+        bmx = new Bicycle("UA 2115", 799);
+        romet = new Moped("TY 5656", 1599, 1600);
+        Example = new Address("Lodz", "Anielska", "13");
+        Tester = new Client("Jacek", "Rambo", "3", Example);
+        A = new Rent(1, Tester, bmw, pt::ptime(gr::date(2024,04,28),pt::hours(20)+pt::minutes(0 )));
+    }
+
+    ~TestVehicleFixture(){
+        delete A;
+        delete Tester;
+        delete Example;
+        delete romet;
+        delete bmx;
+        delete bmw;
+    }
+};
+
+BOOST_FIXTURE_TEST_SUITE(VehicleTest, TestVehicleFixture)
+
+    BOOST_AUTO_TEST_CASE(BicycleTests) {
         BOOST_TEST(
-                car->isRented() == false
+                bmx->getPlateNumber() == "UA 2115"
         );
         BOOST_TEST(
-                car->getPlateNumber() == "GD 8790"
+                bmx->getBasePrice() == 799
         );
         BOOST_TEST(
-                car->getBasePrice() == 1999
+                bmx->isRented() == false
         );
     }
 
-    BOOST_AUTO_TEST_CASE(GetInfoTest) {
+    BOOST_AUTO_TEST_CASE(MopedTests) {
         BOOST_TEST(
-                car->getInfo() == "\nPlate Number: GD 8790\nPrice: 1999\nIs rented: 0"
+                romet->getPlateNumber() == "TY 5656"
+        );
+        BOOST_TEST(
+                romet->getBasePrice() != 1599
+        );
+        BOOST_TEST(
+                romet->getBasePrice() == 2078
+        );
+        BOOST_TEST(
+                romet->getEngineDisplacement() == 1600
+        );
+
+        romet->setEngineDisplacement(1700);
+        BOOST_TEST(
+                romet->getEngineDisplacement() == 1700
+        );
+        BOOST_TEST(
+                romet->isRented() == false
         );
     }
 
-    BOOST_AUTO_TEST_CASE(SettersTest) {
-        car->setRented(true);
+    BOOST_AUTO_TEST_CASE(CarTests) {
         BOOST_TEST(
-                car->isRented() == true
+                bmw->getPlateNumber() == "JD 4290"
         );
-        car->setPlateNumber("AB 1111");
         BOOST_TEST(
-                car->getPlateNumber() == "AB 1111"
+                bmw->getBasePrice() != 3999
         );
-        car->setBasePrice(2999);
         BOOST_TEST(
-                car->getBasePrice() == 2999
+                // 3999*1.5*1.5 = 8997,75
+                bmw->getBasePrice() == 8997
+        );
+        BOOST_TEST(
+                bmw->getEngineDisplacement() == 3000
+        );
+
+        bmw->setEngineDisplacement(3500);
+        BOOST_TEST(
+                bmw->getEngineDisplacement() == 3500
+        );
+        BOOST_TEST(
+                bmw->isRented() == true
+        );
+        BOOST_TEST(
+                bmw->getSegment() == E
+        );
+        bmw->setSegment(D);
+        BOOST_TEST(
+                bmw->getSegment() == D
         );
     }
 
-    BOOST_AUTO_TEST_CASE(IsRented){
-        car->setRented(false);
-        Address* Example = new Address("Lodz", "Anielska", "13");
-        Client* Tester = new Client("Jacek", "Rambo", "3", Example);
-        Rent* A = new Rent(1, Tester, car, pt::not_a_date_time);
-        BOOST_TEST(
-                car->isRented() == true
-        );
-        BOOST_TEST(
-                A->getClient()->getFirstName() == "Jacek"
-        );
-    }
 
 BOOST_AUTO_TEST_SUITE_END()

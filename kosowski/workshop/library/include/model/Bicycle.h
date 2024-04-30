@@ -3,7 +3,7 @@
 #include "Vehicle.h"
 #include <cstring>
 
-class Bicycle : Vehicle{
+class Bicycle : public Vehicle{
 public:
     Bicycle(const std::string &bicPNumber, const unsigned &bicBPrice);
 };

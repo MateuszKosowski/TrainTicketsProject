@@ -1,7 +1,7 @@
 #include "model/Car.h"
 #include <string>
 
-Car::Car(const std::string &carPNumber, const unsigned &carBPrice, const int &carEDisplac, SegmentType carSegment): MotorVehivle(carPNumber, carBPrice, carEDisplac){
+Car::Car(const std::string &carPNumber, const double &carBPrice, const int &carEDisplac, SegmentType carSegment): MotorVehivle(carPNumber, carBPrice, carEDisplac){
     segment = carSegment;
     switch (carSegment) {
         case A:
@@ -22,4 +22,12 @@ Car::Car(const std::string &carPNumber, const unsigned &carBPrice, const int &ca
         default:
             break;
     }
+}
+
+SegmentType Car::getSegment() const {
+    return segment;
+}
+
+void Car::setSegment(SegmentType carSegment) {
+    Car::segment = carSegment;
 }

@@ -8,6 +8,6 @@ private:
     int engineDisplacement;
 public:
     int getEngineDisplacement() const;
-    void setEngineDisplacement();
-    MotorVehivle(const std::string &motoPNumber, const unsigned &motoBPrice, const int &motoEDisplac);
+    void setEngineDisplacement(int displacement);
+    MotorVehivle(const std::string &motoPNumber, const double &motoBPrice, const int &motoEDisplac);
 };

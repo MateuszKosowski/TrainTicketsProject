@@ -3,7 +3,7 @@
 #include "MotorVehicle.h"
 #include <string>
 
-class Moped:MotorVehivle{
+class Moped : public MotorVehivle{
 public:
-    Moped(const std::string &mopPNumber, const unsigned &mopBPrice, const int &mopEDisplac);
+    Moped(const std::string &mopPNumber, const double &mopBPrice, const int &mopEDisplac);
 };

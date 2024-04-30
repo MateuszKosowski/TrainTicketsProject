@@ -4121,7 +4121,11 @@ library/CMakeFiles/LibraryTester.dir/test/VehicleTest.cpp.o: /home/student/CLion
   /usr/include/boost/function.hpp \
   /usr/include/boost/preprocessor/iterate.hpp \
   /usr/include/boost/function/detail/function_iterate.hpp \
-  /usr/include/boost/algorithm/string/join.hpp
+  /usr/include/boost/algorithm/string/join.hpp \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Car.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/MotorVehicle.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Bicycle.h \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Moped.h
 
 library/CMakeFiles/LibraryTester.dir/test/master.cpp.o: /home/student/CLionProjects/start/kosowski/workshop/library/test/master.cpp \
   /usr/include/stdc-predef.h \
@@ -4791,6 +4795,10 @@ library/CMakeFiles/LibraryTester.dir/test/master.cpp.o: /home/student/CLionProje
 
 /home/student/CLionProjects/start/kosowski/workshop/library/test/master.cpp:
 
+/home/student/CLionProjects/start/kosowski/workshop/library/include/model/Moped.h:
+
+/home/student/CLionProjects/start/kosowski/workshop/library/include/model/Bicycle.h:
+
 /home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp:
 
 /home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp:
@@ -5335,6 +5343,8 @@ library/CMakeFiles/LibraryTester.dir/test/master.cpp.o: /home/student/CLionProje
 
 /usr/include/c++/12/bits/memoryfwd.h:
 
+/home/student/CLionProjects/start/kosowski/workshop/library/include/model/MotorVehicle.h:
+
 /usr/include/boost/test/tools/fpc_op.hpp:
 
 /usr/include/boost/date_time/posix_time/time_parsers.hpp:
@@ -5658,6 +5668,8 @@ library/CMakeFiles/LibraryTester.dir/test/master.cpp.o: /home/student/CLionProje
 /usr/include/x86_64-linux-gnu/c++/12/bits/os_defines.h:
 
 /usr/include/boost/smart_ptr/detail/spinlock_pool.hpp:
+
+/home/student/CLionProjects/start/kosowski/workshop/library/include/model/Car.h:
 
 /usr/include/boost/concept/detail/backward_compatibility.hpp:
 
