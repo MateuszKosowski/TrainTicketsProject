@@ -974,4 +974,5 @@ library/CMakeFiles/Library.dir/src/model/Client.cpp.o: \
  /usr/include/boost/function/detail/maybe_include.hpp \
  /usr/include/boost/function/function_template.hpp \
  /usr/include/boost/core/no_exceptions_support.hpp \
- /usr/include/boost/algorithm/string/join.hpp
+ /usr/include/boost/algorithm/string/join.hpp \
+ /home/student/CLionProjects/start/kosowski/workshop/library/include/model/ClientType.h

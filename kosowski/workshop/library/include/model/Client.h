@@ -5,109 +5,41 @@
 #include "model/Rent.h"
 #include <string>
 #include <vector>
+#include "model/ClientType.h"
 
 // Deklaracja wstępna klasy Rent
 class Rent;
 
-/**
- * @brief Klasa reprezentująca klienta.
- */
 class Client{
 private:
-    std::string firstName;  /**< Imię klienta */
-    std::string lastName;    /**< Nazwisko klienta */
-    std::string personalID; /**< Numer identyfikacyjny klienta */
-    AddressPtr  address;        /**< Adres zamieszkania klienta */
-    std::vector<RentPtr> currentRents;   /**< Aktualne wypożyczenia klienta */
+    std::string firstName;
+    std::string lastName;
+    std::string personalID;
+    AddressPtr  address;
+    std::vector<RentPtr> currentRents;
+    ClientTypePtr clientType;
 
 public:
-    /**
-     * @brief Pobiera imię klienta.
-     * @return Referencja do ciągu znaków reprezentującego imię klienta.
-     */
+
     const std::string &getFirstName() const;
-
-    /**
-    * @brief Pobiera nazwisko klienta.
-    * @return Referencja do ciągu znaków reprezentującego nazwisko klienta.
-    */
     const std::string &getLastName() const;
-
-    /**
-     * @brief Pobiera numer identyfikacyjny klienta.
-     * @return Referencja do ciągu znaków reprezentującego numer identyfikacyjny klienta.
-     */
     const std::string &getPersonalID() const;
-
-    /**
-    * @brief Pobiera wskaźnik do adresu zamieszkania klienta.
-    * @return Wskaźnik do obiektu klasy Address reprezentującego adres klienta.
-    */
     AddressPtr getAddress() const;
-
-    /**
-     * @brief Pobiera wskaźnik do aktualnych wypożyczeń klienta.
-     * @return Wektor wskaźników do obiektów klasy Rent reprezentujących aktualne wypożyczenia klienta.
-     */
     RentPtr getCurrentRents() const;
-
     std::vector<RentPtr>& getAllRents();
 
-    /**
-     * @brief Ustawia imię klienta.
-     * @param fName Imię klienta.
-     */
     void setFirstName(const std::string& fName);
-
-    /**
-     * @brief Ustawia nazwisko klienta.
-     * @param lName Nazwisko klienta.
-     */
-    void setPersonalID(const std::string& id);
-
-    /**
-     * @brief Ustawia numer identyfikacyjny klienta.
-     * @param id Numer identyfikacyjny klienta.
-     */
     void setLastName(const std::string& lName);
-
-    /**
-     * @brief Ustawia adres zamieszkania klienta.
-     * @param addr Wskaźnik do obiektu klasy Address reprezentującego adres klienta.
-     */
+    void setPersonalID(const std::string& id);
     void setAddress(AddressPtr addr);
-
-    /**
-    * @brief Dodaje wypożyczenie do listy aktualnych wypożyczeń klienta.
-    * @param rent Wskaźnik do obiektu klasy Rent reprezentującego wypożyczenie.
-    */
     void pushCurrentRents(RentPtr);
+    void setClientType(const ClientTypePtr clientType);
 
-
-    /**
-    * @brief Zwraca podstawowe informacje o kliencie.
-    * @return Podstawowe informacje o kliencie w postaci ciągu znaków.
-    */
     const std::string getInfo() const;
-
-    /**
-    * @brief Zwraca pełne informacje o kliencie, włączając aktualne wypożyczenia.
-    * @return Pełne informacje o kliencie w postaci ciągu znaków.
-    */
     const std::string getFullInfo() const;
+    int getMaxVehicles() const;
+    double applyDiscount(double price) const;
 
-
-    /**
-    * @brief Konstruktor inicjujący obiekt klasy Client.
-    * @param str1 Imię klienta.
-    * @param str2 Nazwisko klienta.
-    * @param str3 Numer identyfikacyjny klienta.
-    * @param addr Wskaźnik do obiektu klasy Address reprezentującego adres klienta.
-    */
-    Client(const std::string& str1, const std::string& str2, const std::string& str3, AddressPtr addr);
-
-    /**
-     * @brief Destruktor klasy Client.
-     */
+    Client(const std::string& str1, const std::string& str2, const std::string& str3, AddressPtr addr, ClientTypePtr cType);
     ~Client();
 };

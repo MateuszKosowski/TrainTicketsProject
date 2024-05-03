@@ -12,6 +12,7 @@ class Moped;
 class MotorVehicle;
 class Bicycle;
 class Car;
+class ClientType;
 
 // Aliasy do nazw, Np: wkaźnik do obiektu typu Address: Address* , można teraz zapisać jako AddressPtr
 typedef Address *AddressPtr;
@@ -22,3 +23,4 @@ typedef Moped* MopedPtr;
 typedef MotorVehicle* MotorVehiclePtr;
 typedef Bicycle* BicyclePtr;
 typedef Car*  CarPtr;
+typedef ClientType* ClientTypePtr;

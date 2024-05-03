@@ -7,6 +7,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/Library.dir/src/model/Car.cpp.o.d"
   "CMakeFiles/Library.dir/src/model/Client.cpp.o"
   "CMakeFiles/Library.dir/src/model/Client.cpp.o.d"
+  "CMakeFiles/Library.dir/src/model/ClientType.cpp.o"
+  "CMakeFiles/Library.dir/src/model/ClientType.cpp.o.d"
   "CMakeFiles/Library.dir/src/model/Moped.cpp.o"
   "CMakeFiles/Library.dir/src/model/Moped.cpp.o.d"
   "CMakeFiles/Library.dir/src/model/MotorVehicle.cpp.o"

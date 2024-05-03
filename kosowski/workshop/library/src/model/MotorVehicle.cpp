@@ -12,3 +12,5 @@ MotorVehivle::MotorVehivle(const std::string &motoPNumber, const unsigned int &m
     engineDisplacement = motoEDisplac;
 }
 
+MotorVehivle::~MotorVehivle(){};
+

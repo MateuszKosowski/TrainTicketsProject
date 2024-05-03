@@ -1048,6 +1048,7 @@ library/CMakeFiles/LibraryTester.dir/test/VehicleTest.cpp.o: \
  /usr/include/boost/preprocessor/iterate.hpp \
  /usr/include/boost/function/detail/function_iterate.hpp \
  /usr/include/boost/algorithm/string/join.hpp \
+ /home/student/CLionProjects/start/kosowski/workshop/library/include/model/ClientType.h \
  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Car.h \
  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/MotorVehicle.h \
  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Bicycle.h \

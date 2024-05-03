@@ -1048,4 +1048,5 @@ library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.o: \
  /usr/include/boost/preprocessor/iterate.hpp \
  /usr/include/boost/function/detail/function_iterate.hpp \
  /usr/include/boost/algorithm/string/join.hpp \
+ /home/student/CLionProjects/start/kosowski/workshop/library/include/model/ClientType.h \
  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Bicycle.h

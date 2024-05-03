@@ -1077,7 +1077,8 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start
   /usr/include/boost/function/detail/maybe_include.hpp \
   /usr/include/boost/function/function_template.hpp \
   /usr/include/boost/core/no_exceptions_support.hpp \
-  /usr/include/boost/algorithm/string/join.hpp
+  /usr/include/boost/algorithm/string/join.hpp \
+  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/ClientType.h
 
 
 /usr/include/boost/core/no_exceptions_support.hpp:
@@ -1375,6 +1376,8 @@ program/CMakeFiles/Program.dir/src/main.cpp.o: /home/student/CLionProjects/start
 /usr/include/boost/mpl/list/aux_/push_front.hpp:
 
 /usr/include/boost/mpl/long.hpp:
+
+/home/student/CLionProjects/start/kosowski/workshop/library/include/model/ClientType.h:
 
 /usr/include/boost/mpl/list/list0.hpp:
 

@@ -4,12 +4,31 @@
 
 namespace btt = boost::test_tools;
 
-BOOST_AUTO_TEST_SUITE(ClientTest)
-    VehiclePtr Car = new Bicycle("JD 4290", 3999);
-    AddressPtr Example = new Address("Lodz", "Anielska", "13");
-    ClientPtr Tester = new Client("Jacek", "Rambo", "3", Example);
-    RentPtr A = new Rent(1, Tester, Car, pt::not_a_date_time);
-    AddressPtr Example2 = new Address("Gdynia", "Widzewska", "18");
+struct TestClientFixture {
+    VehiclePtr BMX;
+    AddressPtr Example;
+    ClientPtr Tester;
+    RentPtr A;
+    AddressPtr Example2;
+
+    TestClientFixture() {
+        BMX = new Bicycle("JD 4290", 3999);
+        Example = new Address("Lodz", "Anielska", "13");
+        Tester = new Client("Jacek", "Rambo", "3", Example, new Bronze);
+        A = new Rent(1, Tester, BMX, pt::not_a_date_time);
+        Example2 = new Address("Gdynia", "Widzewska", "18");
+    }
+
+    ~TestClientFixture(){
+        delete Example2;
+        delete A;
+        delete Tester;
+        delete Example;
+        delete BMX;
+    }
+};
+
+BOOST_FIXTURE_TEST_SUITE(ClientTest, TestClientFixture)
 
     BOOST_AUTO_TEST_CASE(MyFirstTests) {
         BOOST_TEST(                         // domyślnie -> BOOST_TEST_REQUIRE
@@ -52,22 +71,22 @@ BOOST_AUTO_TEST_SUITE(ClientTest)
     BOOST_AUTO_TEST_CASE(EmptySettersTest) {
         Tester->setFirstName("");
         BOOST_TEST(
-                Tester->getFirstName() == "Tomek"
+                Tester->getFirstName() == "Jacek"
         );
 
         Tester->setLastName("");
         BOOST_TEST(
-                Tester->getLastName() == "Budka"
+                Tester->getLastName() == "Rambo"
         );
 
         Tester->setPersonalID("");
         BOOST_TEST(
-                Tester->getPersonalID() == "12345678900"
+                Tester->getPersonalID() == "3"
         );
 
         Tester->setAddress(nullptr);
         BOOST_TEST(
-                Tester->getAddress() == Example2
+                Tester->getAddress() == Example
         );
 
         Tester->pushCurrentRents(nullptr);
@@ -77,12 +96,30 @@ BOOST_AUTO_TEST_SUITE(ClientTest)
 
     }
 
+    BOOST_AUTO_TEST_CASE(ClientTypeTest) {
+        BOOST_TEST(
+            Tester->getMaxVehicles() == 2
+        );
+
+        BOOST_TEST(
+                Tester->applyDiscount(BMX->getActualRentalPrice()) == 3996
+        );
+
+        Tester->setClientType(new Gold);
+        BOOST_TEST(
+                Tester->getMaxVehicles() == 4
+        );
+        BOOST_TEST(
+                Tester->applyDiscount(BMX->getActualRentalPrice()) == 3799.05
+        );
+    }
+
     BOOST_AUTO_TEST_CASE(GetInfoTest) {
             BOOST_TEST(
-                Tester->getInfo() == "\nFirst Name: Tomek,\nLast Name: Budka,\nPersonal ID: 12345678900,\nAddress: \nCity: Gdynia,\nStreet: Widzewska,\nNumber: 18"
+                Tester->getInfo() == "\nFirst Name: Jacek,\nLast Name: Rambo,\nPersonal ID: 3,\nAddress: \nCity: Lodz,\nStreet: Anielska,\nNumber: 13"
             );
             BOOST_TEST(
-                Tester->getFullInfo() == "\nFirst Name: Tomek,\nLast Name: Budka,\nPersonal ID: 12345678900,\nAddress: \nCity: Gdynia,\nStreet: Widzewska,\nNumber: 18\nRents: \nRent ID: 1\nPlate Number: JD 4290"
+                Tester->getFullInfo() == "\nFirst Name: Jacek,\nLast Name: Rambo,\nPersonal ID: 3,\nAddress: \nCity: Lodz,\nStreet: Anielska,\nNumber: 13\nRents: \nRent ID: 1\nPlate Number: JD 4290"
             );
     }
 

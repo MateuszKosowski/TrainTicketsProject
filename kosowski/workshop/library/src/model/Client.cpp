@@ -31,6 +31,14 @@ std::vector<Rent*>& Client::getAllRents() {
     return currentRents;
 }
 
+int Client::getMaxVehicles() const {
+    return clientType->getMaxVehicles();
+}
+
+double Client::applyDiscount(double price) const {
+    return clientType->applyDiscount(price);
+}
+
 
 const std::string Client::getInfo() const{
     return "\nFirst Name: " + firstName + ",\nLast Name: " + lastName + ",\nPersonal ID: " + personalID + ",\nAddress: " + address->getInfo();
@@ -86,14 +94,21 @@ void Client::pushCurrentRents(Rent *varCurrentRents) {
     }
 
 }
+
+void Client::setClientType(const ClientTypePtr clientType) {
+    Client::clientType = clientType;
+}
 //----------------------------------------------------
 
 // Constructor and Destructor implementation
-Client::Client(const std::string& str1, const std::string& str2, const std::string& str3, Address *addr){
+Client::Client(const std::string& str1, const std::string& str2, const std::string& str3, Address *addr, ClientTypePtr ctype){
     firstName = str1;
     lastName = str2;
     personalID = str3;
     address = addr;
+    clientType = ctype;
 }
 
 Client::~Client() {}
+
+

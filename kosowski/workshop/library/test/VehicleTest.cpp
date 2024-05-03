@@ -21,7 +21,7 @@ struct TestVehicleFixture {
         bmx = new Bicycle("UA 2115", 799);
         romet = new Moped("TY 5656", 1599, 1600);
         Example = new Address("Lodz", "Anielska", "13");
-        Tester = new Client("Jacek", "Rambo", "3", Example);
+        Tester = new Client("Jacek", "Rambo", "3", Example, new Default);
         A = new Rent(1, Tester, bmw, pt::ptime(gr::date(2024,04,28),pt::hours(20)+pt::minutes(0 )));
     }
 

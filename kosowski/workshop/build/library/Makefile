@@ -267,6 +267,30 @@ src/model/Client.cpp.s:
 	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.s
 .PHONY : src/model/Client.cpp.s
 
+src/model/ClientType.o: src/model/ClientType.cpp.o
+.PHONY : src/model/ClientType.o
+
+# target to build an object file
+src/model/ClientType.cpp.o:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/ClientType.cpp.o
+.PHONY : src/model/ClientType.cpp.o
+
+src/model/ClientType.i: src/model/ClientType.cpp.i
+.PHONY : src/model/ClientType.i
+
+# target to preprocess a source file
+src/model/ClientType.cpp.i:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/ClientType.cpp.i
+.PHONY : src/model/ClientType.cpp.i
+
+src/model/ClientType.s: src/model/ClientType.cpp.s
+.PHONY : src/model/ClientType.s
+
+# target to generate assembly for a file
+src/model/ClientType.cpp.s:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/ClientType.cpp.s
+.PHONY : src/model/ClientType.cpp.s
+
 src/model/Moped.o: src/model/Moped.cpp.o
 .PHONY : src/model/Moped.o
 
@@ -507,6 +531,9 @@ help:
 	@echo "... src/model/Client.o"
 	@echo "... src/model/Client.i"
 	@echo "... src/model/Client.s"
+	@echo "... src/model/ClientType.o"
+	@echo "... src/model/ClientType.i"
+	@echo "... src/model/ClientType.s"
 	@echo "... src/model/Moped.o"
 	@echo "... src/model/Moped.i"
 	@echo "... src/model/Moped.s"
