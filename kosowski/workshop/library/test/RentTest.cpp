@@ -168,6 +168,14 @@ BOOST_FIXTURE_TEST_SUITE(RentTest, TestRentFixture)
         );
     }
 
+    BOOST_AUTO_TEST_CASE(ApplayClientTypeTest) {
+        Tester->setClientType(new Platinum);
+        A->endRent(pt::ptime(gr::date(2024,04,30),pt::hours(18)+pt::minutes(20 )));;
+        BOOST_TEST(
+                A->getRentCost() == 7198
+        );
+    }
+
     BOOST_AUTO_TEST_CASE(GetInfoTest) {
         BOOST_TEST(
                 A->getInfo() == "\nRent ID: 1 \n"

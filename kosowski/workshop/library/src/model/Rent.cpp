@@ -49,7 +49,7 @@ void Rent::endRent(pt::ptime eTime) {
                 else
                     ++it;
             }
-            rentCost = (this->getRentDays()*vehicle->getActualRentalPrice());
+            rentCost = client->applyDiscount((this->getRentDays()*vehicle->getActualRentalPrice()));
         }
         else{
             if(eTime <= beginTime){
@@ -61,7 +61,7 @@ void Rent::endRent(pt::ptime eTime) {
                     else
                         ++it;
                 }
-                rentCost = (this->getRentDays()*vehicle->getActualRentalPrice());
+                rentCost = client->applyDiscount((this->getRentDays()*vehicle->getActualRentalPrice()));
             }
             else{
                 endTime = eTime;
@@ -72,7 +72,7 @@ void Rent::endRent(pt::ptime eTime) {
                     else
                         ++it;
                 }
-                rentCost = (this->getRentDays()*vehicle->getActualRentalPrice());
+                rentCost = client->applyDiscount((this->getRentDays()*vehicle->getActualRentalPrice()));
             }
         }
     }
