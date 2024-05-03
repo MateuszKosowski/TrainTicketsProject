@@ -58,7 +58,7 @@ BOOST_FIXTURE_TEST_SUITE(VehicleTest, TestVehicleFixture)
                 romet->getActualRentalPrice() != 1599
         );
         BOOST_TEST(
-                romet->getActualRentalPrice() == 2078
+                romet->getActualRentalPrice() == 2078.70
         );
         BOOST_TEST(
                 romet->getEngineDisplacement() == 1600
@@ -82,7 +82,7 @@ BOOST_FIXTURE_TEST_SUITE(VehicleTest, TestVehicleFixture)
         );
         BOOST_TEST(
                 // 3999*1.5*1.5 = 8997,75
-                bmw->getActualRentalPrice() == 8997
+                bmw->getActualRentalPrice() == 8997.75
         );
         BOOST_TEST(
                 bmw->getEngineDisplacement() == 3000
@@ -105,7 +105,7 @@ BOOST_FIXTURE_TEST_SUITE(VehicleTest, TestVehicleFixture)
     }
     BOOST_AUTO_TEST_CASE(CarFromVehiclePtrTest) {
         BOOST_TEST(
-                audi->getActualRentalPrice() == 11697
+                audi->getActualRentalPrice() == 11698.05
         );
     }
 

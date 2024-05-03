@@ -66,6 +66,6 @@ public:
     /**
      * @brief Destruktor klasy Vehicle.
      */
-    virtual ~Vehicle();
+    virtual ~Vehicle() = 0;
 };
 

@@ -36,3 +36,4 @@ Vehicle::Vehicle(const std::string &vehPNumber, const unsigned &vehBPrise) {
     plateNumber = vehPNumber;
     basePrice = vehBPrise;
 }
+Vehicle::~Vehicle(){}

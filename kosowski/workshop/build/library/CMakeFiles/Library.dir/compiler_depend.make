@@ -570,7 +570,20 @@ library/CMakeFiles/Library.dir/src/model/Car.cpp.o: /home/student/CLionProjects/
   /usr/include/c++/12/bits/istream.tcc \
   /usr/include/c++/12/cstring \
   /usr/include/string.h \
-  /usr/include/strings.h
+  /usr/include/strings.h \
+  /usr/include/c++/12/iomanip \
+  /usr/include/c++/12/locale \
+  /usr/include/c++/12/bits/locale_facets_nonio.h \
+  /usr/include/c++/12/ctime \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/12/bits/locale_conv.h \
+  /usr/include/c++/12/bits/quoted_string.h \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc
 
 library/CMakeFiles/Library.dir/src/model/Client.cpp.o: /home/student/CLionProjects/start/kosowski/workshop/library/src/model/Client.cpp \
   /usr/include/stdc-predef.h \
@@ -1840,7 +1853,20 @@ library/CMakeFiles/Library.dir/src/model/Moped.cpp.o: /home/student/CLionProject
   /usr/include/c++/12/bits/istream.tcc \
   /usr/include/c++/12/cstring \
   /usr/include/string.h \
-  /usr/include/strings.h
+  /usr/include/strings.h \
+  /usr/include/c++/12/iomanip \
+  /usr/include/c++/12/locale \
+  /usr/include/c++/12/bits/locale_facets_nonio.h \
+  /usr/include/c++/12/ctime \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h \
+  /usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h \
+  /usr/include/libintl.h \
+  /usr/include/c++/12/bits/codecvt.h \
+  /usr/include/c++/12/bits/locale_facets_nonio.tcc \
+  /usr/include/c++/12/bits/locale_conv.h \
+  /usr/include/c++/12/bits/quoted_string.h \
+  /usr/include/c++/12/sstream \
+  /usr/include/c++/12/bits/sstream.tcc
 
 library/CMakeFiles/Library.dir/src/model/MotorVehicle.cpp.o: /home/student/CLionProjects/start/kosowski/workshop/library/src/model/MotorVehicle.cpp \
   /usr/include/stdc-predef.h \
@@ -3978,50 +4004,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/boost/range/range_fwd.hpp:
 
-/usr/include/c++/12/bits/basic_ios.tcc:
-
-/usr/include/boost/date_time/time_duration.hpp:
-
-/usr/include/c++/12/tr1/poly_laguerre.tcc:
-
-/usr/include/c++/12/tr1/modified_bessel_func.tcc:
-
-/usr/include/boost/preprocessor/cat.hpp:
-
-/usr/include/boost/mpl/aux_/config/has_xxx.hpp:
-
-/usr/include/boost/numeric/conversion/bounds.hpp:
-
-/usr/include/c++/12/tr1/legendre_function.tcc:
-
-/home/student/CLionProjects/start/kosowski/workshop/library/src/model/Client.cpp:
-
-/usr/include/boost/mpl/aux_/preprocessed/gcc/advance_forward.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
-
-/usr/include/c++/12/cwctype:
-
-/usr/include/c++/12/bits/shared_ptr.h:
-
-/usr/include/c++/12/tr1/bessel_function.tcc:
-
-/usr/include/c++/12/ext/slist:
-
-/usr/include/c++/12/cwchar:
-
-/usr/include/boost/mpl/list/aux_/O1_size.hpp:
-
-/usr/include/boost/preprocessor/arithmetic/sub.hpp:
-
-/usr/include/boost/algorithm/string/predicate.hpp:
-
-/usr/include/c++/12/tr1/gamma.tcc:
-
-/usr/include/boost/mpl/aux_/config/eti.hpp:
-
-/usr/include/c++/12/bits/specfun.h:
-
 /usr/include/boost/date_time/wrapping_int.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/fp-fast.h:
@@ -4130,6 +4112,40 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/c++/12/bits/locale_conv.h:
 
+/home/student/CLionProjects/start/kosowski/workshop/library/src/model/Client.cpp:
+
+/usr/include/boost/mpl/aux_/preprocessed/gcc/advance_forward.hpp:
+
+/usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
+
+/usr/include/c++/12/cwctype:
+
+/usr/include/boost/current_function.hpp:
+
+/usr/include/c++/12/bits/locale_facets_nonio.tcc:
+
+/usr/include/boost/type_traits/add_volatile.hpp:
+
+/usr/include/c++/12/bits/codecvt.h:
+
+/usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h:
+
+/usr/include/x86_64-linux-gnu/bits/wordsize.h:
+
+/usr/include/boost/date_time.hpp:
+
+/usr/include/boost/mpl/aux_/config/use_preprocessed.hpp:
+
+/usr/include/boost/mpl/aux_/value_wknd.hpp:
+
+/usr/include/c++/12/bits/exception.h:
+
+/usr/include/boost/preprocessor/enum_params.hpp:
+
+/usr/include/boost/preprocessor/seq/enum.hpp:
+
+/usr/include/boost/preprocessor/facilities/expand.hpp:
+
 /usr/include/c++/12/bits/hashtable_policy.h:
 
 /usr/include/boost/preprocessor/repeat.hpp:
@@ -4142,6 +4158,14 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/template_arity.hpp:
 
+/usr/include/boost/predef/library/c/_prefix.h:
+
+/usr/include/c++/12/ctime:
+
+/usr/include/c++/12/bits/basic_ios.tcc:
+
+/usr/include/boost/date_time/time_duration.hpp:
+
 /usr/include/c++/12/bits/streambuf_iterator.h:
 
 /usr/include/boost/date_time/posix_time/posix_time_io.hpp:
@@ -4149,8 +4173,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 /usr/include/c++/12/bits/locale_facets.h:
 
 /usr/include/c++/12/string_view:
-
-/usr/include/boost/current_function.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/getopt_posix.h:
 
@@ -4165,6 +4187,12 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 /usr/include/boost/iterator/minimum_category.hpp:
 
 /usr/include/boost/mpl/limits/arity.hpp:
+
+/usr/include/boost/algorithm/string/predicate.hpp:
+
+/usr/include/c++/12/tr1/gamma.tcc:
+
+/usr/include/boost/mpl/aux_/config/eti.hpp:
 
 /usr/include/c++/12/streambuf:
 
@@ -4244,6 +4272,12 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/x86_64-linux-gnu/bits/waitflags.h:
 
+/usr/include/boost/date_time/dst_rules.hpp:
+
+/usr/include/boost/mpl/aux_/push_back_impl.hpp:
+
+/usr/include/c++/12/bits/sstream.tcc:
+
 /usr/include/boost/mpl/O1_size.hpp:
 
 /usr/include/c++/12/cstdlib:
@@ -4253,6 +4287,12 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 /usr/include/c++/12/ext/string_conversions.h:
 
 /usr/include/boost/preprocessor/facilities/identity.hpp:
+
+/usr/include/c++/12/tr1/modified_bessel_func.tcc:
+
+/usr/include/boost/preprocessor/cat.hpp:
+
+/usr/include/boost/mpl/aux_/config/has_xxx.hpp:
 
 /usr/include/boost/detail/lcast_precision.hpp:
 
@@ -4272,6 +4312,16 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/c++/12/bits/alloc_traits.h:
 
+/usr/include/boost/algorithm/string/join.hpp:
+
+/usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h:
+
+/usr/include/c++/12/iomanip:
+
+/usr/include/boost/type_traits/function_traits.hpp:
+
+/usr/include/c++/12/debug/debug.h:
+
 /usr/include/x86_64-linux-gnu/bits/time64.h:
 
 /usr/include/c++/12/bits/hash_bytes.h:
@@ -4286,8 +4336,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/c++/12/bits/stl_pair.h:
 
-/usr/include/c++/12/tr1/exp_integral.tcc:
-
 /usr/include/boost/mpl/front_inserter.hpp:
 
 /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Bicycle.h:
@@ -4295,10 +4343,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 /usr/include/boost/preprocessor/list/detail/fold_left.hpp:
 
 /usr/include/boost/mpl/if.hpp:
-
-/usr/include/boost/mpl/aux_/has_type.hpp:
-
-/usr/include/boost/type_traits/remove_const.hpp:
 
 /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Vehicle.h:
 
@@ -4348,8 +4392,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/c++/12/bits/locale_classes.h:
 
-/usr/include/c++/12/tr1/poly_hermite.tcc:
-
 /usr/include/boost/concept/usage.hpp:
 
 /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h:
@@ -4359,12 +4401,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 /usr/include/boost/range/detail/msvc_has_iterator_workaround.hpp:
 
 /usr/include/c++/12/ext/numeric_traits.h:
-
-/usr/include/boost/assert.hpp:
-
-/usr/include/c++/12/bits/nested_exception.h:
-
-/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
 
 /usr/include/boost/mpl/aux_/config/ctps.hpp:
 
@@ -4393,6 +4429,10 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 /usr/include/x86_64-linux-gnu/sys/select.h:
 
 /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h:
+
+/usr/include/boost/mpl/empty_fwd.hpp:
+
+/usr/include/c++/12/bits/quoted_string.h:
 
 /usr/include/boost/preprocessor/iteration/detail/bounds/upper1.hpp:
 
@@ -4430,8 +4470,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/c++/12/type_traits:
 
-/usr/include/c++/12/tr1/beta_function.tcc:
-
 /usr/include/c++/12/backward/auto_ptr.h:
 
 /home/student/CLionProjects/start/kosowski/workshop/library/include/model/Car.h:
@@ -4455,14 +4493,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 /usr/include/boost/config/workaround.hpp:
 
 /usr/include/c++/12/bits/locale_classes.tcc:
-
-/usr/include/c++/12/bits/exception.h:
-
-/usr/include/boost/preprocessor/enum_params.hpp:
-
-/usr/include/boost/preprocessor/seq/enum.hpp:
-
-/usr/include/boost/preprocessor/facilities/expand.hpp:
 
 /usr/include/boost/mpl/aux_/preprocessed/gcc/advance_backward.hpp:
 
@@ -4597,6 +4627,24 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 /usr/include/boost/preprocessor/tuple/elem.hpp:
 
 /usr/include/c++/12/bits/ios_base.h:
+
+/usr/include/c++/12/ext/slist:
+
+/usr/include/c++/12/cwchar:
+
+/usr/include/c++/12/bits/shared_ptr.h:
+
+/usr/include/c++/12/tr1/bessel_function.tcc:
+
+/usr/include/c++/12/bits/nested_exception.h:
+
+/usr/include/x86_64-linux-gnu/bits/types/__FILE.h:
+
+/usr/include/boost/assert.hpp:
+
+/usr/include/boost/mpl/list/aux_/O1_size.hpp:
+
+/usr/include/boost/preprocessor/arithmetic/sub.hpp:
 
 /usr/include/boost/date_time/date_names_put.hpp:
 
@@ -4768,6 +4816,10 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h:
 
+/usr/include/libintl.h:
+
+/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
+
 /usr/include/boost/type_traits/has_right_shift.hpp:
 
 /usr/include/boost/date_time/format_date_parser.hpp:
@@ -4779,10 +4831,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 /usr/include/boost/algorithm/string/formatter.hpp:
 
 /usr/include/boost/type_traits/add_rvalue_reference.hpp:
-
-/usr/include/boost/type_traits/detail/yes_no_type.hpp:
-
-/usr/include/c++/12/initializer_list:
 
 /usr/include/strings.h:
 
@@ -4821,14 +4869,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 /usr/include/boost/config/no_tr1/cmath.hpp:
 
 /usr/include/boost/date_time/gregorian/gregorian_types.hpp:
-
-/usr/include/x86_64-linux-gnu/bits/wordsize.h:
-
-/usr/include/x86_64-linux-gnu/c++/12/bits/messages_members.h:
-
-/usr/include/boost/type_traits/add_volatile.hpp:
-
-/usr/include/c++/12/bits/codecvt.h:
 
 /usr/include/c++/12/bits/stringfwd.h:
 
@@ -4876,16 +4916,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/boost/type_traits/is_integral.hpp:
 
-/usr/include/boost/type_traits/function_traits.hpp:
-
-/usr/include/c++/12/debug/debug.h:
-
-/usr/include/boost/algorithm/string/join.hpp:
-
-/usr/lib/gcc/x86_64-linux-gnu/12/include/syslimits.h:
-
-/usr/include/c++/12/iomanip:
-
 /usr/include/c++/12/ext/atomicity.h:
 
 /usr/include/boost/cstdint.hpp:
@@ -4926,6 +4956,28 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/c++/12/bits/basic_string.h:
 
+/usr/include/c++/12/bits/specfun.h:
+
+/usr/include/boost/type_traits/remove_const.hpp:
+
+/usr/include/boost/mpl/aux_/has_type.hpp:
+
+/usr/include/c++/12/tr1/beta_function.tcc:
+
+/usr/include/c++/12/initializer_list:
+
+/usr/include/boost/type_traits/detail/yes_no_type.hpp:
+
+/usr/include/c++/12/tr1/exp_integral.tcc:
+
+/usr/include/boost/numeric/conversion/bounds.hpp:
+
+/usr/include/c++/12/tr1/legendre_function.tcc:
+
+/usr/include/c++/12/tr1/poly_hermite.tcc:
+
+/usr/include/c++/12/tr1/poly_laguerre.tcc:
+
 /usr/include/boost/array.hpp:
 
 /usr/include/boost/core/enable_if.hpp:
@@ -4953,10 +5005,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 /usr/include/boost/type_traits/integral_constant.hpp:
 
 /usr/include/boost/date_time/time_resolution_traits.hpp:
-
-/usr/include/boost/predef/library/c/_prefix.h:
-
-/usr/include/c++/12/ctime:
 
 /usr/include/c++/12/bits/locale_facets_nonio.h:
 
@@ -5040,16 +5088,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/boost/date_time/date_generators.hpp:
 
-/usr/include/boost/date_time/dst_rules.hpp:
-
-/usr/include/boost/mpl/aux_/push_back_impl.hpp:
-
-/usr/include/c++/12/bits/sstream.tcc:
-
-/usr/include/x86_64-linux-gnu/bits/thread-shared-types.h:
-
-/usr/include/libintl.h:
-
 /usr/include/boost/bind/mem_fn_template.hpp:
 
 /usr/include/boost/move/detail/std_ns_begin.hpp:
@@ -5089,18 +5127,6 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 /usr/include/boost/date_time/period.hpp:
 
 /usr/include/boost/io/ios_state.hpp:
-
-/usr/include/boost/date_time.hpp:
-
-/usr/include/boost/mpl/aux_/config/use_preprocessed.hpp:
-
-/usr/include/boost/mpl/aux_/value_wknd.hpp:
-
-/usr/include/c++/12/bits/locale_facets_nonio.tcc:
-
-/usr/include/boost/mpl/empty_fwd.hpp:
-
-/usr/include/c++/12/bits/quoted_string.h:
 
 /usr/include/c++/12/bits/stl_vector.h:
 
@@ -5174,9 +5200,9 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/boost/mpl/int.hpp:
 
-/usr/include/boost/type_traits/remove_reference.hpp:
-
 /usr/include/x86_64-linux-gnu/c++/12/bits/time_members.h:
+
+/usr/include/boost/type_traits/remove_reference.hpp:
 
 /usr/include/boost/preprocessor/array/data.hpp:
 
@@ -5380,9 +5406,9 @@ library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o: /home/student/CLionProje
 
 /usr/include/c++/12/ext/aligned_buffer.h:
 
-/usr/include/stdlib.h:
-
 /usr/include/boost/date_time/locale_config.hpp:
+
+/usr/include/stdlib.h:
 
 /usr/include/boost/type_traits/remove_pointer.hpp:
 

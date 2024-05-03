@@ -1,5 +1,6 @@
 #include "model/Car.h"
 #include <string>
+#include <iomanip>
 
 Car::Car(const std::string &carPNumber, const unsigned int &carBPrice, const int &carEDisplac, SegmentType carSegment): MotorVehivle(carPNumber, carBPrice, carEDisplac){
     segment = carSegment;
@@ -26,6 +27,9 @@ double Car::getActualRentalPrice() const{
         default:
             break;
     }
+    std::stringstream stream;
+    stream << std::fixed << std::setprecision(2) << actualPrice;
+    actualPrice = std::stod(stream.str());
     return actualPrice;
 }
 
