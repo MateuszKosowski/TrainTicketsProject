@@ -15,6 +15,7 @@ set(SOURCE_FILES
         src/repositories/ClientRepository.cpp
         src/repositories/RentRepository.cpp
         src/repositories/VehicleRepository.cpp
+        src/StorageContainer.cpp
 )
 # Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h
 add_library(Library ${SOURCE_FILES})
@@ -42,6 +43,7 @@ set(SOURCE_TEST_FILES
         test/AddressTest.cpp
         test/RentTest.cpp
         test/VehicleTest.cpp
+        test/StorageContainerTest.cpp
 ) # tu w przyszłości będą dodawane pliki źródłowe testów
 
 add_executable (LibraryTester ${SOURCE_TEST_FILES})

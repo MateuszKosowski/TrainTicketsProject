@@ -171,6 +171,30 @@ check/fast:
 	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/check.dir/build.make library/CMakeFiles/check.dir/build
 .PHONY : check/fast
 
+src/StorageContainer.o: src/StorageContainer.cpp.o
+.PHONY : src/StorageContainer.o
+
+# target to build an object file
+src/StorageContainer.cpp.o:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/StorageContainer.cpp.o
+.PHONY : src/StorageContainer.cpp.o
+
+src/StorageContainer.i: src/StorageContainer.cpp.i
+.PHONY : src/StorageContainer.i
+
+# target to preprocess a source file
+src/StorageContainer.cpp.i:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/StorageContainer.cpp.i
+.PHONY : src/StorageContainer.cpp.i
+
+src/StorageContainer.s: src/StorageContainer.cpp.s
+.PHONY : src/StorageContainer.s
+
+# target to generate assembly for a file
+src/StorageContainer.cpp.s:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/StorageContainer.cpp.s
+.PHONY : src/StorageContainer.cpp.s
+
 src/model/Address.o: src/model/Address.cpp.o
 .PHONY : src/model/Address.o
 
@@ -531,6 +555,30 @@ test/RentTest.cpp.s:
 	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.s
 .PHONY : test/RentTest.cpp.s
 
+test/StorageContainerTest.o: test/StorageContainerTest.cpp.o
+.PHONY : test/StorageContainerTest.o
+
+# target to build an object file
+test/StorageContainerTest.cpp.o:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/StorageContainerTest.cpp.o
+.PHONY : test/StorageContainerTest.cpp.o
+
+test/StorageContainerTest.i: test/StorageContainerTest.cpp.i
+.PHONY : test/StorageContainerTest.i
+
+# target to preprocess a source file
+test/StorageContainerTest.cpp.i:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/StorageContainerTest.cpp.i
+.PHONY : test/StorageContainerTest.cpp.i
+
+test/StorageContainerTest.s: test/StorageContainerTest.cpp.s
+.PHONY : test/StorageContainerTest.s
+
+# target to generate assembly for a file
+test/StorageContainerTest.cpp.s:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/StorageContainerTest.cpp.s
+.PHONY : test/StorageContainerTest.cpp.s
+
 test/VehicleTest.o: test/VehicleTest.cpp.o
 .PHONY : test/VehicleTest.o
 
@@ -591,6 +639,9 @@ help:
 	@echo "... check"
 	@echo "... Library"
 	@echo "... LibraryTester"
+	@echo "... src/StorageContainer.o"
+	@echo "... src/StorageContainer.i"
+	@echo "... src/StorageContainer.s"
 	@echo "... src/model/Address.o"
 	@echo "... src/model/Address.i"
 	@echo "... src/model/Address.s"
@@ -636,6 +687,9 @@ help:
 	@echo "... test/RentTest.o"
 	@echo "... test/RentTest.i"
 	@echo "... test/RentTest.s"
+	@echo "... test/StorageContainerTest.o"
+	@echo "... test/StorageContainerTest.i"
+	@echo "... test/StorageContainerTest.s"
 	@echo "... test/VehicleTest.o"
 	@echo "... test/VehicleTest.i"
 	@echo "... test/VehicleTest.s"

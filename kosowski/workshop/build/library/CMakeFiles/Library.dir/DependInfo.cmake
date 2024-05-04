@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
+  "/home/student/CLionProjects/start/kosowski/workshop/library/src/StorageContainer.cpp" "library/CMakeFiles/Library.dir/src/StorageContainer.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/StorageContainer.cpp.o.d"
   "/home/student/CLionProjects/start/kosowski/workshop/library/src/model/Address.cpp" "library/CMakeFiles/Library.dir/src/model/Address.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/model/Address.cpp.o.d"
   "/home/student/CLionProjects/start/kosowski/workshop/library/src/model/Bicycle.cpp" "library/CMakeFiles/Library.dir/src/model/Bicycle.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/model/Bicycle.cpp.o.d"
   "/home/student/CLionProjects/start/kosowski/workshop/library/src/model/Car.cpp" "library/CMakeFiles/Library.dir/src/model/Car.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/model/Car.cpp.o.d"

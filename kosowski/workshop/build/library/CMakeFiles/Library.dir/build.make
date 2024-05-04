@@ -240,6 +240,20 @@ library/CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.s: cmake_f
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.s"
 	cd /home/student/CLionProjects/start/kosowski/workshop/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/VehicleRepository.cpp -o CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.s
 
+library/CMakeFiles/Library.dir/src/StorageContainer.cpp.o: library/CMakeFiles/Library.dir/flags.make
+library/CMakeFiles/Library.dir/src/StorageContainer.cpp.o: /home/student/CLionProjects/start/kosowski/workshop/library/src/StorageContainer.cpp
+library/CMakeFiles/Library.dir/src/StorageContainer.cpp.o: library/CMakeFiles/Library.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CLionProjects/start/kosowski/workshop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object library/CMakeFiles/Library.dir/src/StorageContainer.cpp.o"
+	cd /home/student/CLionProjects/start/kosowski/workshop/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT library/CMakeFiles/Library.dir/src/StorageContainer.cpp.o -MF CMakeFiles/Library.dir/src/StorageContainer.cpp.o.d -o CMakeFiles/Library.dir/src/StorageContainer.cpp.o -c /home/student/CLionProjects/start/kosowski/workshop/library/src/StorageContainer.cpp
+
+library/CMakeFiles/Library.dir/src/StorageContainer.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Library.dir/src/StorageContainer.cpp.i"
+	cd /home/student/CLionProjects/start/kosowski/workshop/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/CLionProjects/start/kosowski/workshop/library/src/StorageContainer.cpp > CMakeFiles/Library.dir/src/StorageContainer.cpp.i
+
+library/CMakeFiles/Library.dir/src/StorageContainer.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Library.dir/src/StorageContainer.cpp.s"
+	cd /home/student/CLionProjects/start/kosowski/workshop/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/CLionProjects/start/kosowski/workshop/library/src/StorageContainer.cpp -o CMakeFiles/Library.dir/src/StorageContainer.cpp.s
+
 # Object files for target Library
 Library_OBJECTS = \
 "CMakeFiles/Library.dir/src/model/Client.cpp.o" \
@@ -253,7 +267,8 @@ Library_OBJECTS = \
 "CMakeFiles/Library.dir/src/model/ClientType.cpp.o" \
 "CMakeFiles/Library.dir/src/repositories/ClientRepository.cpp.o" \
 "CMakeFiles/Library.dir/src/repositories/RentRepository.cpp.o" \
-"CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.o"
+"CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.o" \
+"CMakeFiles/Library.dir/src/StorageContainer.cpp.o"
 
 # External object files for target Library
 Library_EXTERNAL_OBJECTS =
@@ -270,9 +285,10 @@ library/libLibrary.a: library/CMakeFiles/Library.dir/src/model/ClientType.cpp.o
 library/libLibrary.a: library/CMakeFiles/Library.dir/src/repositories/ClientRepository.cpp.o
 library/libLibrary.a: library/CMakeFiles/Library.dir/src/repositories/RentRepository.cpp.o
 library/libLibrary.a: library/CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.o
+library/libLibrary.a: library/CMakeFiles/Library.dir/src/StorageContainer.cpp.o
 library/libLibrary.a: library/CMakeFiles/Library.dir/build.make
 library/libLibrary.a: library/CMakeFiles/Library.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/CLionProjects/start/kosowski/workshop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking CXX static library libLibrary.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/CLionProjects/start/kosowski/workshop/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking CXX static library libLibrary.a"
 	cd /home/student/CLionProjects/start/kosowski/workshop/build/library && $(CMAKE_COMMAND) -P CMakeFiles/Library.dir/cmake_clean_target.cmake
 	cd /home/student/CLionProjects/start/kosowski/workshop/build/library && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Library.dir/link.txt --verbose=$(VERBOSE)
 

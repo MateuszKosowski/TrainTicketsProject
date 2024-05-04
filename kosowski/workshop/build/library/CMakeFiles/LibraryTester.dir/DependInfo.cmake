@@ -11,6 +11,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/student/CLionProjects/start/kosowski/workshop/library/test/AddressTest.cpp" "library/CMakeFiles/LibraryTester.dir/test/AddressTest.cpp.o" "gcc" "library/CMakeFiles/LibraryTester.dir/test/AddressTest.cpp.o.d"
   "/home/student/CLionProjects/start/kosowski/workshop/library/test/ClientTest.cpp" "library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.o" "gcc" "library/CMakeFiles/LibraryTester.dir/test/ClientTest.cpp.o.d"
   "/home/student/CLionProjects/start/kosowski/workshop/library/test/RentTest.cpp" "library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.o" "gcc" "library/CMakeFiles/LibraryTester.dir/test/RentTest.cpp.o.d"
+  "/home/student/CLionProjects/start/kosowski/workshop/library/test/StorageContainerTest.cpp" "library/CMakeFiles/LibraryTester.dir/test/StorageContainerTest.cpp.o" "gcc" "library/CMakeFiles/LibraryTester.dir/test/StorageContainerTest.cpp.o.d"
   "/home/student/CLionProjects/start/kosowski/workshop/library/test/VehicleTest.cpp" "library/CMakeFiles/LibraryTester.dir/test/VehicleTest.cpp.o" "gcc" "library/CMakeFiles/LibraryTester.dir/test/VehicleTest.cpp.o.d"
   "/home/student/CLionProjects/start/kosowski/workshop/library/test/master.cpp" "library/CMakeFiles/LibraryTester.dir/test/master.cpp.o" "gcc" "library/CMakeFiles/LibraryTester.dir/test/master.cpp.o.d"
   )
