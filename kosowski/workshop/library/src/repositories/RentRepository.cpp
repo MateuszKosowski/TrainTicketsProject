@@ -33,3 +33,13 @@ std::string RentRepository::report() {
 int RentRepository::size() {
     return allRents.size();
 }
+
+std::vector<RentPtr> RentRepository::findBy(RentPredicate predicate) const {
+    std::vector<RentPtr> found;
+    for (const auto& rent : allRents) {
+        if (rent != nullptr && predicate(rent)) {
+            found.push_back(rent);
+        }
+    }
+    return found;
+}

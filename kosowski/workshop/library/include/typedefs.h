@@ -24,3 +24,7 @@ typedef MotorVehicle* MotorVehiclePtr;
 typedef Bicycle* BicyclePtr;
 typedef Car*  CarPtr;
 typedef ClientType* ClientTypePtr;
+typedef bool (*ClientPredicate)(ClientPtr);
+typedef bool (*VehiclePredicate)(VehiclePtr);
+typedef bool (*RentPredicate)(RentPtr);
+

@@ -34,3 +34,18 @@ std::string ClientRepository::report() {
 int ClientRepository::size() {
     return allClients.size();
 }
+
+std::vector<ClientPtr> ClientRepository::findBy(ClientPredicate predicate) const {
+    std::vector<ClientPtr> found;
+    for (const auto& client : allClients) {
+        if (client != nullptr && predicate(client)) {
+            found.push_back(client);
+        }
+    }
+    return found;
+}
+
+
+
+
+

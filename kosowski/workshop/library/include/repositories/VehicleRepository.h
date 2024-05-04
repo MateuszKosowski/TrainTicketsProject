@@ -12,6 +12,8 @@ public:
     void remove(VehiclePtr vehicle);
     std::string report();
     int size();
+    std::vector<VehiclePtr> findBy(VehiclePredicate predicate) const;
+
 
 private:
     std::vector<VehiclePtr> allVehicles;
