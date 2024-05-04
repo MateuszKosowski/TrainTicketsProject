@@ -4616,3 +4616,11 @@ library/CMakeFiles/Library.dir/src/repositories/ClientRepository.cpp.o
  /usr/include/boost/algorithm/string/join.hpp
  /home/student/CLionProjects/start/kosowski/workshop/library/include/model/ClientType.h
 
+library/CMakeFiles/Library.dir/src/repositories/RentRepository.cpp.o
+ /home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/RentRepository.cpp
+ /usr/include/stdc-predef.h
+
+library/CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.o
+ /home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/VehicleRepository.cpp
+ /usr/include/stdc-predef.h
+

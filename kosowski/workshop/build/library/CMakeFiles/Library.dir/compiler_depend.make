@@ -4606,6 +4606,12 @@ library/CMakeFiles/Library.dir/src/repositories/ClientRepository.cpp.o: /home/st
   /usr/include/boost/algorithm/string/join.hpp \
   /home/student/CLionProjects/start/kosowski/workshop/library/include/model/ClientType.h
 
+library/CMakeFiles/Library.dir/src/repositories/RentRepository.cpp.o: /home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/RentRepository.cpp \
+  /usr/include/stdc-predef.h
+
+library/CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.o: /home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/VehicleRepository.cpp \
+  /usr/include/stdc-predef.h
+
 
 /home/student/CLionProjects/start/kosowski/workshop/library/include/repositories/ClientRepository.h:
 
@@ -5146,6 +5152,8 @@ library/CMakeFiles/Library.dir/src/repositories/ClientRepository.cpp.o: /home/st
 /usr/include/boost/type_traits/make_void.hpp:
 
 /usr/include/boost/type_traits/detail/has_binary_operator.hpp:
+
+/home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/RentRepository.cpp:
 
 /usr/include/boost/range/algorithm/equal.hpp:
 
@@ -6496,6 +6504,8 @@ library/CMakeFiles/Library.dir/src/repositories/ClientRepository.cpp.o: /home/st
 /usr/include/boost/range/iterator_range.hpp:
 
 /usr/include/boost/range/functions.hpp:
+
+/home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/VehicleRepository.cpp:
 
 /usr/include/boost/type_traits/is_float.hpp:
 
