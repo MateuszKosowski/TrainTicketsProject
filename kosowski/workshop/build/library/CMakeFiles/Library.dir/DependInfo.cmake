@@ -17,6 +17,9 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/student/CLionProjects/start/kosowski/workshop/library/src/model/MotorVehicle.cpp" "library/CMakeFiles/Library.dir/src/model/MotorVehicle.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/model/MotorVehicle.cpp.o.d"
   "/home/student/CLionProjects/start/kosowski/workshop/library/src/model/Rent.cpp" "library/CMakeFiles/Library.dir/src/model/Rent.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/model/Rent.cpp.o.d"
   "/home/student/CLionProjects/start/kosowski/workshop/library/src/model/Vehicle.cpp" "library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.o.d"
+  "/home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/ClientRepository.cpp" "library/CMakeFiles/Library.dir/src/repositories/ClientRepository.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/repositories/ClientRepository.cpp.o.d"
+  "/home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/RentRepository.cpp" "library/CMakeFiles/Library.dir/src/repositories/RentRepository.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/repositories/RentRepository.cpp.o.d"
+  "/home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/VehicleRepository.cpp" "library/CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.o" "gcc" "library/CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.o.d"
   )
 
 # Targets to which this target links.

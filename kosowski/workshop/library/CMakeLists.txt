@@ -12,6 +12,9 @@ set(SOURCE_FILES
         src/model/Moped.cpp
         src/model/Car.cpp
         src/model/ClientType.cpp
+        src/repositories/ClientRepository.cpp
+        src/repositories/RentRepository.cpp
+        src/repositories/VehicleRepository.cpp
 )
 # Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h
 add_library(Library ${SOURCE_FILES})

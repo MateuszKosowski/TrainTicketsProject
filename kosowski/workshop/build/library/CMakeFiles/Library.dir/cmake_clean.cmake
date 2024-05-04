@@ -17,6 +17,12 @@ file(REMOVE_RECURSE
   "CMakeFiles/Library.dir/src/model/Rent.cpp.o.d"
   "CMakeFiles/Library.dir/src/model/Vehicle.cpp.o"
   "CMakeFiles/Library.dir/src/model/Vehicle.cpp.o.d"
+  "CMakeFiles/Library.dir/src/repositories/ClientRepository.cpp.o"
+  "CMakeFiles/Library.dir/src/repositories/ClientRepository.cpp.o.d"
+  "CMakeFiles/Library.dir/src/repositories/RentRepository.cpp.o"
+  "CMakeFiles/Library.dir/src/repositories/RentRepository.cpp.o.d"
+  "CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.o"
+  "CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.o.d"
   "libLibrary.a"
   "libLibrary.pdb"
 )

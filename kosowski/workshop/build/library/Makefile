@@ -387,6 +387,78 @@ src/model/Vehicle.cpp.s:
 	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Vehicle.cpp.s
 .PHONY : src/model/Vehicle.cpp.s
 
+src/repositories/ClientRepository.o: src/repositories/ClientRepository.cpp.o
+.PHONY : src/repositories/ClientRepository.o
+
+# target to build an object file
+src/repositories/ClientRepository.cpp.o:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/repositories/ClientRepository.cpp.o
+.PHONY : src/repositories/ClientRepository.cpp.o
+
+src/repositories/ClientRepository.i: src/repositories/ClientRepository.cpp.i
+.PHONY : src/repositories/ClientRepository.i
+
+# target to preprocess a source file
+src/repositories/ClientRepository.cpp.i:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/repositories/ClientRepository.cpp.i
+.PHONY : src/repositories/ClientRepository.cpp.i
+
+src/repositories/ClientRepository.s: src/repositories/ClientRepository.cpp.s
+.PHONY : src/repositories/ClientRepository.s
+
+# target to generate assembly for a file
+src/repositories/ClientRepository.cpp.s:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/repositories/ClientRepository.cpp.s
+.PHONY : src/repositories/ClientRepository.cpp.s
+
+src/repositories/RentRepository.o: src/repositories/RentRepository.cpp.o
+.PHONY : src/repositories/RentRepository.o
+
+# target to build an object file
+src/repositories/RentRepository.cpp.o:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/repositories/RentRepository.cpp.o
+.PHONY : src/repositories/RentRepository.cpp.o
+
+src/repositories/RentRepository.i: src/repositories/RentRepository.cpp.i
+.PHONY : src/repositories/RentRepository.i
+
+# target to preprocess a source file
+src/repositories/RentRepository.cpp.i:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/repositories/RentRepository.cpp.i
+.PHONY : src/repositories/RentRepository.cpp.i
+
+src/repositories/RentRepository.s: src/repositories/RentRepository.cpp.s
+.PHONY : src/repositories/RentRepository.s
+
+# target to generate assembly for a file
+src/repositories/RentRepository.cpp.s:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/repositories/RentRepository.cpp.s
+.PHONY : src/repositories/RentRepository.cpp.s
+
+src/repositories/VehicleRepository.o: src/repositories/VehicleRepository.cpp.o
+.PHONY : src/repositories/VehicleRepository.o
+
+# target to build an object file
+src/repositories/VehicleRepository.cpp.o:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.o
+.PHONY : src/repositories/VehicleRepository.cpp.o
+
+src/repositories/VehicleRepository.i: src/repositories/VehicleRepository.cpp.i
+.PHONY : src/repositories/VehicleRepository.i
+
+# target to preprocess a source file
+src/repositories/VehicleRepository.cpp.i:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.i
+.PHONY : src/repositories/VehicleRepository.cpp.i
+
+src/repositories/VehicleRepository.s: src/repositories/VehicleRepository.cpp.s
+.PHONY : src/repositories/VehicleRepository.s
+
+# target to generate assembly for a file
+src/repositories/VehicleRepository.cpp.s:
+	cd /home/student/CLionProjects/start/kosowski/workshop/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.s
+.PHONY : src/repositories/VehicleRepository.cpp.s
+
 test/AddressTest.o: test/AddressTest.cpp.o
 .PHONY : test/AddressTest.o
 
@@ -546,6 +618,15 @@ help:
 	@echo "... src/model/Vehicle.o"
 	@echo "... src/model/Vehicle.i"
 	@echo "... src/model/Vehicle.s"
+	@echo "... src/repositories/ClientRepository.o"
+	@echo "... src/repositories/ClientRepository.i"
+	@echo "... src/repositories/ClientRepository.s"
+	@echo "... src/repositories/RentRepository.o"
+	@echo "... src/repositories/RentRepository.i"
+	@echo "... src/repositories/RentRepository.s"
+	@echo "... src/repositories/VehicleRepository.o"
+	@echo "... src/repositories/VehicleRepository.i"
+	@echo "... src/repositories/VehicleRepository.s"
 	@echo "... test/AddressTest.o"
 	@echo "... test/AddressTest.i"
 	@echo "... test/AddressTest.s"

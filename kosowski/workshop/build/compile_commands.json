@@ -46,6 +46,21 @@
 },
 {
   "directory": "/home/student/CLionProjects/start/kosowski/workshop/build/library",
+  "command": "/usr/bin/g++  -I/home/student/CLionProjects/start/kosowski/workshop/library/include -g3 -gdwarf-4 -Wall -Wextra -Werror -std=gnu++17 -o CMakeFiles/Library.dir/src/repositories/ClientRepository.cpp.o -c /home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/ClientRepository.cpp",
+  "file": "/home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/ClientRepository.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/start/kosowski/workshop/build/library",
+  "command": "/usr/bin/g++  -I/home/student/CLionProjects/start/kosowski/workshop/library/include -g3 -gdwarf-4 -Wall -Wextra -Werror -std=gnu++17 -o CMakeFiles/Library.dir/src/repositories/RentRepository.cpp.o -c /home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/RentRepository.cpp",
+  "file": "/home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/RentRepository.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/start/kosowski/workshop/build/library",
+  "command": "/usr/bin/g++  -I/home/student/CLionProjects/start/kosowski/workshop/library/include -g3 -gdwarf-4 -Wall -Wextra -Werror -std=gnu++17 -o CMakeFiles/Library.dir/src/repositories/VehicleRepository.cpp.o -c /home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/VehicleRepository.cpp",
+  "file": "/home/student/CLionProjects/start/kosowski/workshop/library/src/repositories/VehicleRepository.cpp"
+},
+{
+  "directory": "/home/student/CLionProjects/start/kosowski/workshop/build/library",
   "command": "/usr/bin/g++ -DBOOST_ALL_NO_LIB -DBOOST_UNIT_TEST_FRAMEWORK_DYN_LINK -I/home/student/CLionProjects/start/kosowski/workshop/library/include -g3 -gdwarf-4 -Wall -Wextra -Werror -std=gnu++17 -o CMakeFiles/LibraryTester.dir/test/master.cpp.o -c /home/student/CLionProjects/start/kosowski/workshop/library/test/master.cpp",
   "file": "/home/student/CLionProjects/start/kosowski/workshop/library/test/master.cpp"
 },
