@@ -11,7 +11,7 @@
  * Klasa jest abstrakcyjna i zawiera czysto wirtualne metody, które muszą być zaimplementowane przez klasy pochodne.
  */
 
-class ClientType {
+class ClientType{
 public:
     /**
      * \brief Wirtualny destruktor.

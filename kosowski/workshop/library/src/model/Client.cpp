@@ -27,7 +27,7 @@ RentPtr Client::getCurrentRents() const {
     }
 }
 
-std::vector<Rent*>& Client::getAllRents() {
+std::vector<RentPtr>& Client::getAllRents() {
     return currentRents;
 }
 
@@ -81,14 +81,14 @@ void Client::setPersonalID(const std::string& id) {
     }
 }
 
-void Client::setAddress(Address *addr) {
+void Client::setAddress(AddressPtr addr) {
 
     if(addr != nullptr){
         address = addr;
     }
 }
 
-void Client::pushCurrentRents(Rent *varCurrentRents) {
+void Client::pushCurrentRents(RentPtr varCurrentRents) {
     if (varCurrentRents != nullptr){
         currentRents.push_back(varCurrentRents);
     }
@@ -101,7 +101,7 @@ void Client::setClientType(const ClientTypePtr clientType) {
 //----------------------------------------------------
 
 // Constructor and Destructor implementation
-Client::Client(const std::string& str1, const std::string& str2, const std::string& str3, Address *addr, ClientTypePtr ctype){
+Client::Client(const std::string& str1, const std::string& str2, const std::string& str3, AddressPtr addr, ClientTypePtr ctype){
     firstName = str1;
     lastName = str2;
     personalID = str3;

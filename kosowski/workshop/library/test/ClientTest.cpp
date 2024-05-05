@@ -12,20 +12,14 @@ struct TestClientFixture {
     AddressPtr Example2;
 
     TestClientFixture() {
-        BMX = new Bicycle("JD 4290", 3999);
-        Example = new Address("Lodz", "Anielska", "13");
-        Tester = new Client("Jacek", "Rambo", "3", Example, new Bronze);
-        A = new Rent(1, Tester, BMX, pt::not_a_date_time);
-        Example2 = new Address("Gdynia", "Widzewska", "18");
+        BMX = std::make_shared<Bicycle>("JD 4290", 3999);
+        Example = std::make_shared<Address>("Lodz", "Anielska", "13");
+        Tester = std::make_shared<Client>("Jacek", "Rambo", "3", Example, std::make_shared<Bronze>());
+        A = std::make_shared<Rent>(1, Tester, BMX, pt::not_a_date_time);
+        Example2 = std::make_shared<Address>("Gdynia", "Widzewska", "18");
     }
 
-    ~TestClientFixture(){
-        delete Example2;
-        delete A;
-        delete Tester;
-        delete Example;
-        delete BMX;
-    }
+    ~TestClientFixture(){}
 };
 
 BOOST_FIXTURE_TEST_SUITE(ClientTest, TestClientFixture)
@@ -105,7 +99,7 @@ BOOST_FIXTURE_TEST_SUITE(ClientTest, TestClientFixture)
                 Tester->applyDiscount(BMX->getActualRentalPrice()) == 3996
         );
 
-        Tester->setClientType(new Gold);
+        Tester->setClientType(std::make_shared<Gold>());
         BOOST_TEST(
                 Tester->getMaxVehicles() == 4
         );

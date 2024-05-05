@@ -2,6 +2,7 @@
 #include "model/Client.h"
 #include "model/Bicycle.h"
 #include "StorageContainer.h"
+#include <memory>
 
 namespace btt = boost::test_tools;
 

@@ -3,6 +3,7 @@
 
 #include "model/Address.h"
 #include "model/Vehicle.h"
+#include <memory>
 
 // Deklaracja wstępna
 class Client;
@@ -15,15 +16,15 @@ class Car;
 class ClientType;
 
 // Aliasy do nazw, Np: wkaźnik do obiektu typu Address: Address* , można teraz zapisać jako AddressPtr
-typedef Address *AddressPtr;
-typedef Client *ClientPtr;
-typedef Rent *RentPtr;
-typedef Vehicle* VehiclePtr;
-typedef Moped* MopedPtr;
-typedef MotorVehicle* MotorVehiclePtr;
-typedef Bicycle* BicyclePtr;
-typedef Car*  CarPtr;
-typedef ClientType* ClientTypePtr;
+typedef std::shared_ptr<Address> AddressPtr;
+typedef std::shared_ptr<Client> ClientPtr;
+typedef std::shared_ptr<Rent> RentPtr;
+typedef std::shared_ptr<Vehicle> VehiclePtr;
+typedef std::shared_ptr<Moped> MopedPtr;
+typedef std::shared_ptr<MotorVehicle> MotorVehiclePtr;
+typedef std::shared_ptr<Bicycle> BicyclePtr;
+typedef std::shared_ptr<Car> CarPtr;
+typedef std::shared_ptr<ClientType> ClientTypePtr;
 typedef bool (*ClientPredicate)(ClientPtr);
 typedef bool (*VehiclePredicate)(VehiclePtr);
 typedef bool (*RentPredicate)(RentPtr);

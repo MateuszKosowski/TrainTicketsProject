@@ -14,7 +14,7 @@ class Client;
 /**
  * @brief Klasa reprezentująca wypożyczenie pojazdu przez klienta.
  */
-class Rent{
+class Rent : public std::enable_shared_from_this<Rent>{
 private:
     unsigned id;        /**< Numer identyfikacyjny wypożyczenia */
     ClientPtr client;   /**< Klient dokonujący wypożyczenia */
