@@ -31,6 +31,12 @@ struct TestContainerFixture {
     }
 };
 
+bool testIdEqualTo3(ClientPtr ptr)
+{
+    return ptr->getPersonalID() == "3";
+}
+
+
 BOOST_FIXTURE_TEST_SUITE(ContainerTest, TestContainerFixture)
 
     BOOST_AUTO_TEST_CASE(ClientRepositoryTests) {
@@ -46,6 +52,11 @@ BOOST_FIXTURE_TEST_SUITE(ContainerTest, TestContainerFixture)
         BOOST_TEST(
                 storage.getClientRepository()->report() == "\nFirst Name: Jan,\nLast Name: Kowalski,\nPersonal ID: 05302080557,\nAddress: \nCity: Lodz,\nStreet: Piotrkowska,\nNumber: 20\n\nFirst Name: Jacek,\nLast Name: Rambo,\nPersonal ID: 3,\nAddress: \nCity: Warszawa,\nStreet: Anielska,\nNumber: 13\n"
         );
+        BOOST_TEST(
+                storage.getClientRepository()->findAll().size() == 2
+        );
+
+        BOOST_TEST(storage.getClientRepository()->findBy(testIdEqualTo3).size() == 1);
 
         storage.getClientRepository()->remove(Tester);
         BOOST_TEST(

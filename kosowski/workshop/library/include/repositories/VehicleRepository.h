@@ -13,6 +13,7 @@ public:
     std::string report();
     int size();
     std::vector<VehiclePtr> findBy(VehiclePredicate predicate) const;
+    std::vector<VehiclePtr> findAll() const;
 
 
 private:

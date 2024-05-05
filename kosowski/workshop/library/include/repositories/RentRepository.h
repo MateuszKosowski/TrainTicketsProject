@@ -13,6 +13,7 @@ public:
     std::string report();
     int size();
     std::vector<RentPtr> findBy(RentPredicate predicate) const;
+    std::vector<RentPtr> findAll() const;
 
 private:
     std::vector<RentPtr> allRents;

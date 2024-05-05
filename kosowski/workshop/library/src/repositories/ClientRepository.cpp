@@ -36,14 +36,21 @@ int ClientRepository::size() {
 }
 
 std::vector<ClientPtr> ClientRepository::findBy(ClientPredicate predicate) const {
-    std::vector<ClientPtr> found;
+    std::vector<ClientPtr> foundClietns;
     for (const auto& client : allClients) {
         if (client != nullptr && predicate(client)) {
-            found.push_back(client);
+            foundClietns.push_back(client);
         }
     }
-    return found;
+    return foundClietns;
 }
+
+std::vector<ClientPtr> ClientRepository::findAll() const {
+    // Lambda, która przyjmuje parametr typu Client* i zawsze zwraca true
+    return findBy([](ClientPtr client) { (void)client; return true; });
+}
+
+
 
 
 

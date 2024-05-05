@@ -13,6 +13,7 @@ public:
     std::string report();
     int size();
     std::vector<ClientPtr> findBy(ClientPredicate predicate) const;
+    std::vector<ClientPtr> findAll() const;
 
 
 private:

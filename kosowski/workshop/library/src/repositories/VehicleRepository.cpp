@@ -43,3 +43,7 @@ std::vector<VehiclePtr> VehicleRepository::findBy(VehiclePredicate predicate) co
     }
     return found;
 }
+
+std::vector<VehiclePtr> VehicleRepository::findAll() const {
+    return findBy([](VehiclePtr vehicle) { (void)vehicle; return true; });
+}

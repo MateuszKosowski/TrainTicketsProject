@@ -43,3 +43,7 @@ std::vector<RentPtr> RentRepository::findBy(RentPredicate predicate) const {
     }
     return found;
 }
+
+std::vector<RentPtr> RentRepository::findAll() const {
+    return findBy([](RentPtr rent) { (void)rent; return true; });
+}
