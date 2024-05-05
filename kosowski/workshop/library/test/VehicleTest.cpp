@@ -16,24 +16,16 @@ struct TestVehicleFixture {
     RentPtr A;
 
     TestVehicleFixture() {
-        bmw = new Car("JD 4290", 3999, 3000, E);
-        audi = new Car("AA 9999", 5999, 4000, D);
-        bmx = new Bicycle("UA 2115", 799);
-        romet = new Moped("TY 5656", 1599, 1600);
-        Example = new Address("Lodz", "Anielska", "13");
-        Tester = new Client("Jacek", "Rambo", "3", Example, new Default);
-        A = new Rent(1, Tester, bmw, pt::ptime(gr::date(2024,04,28),pt::hours(20)+pt::minutes(0 )));
+        bmw = std::make_shared<Car>("JD 4290", 3999, 3000, E);
+        audi = std::make_shared<Car>("AA 9999", 5999, 4000, D);
+        bmx = std::make_shared<Bicycle>("UA 2115", 799);
+        romet = std::make_shared<Moped>("TY 5656", 1599, 1600);
+        Example = std::make_shared<Address>("Lodz", "Anielska", "13");
+        Tester = std::make_shared<Client>("Jacek", "Rambo", "3", Example, std::make_shared<Default>());
+        A = std::make_shared<Rent>(1, Tester, bmw, pt::ptime(gr::date(2024,04,28),pt::hours(20)+pt::minutes(0 )));
     }
 
-    ~TestVehicleFixture(){
-        delete A;
-        delete Tester;
-        delete Example;
-        delete romet;
-        delete bmx;
-        delete audi;
-        delete bmw;
-    }
+    ~TestVehicleFixture(){}
 };
 
 BOOST_FIXTURE_TEST_SUITE(VehicleTest, TestVehicleFixture)

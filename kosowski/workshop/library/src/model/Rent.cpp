@@ -103,6 +103,6 @@ Rent::Rent(const unsigned &number, ClientPtr obj_client, VehiclePtr obj_vehicle,
     }
     endTime = pt::not_a_date_time;
     rentCost = 0;
-    client->pushCurrentRents(shared_from_this());
+    //client->pushCurrentRents(shared_from_this());
 }
 Rent::~Rent(){}

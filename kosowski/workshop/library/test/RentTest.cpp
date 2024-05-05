@@ -11,21 +11,17 @@ struct TestRentFixture {
     RentPtr B;
 
     TestRentFixture() {
-        Car = new Bicycle("JD 4290", 3999);
-        Motorbike = new Bicycle("UA 2115", 799);
-        Example = new Address("Lodz", "Anielska", "13");
-        Tester = new Client("Jacek", "Rambo", "3", Example, new Default);
-        A = new Rent(1, Tester, Car, pt::ptime(gr::date(2024,04,28),pt::hours(20)+pt::minutes(0 )));
-        B = new Rent(2, Tester, Motorbike, pt::ptime(gr::date(2024,04,29),pt::hours(21)+pt::minutes(30 )));
+        Car = std::make_shared<Bicycle>("JD 4290", 3999);
+        Motorbike = std::make_shared<Bicycle>("UA 2115", 799);
+        Example = std::make_shared<Address>("Lodz", "Anielska", "13");
+        Tester = std::make_shared<Client>("Jacek", "Rambo", "3", Example, std::make_shared<Default>());
+        A = std::make_shared<Rent>(1, Tester, Car, pt::ptime(gr::date(2024,04,28),pt::hours(20)+pt::minutes(0 )));
+        B = std::make_shared<Rent>(2, Tester, Motorbike, pt::ptime(gr::date(2024,04,29),pt::hours(21)+pt::minutes(30 )));
+        Tester->pushCurrentRents(A);
+        Tester->pushCurrentRents(B);
     }
 
-    ~TestRentFixture(){
-        delete A;
-        delete B;
-        delete Tester;
-        delete Example;
-        delete Car;
-    }
+    ~TestRentFixture(){ }
 };
 
 BOOST_FIXTURE_TEST_SUITE(RentTest, TestRentFixture)
@@ -169,7 +165,7 @@ BOOST_FIXTURE_TEST_SUITE(RentTest, TestRentFixture)
     }
 
     BOOST_AUTO_TEST_CASE(ApplayClientTypeTest) {
-        Tester->setClientType(new Platinum);
+        Tester->setClientType(std::make_shared<Platinum>());
         A->endRent(pt::ptime(gr::date(2024,04,30),pt::hours(18)+pt::minutes(20 )));;
         BOOST_TEST(
                 A->getRentCost() == 7198

@@ -14,22 +14,17 @@ struct TestContainerFixture {
     StorageContainer storage;
 
     TestContainerFixture() {
-        BMX = new Bicycle("JD 4290", 4000);
-        Example = new Address("Warszawa", "Anielska", "13");
-        Tester = new Client("Jacek", "Rambo", "3", Example, new Bronze);
-        A = new Rent(1, Tester, BMX, pt::not_a_date_time);
+        BMX = std::make_shared<Bicycle>("JD 4290", 4000);
+        Example = std::make_shared<Address>("Warszawa", "Anielska", "13");
+        Tester = std::make_shared<Client>("Jacek", "Rambo", "3", Example, std::make_shared<Bronze>());
+        A = std::make_shared<Rent>(1, Tester, BMX, pt::not_a_date_time);
 
         storage.getClientRepository()->add(Tester);
         storage.getVehicleRepository()->add(BMX);
         storage.getRentRepository()->add(A);
     }
 
-    ~TestContainerFixture(){
-        delete A;
-        delete Tester;
-        delete Example;
-        delete BMX;
-    }
+    ~TestContainerFixture(){}
 };
 
 bool testIdEqualTo3(ClientPtr ptr)

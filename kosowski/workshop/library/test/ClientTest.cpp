@@ -17,6 +17,8 @@ struct TestClientFixture {
         Tester = std::make_shared<Client>("Jacek", "Rambo", "3", Example, std::make_shared<Bronze>());
         A = std::make_shared<Rent>(1, Tester, BMX, pt::not_a_date_time);
         Example2 = std::make_shared<Address>("Gdynia", "Widzewska", "18");
+
+        Tester->pushCurrentRents(A);
     }
 
     ~TestClientFixture(){}
