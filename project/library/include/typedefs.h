@@ -11,8 +11,10 @@
 
 class Train;
 class Handcar;
+class MotorTrain;
 
 typedef std::shared_ptr<Train> TrainPtr;
 typedef std::shared_ptr<Handcar> HandcarPtr;
+typedef std::shared_ptr<MotorTrain> MotorTrainPtr;
 
 #endif //TRAINTICKETS_TYPEDEFS_H

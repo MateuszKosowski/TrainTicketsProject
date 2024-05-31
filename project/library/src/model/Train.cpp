@@ -15,7 +15,9 @@ const std::string &Train::getTrainId() const {
 }
 
 void Train::setTrainId(const std::string &trainIdP) {
-    trainID = trainIdP;
+    if(trainIdP.length() > 0){
+        Train::trainID = trainIdP;
+    }
 }
 
 int Train::getBasePrice() const {
@@ -23,7 +25,9 @@ int Train::getBasePrice() const {
 }
 
 void Train::setBasePrice(int basePriceP) {
-    Train::basePrice = basePriceP;
+    if(basePriceP >= 0){
+        Train::basePrice = basePriceP;
+    }
 }
 
 const std::string &Train::getSeatNumber() const {
@@ -33,6 +37,8 @@ const std::string &Train::getSeatNumber() const {
 Train::~Train() = default;
 
 void Train::setSeatNumber(const std::string &seatNumberP) {
-    Train::seatNumber = seatNumberP;
+    if(seatNumberP.length() > 0){
+        Train::seatNumber = seatNumberP;
+    }
 }
 

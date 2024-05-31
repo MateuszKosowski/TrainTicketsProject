@@ -5,7 +5,6 @@
 #ifndef TRAINTICKETS_HANDCAR_H
 #define TRAINTICKETS_HANDCAR_H
 
-#include "typedefs.h"
 #include "Train.h"
 
 class Handcar : public Train {

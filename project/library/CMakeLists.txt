@@ -9,6 +9,8 @@ set(SOURCE_FILES
         src/model/Train.cpp
         include/model/Handcar.h
         src/model/Handcar.cpp
+        include/model/MotorTrain.h
+        src/model/MotorTrain.cpp
 
 )
 # Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h
