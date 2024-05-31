@@ -4,6 +4,8 @@ project(Library)
 #Pliki do kompilacji aby powstały .obj
 set(SOURCE_FILES
         src/model/Client.cpp
+        include/model/Train.h
+        include/typedefs.h
 
 )
 # Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h
