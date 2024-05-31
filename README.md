@@ -1,4 +1,4 @@
-# Projekt startowy
+# Projekty przedmiotu: Programowanie Obiektowe 2023-2024 Lato
 
 ### Zespół deweloperski
 
