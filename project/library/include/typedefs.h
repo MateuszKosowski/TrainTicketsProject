@@ -11,7 +11,6 @@
 
 class Train;
 class Handcar;
-class Train;
 class Client;
 class Address;
 class ClientType;
