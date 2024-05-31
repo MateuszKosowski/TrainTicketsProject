@@ -14,11 +14,13 @@ struct TestTrainFixture {
     HandcarPtr Drezynka;
     HighSpeedTrainPtr Pendolino;
     PassagerTrainPtr PociagIntercity;
+    TrainPtr Pociag;
 
     TestTrainFixture() {
            Drezynka = std::make_shared<Handcar>("1", 100, "2");
            Pendolino = std::make_shared<HighSpeedTrain>("2", 200, "80", 250);
            PociagIntercity = std::make_shared<PassagerTrain>("3", 150, "140", 120);
+           Pociag = std::make_shared<HighSpeedTrain>("4", 200, "80", 250);
     }
 
     ~TestTrainFixture(){}
@@ -29,6 +31,9 @@ BOOST_FIXTURE_TEST_SUITE(TrainTest, TestTrainFixture)
     BOOST_AUTO_TEST_CASE(InfoTests_GettersTests) {
         BOOST_TEST(
                 Pendolino->getActualRentalPrice() == 330.00
+        );
+        BOOST_TEST(
+                Pociag->getActualRentalPrice() == 330.00
         );
         BOOST_TEST(
                 Drezynka->getInfo() == "Drezyna: 1, ilosc miejsc: 2, aktualna cena: 20.00"

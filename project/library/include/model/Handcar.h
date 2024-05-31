@@ -12,7 +12,7 @@ public:
     Handcar(const std::string &trainID, int basePrice, const std::string &seatNumber);
     ~Handcar() override;
     std::string getInfo() const override;
-    double getActualRentalPrice() const;
+    double getActualRentalPrice() const override;
 
 };
 
