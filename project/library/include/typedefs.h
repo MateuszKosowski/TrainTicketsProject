@@ -12,6 +12,7 @@
 class Train;
 class Handcar;
 class MotorTrain;
+class HighSpeedTrain;
 class Client;
 class Address;
 class ClientType;
@@ -20,6 +21,7 @@ typedef std::shared_ptr<Train> TrainPtr;
 typedef std::shared_ptr<Handcar> HandcarPtr;
 typedef std::shared_ptr<MotorTrain> MotorTrainPtr;
 typedef std::shared_ptr<Client> ClientPtr;
+typedef std::shared_ptr<HighSpeedTrain> HighSpeedTrainPtr;
 typedef std::shared_ptr<Address> AddressPtr;
 typedef std::shared_ptr<ClientType> ClientTypePtr;
 
