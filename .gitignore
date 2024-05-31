@@ -1,5 +1,6 @@
 #Global path to single directory
 /kosowski/introduction/build
+/project/build
 
 #All cmake-build-debug directories.
 .idea
