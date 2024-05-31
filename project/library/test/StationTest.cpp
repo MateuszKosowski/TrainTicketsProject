@@ -37,5 +37,20 @@ BOOST_FIXTURE_TEST_SUITE(StationTest, TestStationFixture)
                 Stacja2->getInfo() == "Station: Łódź Kaliska\nRoutes: \nTrasa z: Poznań Główny do Łódź Widzew, dlugosc: 230, czas: 180 min\n"
         );
     }
+    BOOST_AUTO_TEST_CASE(SetterTests) {
+        Stacja1->setName("Gdańsk Główny");
+        BOOST_TEST(
+                Stacja1->getName() == "Gdańsk Główny"
+        );
+
+    }
+    BOOST_AUTO_TEST_CASE(DelRoutTests) {
+        Stacja1->addRoute(Trasa1);
+        Stacja1->addRoute(Trasa2);
+        Stacja1->deleteRoute(Trasa1);
+        BOOST_TEST(
+                Stacja1->getInfo() == "Station: Łódź Widzew\nRoutes: \nTrasa z: Poznań Główny do Łódź Widzew, dlugosc: 230, czas: 180 min\n"
+        );
+    }
 BOOST_AUTO_TEST_SUITE_END()
 
