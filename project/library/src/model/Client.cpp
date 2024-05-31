@@ -1,8 +1,2 @@
-#include <iostream>
-using namespace std;
+#include "model/Client.h"
 
-int main()
-{
-    cout << "Klient";
-    return 0;
-}
