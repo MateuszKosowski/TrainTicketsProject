@@ -6,13 +6,49 @@
 #define TRAINTICKETS_CLIENT_H
 
 #include <string>
+#include "typedefs.h"
+#include "Address.h"
 
 class Client{
 private:
     std::string firstName; ///< Imię klienta.
     std::string lastName; ///< Nazwisko klienta.
     std::string personalID; ///< Numer PESEL klienta.
+    AddressPtr address; ///< Adres klienta.
+    ClientTypePtr clientType; ///< Typ klienta.
 public:
+    Client(std::string &firstName, std::string &lastName, std::string &personalId,
+           AddressPtr &address, ClientTypePtr &clientType);
+
+    ~Client();
+
+    std::string getInfo() const;
+
+    std::string getFullInfo() const;
+
+    int getMaxTickets() const;
+
+    double applyDiscount(double price) const;
+
+
+    const std::string &getFirstName() const;
+
+    void setFirstName(const std::string &firstName);
+
+    const std::string &getLastName() const;
+
+    void setLastName(const std::string &lastName);
+
+    const std::string &getPersonalId() const;
+
+    const AddressPtr &getAddress() const;
+
+    void setAddress(const AddressPtr &address);
+
+    const ClientTypePtr &getClientType() const;
+
+    void setClientType(const ClientTypePtr &clientType);
+
 
 };
 

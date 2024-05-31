@@ -6,6 +6,8 @@ set(SOURCE_FILES
         src/model/Client.cpp
         include/model/Train.h
         include/typedefs.h
+        include/model/Address.h
+        src/model/Address.cpp
         src/model/Train.cpp
         include/model/Handcar.h
         src/model/Handcar.cpp
