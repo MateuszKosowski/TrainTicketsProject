@@ -40,4 +40,18 @@ BOOST_FIXTURE_TEST_SUITE(TrainTest, TestTrainFixture)
                 PociagIntercity->getInfo() == "Pociag pasazerski: 3, ilosc miejsc: 140, predkosc: 120, aktualna cena: 200.00"
         );
     }
+    BOOST_AUTO_TEST_CASE(SettersTests) {
+        Pendolino->setBasePrice(300);
+        Pendolino->setSeatNumber("100");
+        Pendolino->setVelocity(300);
+        BOOST_TEST(
+                Pendolino->getBasePrice() == 300
+        );
+        BOOST_TEST(
+                Pendolino->getSeatNumber() == "100"
+        );
+        BOOST_TEST(
+                Pendolino->getVelocity() == 300
+        );
+    }
 BOOST_AUTO_TEST_SUITE_END()

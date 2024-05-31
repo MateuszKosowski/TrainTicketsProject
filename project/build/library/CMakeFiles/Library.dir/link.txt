@@ -1,2 +1,0 @@
-/usr/bin/ar qc libLibrary.a CMakeFiles/Library.dir/src/model/Client.cpp.o CMakeFiles/Library.dir/src/model/Address.cpp.o CMakeFiles/Library.dir/src/model/Train.cpp.o CMakeFiles/Library.dir/src/model/Handcar.cpp.o CMakeFiles/Library.dir/src/model/MotorTrain.cpp.o CMakeFiles/Library.dir/src/model/HighSpeedTrain.cpp.o CMakeFiles/Library.dir/src/model/PassagerTrain.cpp.o CMakeFiles/Library.dir/src/model/ClientType.cpp.o
-/usr/bin/ranlib libLibrary.a
