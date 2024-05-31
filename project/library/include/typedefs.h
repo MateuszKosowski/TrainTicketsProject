@@ -21,6 +21,8 @@ class PassagerTrain;
 class Client;
 class Address;
 class ClientType;
+class Route;
+class Station;
 
 typedef std::shared_ptr<Train> TrainPtr;
 typedef std::shared_ptr<Handcar> HandcarPtr;
@@ -30,6 +32,9 @@ typedef std::shared_ptr<HighSpeedTrain> HighSpeedTrainPtr;
 typedef std::shared_ptr<PassagerTrain> PassagerTrainPtr;
 typedef std::shared_ptr<Address> AddressPtr;
 typedef std::shared_ptr<ClientType> ClientTypePtr;
+typedef std::shared_ptr<Route> RoutePtr;
+typedef std::shared_ptr<Station> StationPtr;
+
 
 
 #endif //TRAINTICKETS_TYPEDEFS_H
