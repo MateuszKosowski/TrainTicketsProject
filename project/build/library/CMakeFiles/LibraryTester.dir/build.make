@@ -86,19 +86,163 @@ library/CMakeFiles/LibraryTester.dir/test/master.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibraryTester.dir/test/master.cpp.s"
 	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/CLionProjects/start/project/library/test/master.cpp -o CMakeFiles/LibraryTester.dir/test/master.cpp.s
 
+library/CMakeFiles/LibraryTester.dir/src/model/Client.cpp.o: library/CMakeFiles/LibraryTester.dir/flags.make
+library/CMakeFiles/LibraryTester.dir/src/model/Client.cpp.o: /home/student/CLionProjects/start/project/library/src/model/Client.cpp
+library/CMakeFiles/LibraryTester.dir/src/model/Client.cpp.o: library/CMakeFiles/LibraryTester.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CLionProjects/start/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object library/CMakeFiles/LibraryTester.dir/src/model/Client.cpp.o"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT library/CMakeFiles/LibraryTester.dir/src/model/Client.cpp.o -MF CMakeFiles/LibraryTester.dir/src/model/Client.cpp.o.d -o CMakeFiles/LibraryTester.dir/src/model/Client.cpp.o -c /home/student/CLionProjects/start/project/library/src/model/Client.cpp
+
+library/CMakeFiles/LibraryTester.dir/src/model/Client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibraryTester.dir/src/model/Client.cpp.i"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/CLionProjects/start/project/library/src/model/Client.cpp > CMakeFiles/LibraryTester.dir/src/model/Client.cpp.i
+
+library/CMakeFiles/LibraryTester.dir/src/model/Client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibraryTester.dir/src/model/Client.cpp.s"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/CLionProjects/start/project/library/src/model/Client.cpp -o CMakeFiles/LibraryTester.dir/src/model/Client.cpp.s
+
+library/CMakeFiles/LibraryTester.dir/src/model/Address.cpp.o: library/CMakeFiles/LibraryTester.dir/flags.make
+library/CMakeFiles/LibraryTester.dir/src/model/Address.cpp.o: /home/student/CLionProjects/start/project/library/src/model/Address.cpp
+library/CMakeFiles/LibraryTester.dir/src/model/Address.cpp.o: library/CMakeFiles/LibraryTester.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CLionProjects/start/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object library/CMakeFiles/LibraryTester.dir/src/model/Address.cpp.o"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT library/CMakeFiles/LibraryTester.dir/src/model/Address.cpp.o -MF CMakeFiles/LibraryTester.dir/src/model/Address.cpp.o.d -o CMakeFiles/LibraryTester.dir/src/model/Address.cpp.o -c /home/student/CLionProjects/start/project/library/src/model/Address.cpp
+
+library/CMakeFiles/LibraryTester.dir/src/model/Address.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibraryTester.dir/src/model/Address.cpp.i"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/CLionProjects/start/project/library/src/model/Address.cpp > CMakeFiles/LibraryTester.dir/src/model/Address.cpp.i
+
+library/CMakeFiles/LibraryTester.dir/src/model/Address.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibraryTester.dir/src/model/Address.cpp.s"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/CLionProjects/start/project/library/src/model/Address.cpp -o CMakeFiles/LibraryTester.dir/src/model/Address.cpp.s
+
+library/CMakeFiles/LibraryTester.dir/src/model/Train.cpp.o: library/CMakeFiles/LibraryTester.dir/flags.make
+library/CMakeFiles/LibraryTester.dir/src/model/Train.cpp.o: /home/student/CLionProjects/start/project/library/src/model/Train.cpp
+library/CMakeFiles/LibraryTester.dir/src/model/Train.cpp.o: library/CMakeFiles/LibraryTester.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CLionProjects/start/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object library/CMakeFiles/LibraryTester.dir/src/model/Train.cpp.o"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT library/CMakeFiles/LibraryTester.dir/src/model/Train.cpp.o -MF CMakeFiles/LibraryTester.dir/src/model/Train.cpp.o.d -o CMakeFiles/LibraryTester.dir/src/model/Train.cpp.o -c /home/student/CLionProjects/start/project/library/src/model/Train.cpp
+
+library/CMakeFiles/LibraryTester.dir/src/model/Train.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibraryTester.dir/src/model/Train.cpp.i"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/CLionProjects/start/project/library/src/model/Train.cpp > CMakeFiles/LibraryTester.dir/src/model/Train.cpp.i
+
+library/CMakeFiles/LibraryTester.dir/src/model/Train.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibraryTester.dir/src/model/Train.cpp.s"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/CLionProjects/start/project/library/src/model/Train.cpp -o CMakeFiles/LibraryTester.dir/src/model/Train.cpp.s
+
+library/CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.o: library/CMakeFiles/LibraryTester.dir/flags.make
+library/CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.o: /home/student/CLionProjects/start/project/library/src/model/Handcar.cpp
+library/CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.o: library/CMakeFiles/LibraryTester.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CLionProjects/start/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object library/CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.o"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT library/CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.o -MF CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.o.d -o CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.o -c /home/student/CLionProjects/start/project/library/src/model/Handcar.cpp
+
+library/CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.i"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/CLionProjects/start/project/library/src/model/Handcar.cpp > CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.i
+
+library/CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.s"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/CLionProjects/start/project/library/src/model/Handcar.cpp -o CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.s
+
+library/CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.o: library/CMakeFiles/LibraryTester.dir/flags.make
+library/CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.o: /home/student/CLionProjects/start/project/library/src/model/MotorTrain.cpp
+library/CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.o: library/CMakeFiles/LibraryTester.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CLionProjects/start/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object library/CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.o"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT library/CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.o -MF CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.o.d -o CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.o -c /home/student/CLionProjects/start/project/library/src/model/MotorTrain.cpp
+
+library/CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.i"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/CLionProjects/start/project/library/src/model/MotorTrain.cpp > CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.i
+
+library/CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.s"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/CLionProjects/start/project/library/src/model/MotorTrain.cpp -o CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.s
+
+library/CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.o: library/CMakeFiles/LibraryTester.dir/flags.make
+library/CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.o: /home/student/CLionProjects/start/project/library/src/model/HighSpeedTrain.cpp
+library/CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.o: library/CMakeFiles/LibraryTester.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CLionProjects/start/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object library/CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.o"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT library/CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.o -MF CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.o.d -o CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.o -c /home/student/CLionProjects/start/project/library/src/model/HighSpeedTrain.cpp
+
+library/CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.i"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/CLionProjects/start/project/library/src/model/HighSpeedTrain.cpp > CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.i
+
+library/CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.s"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/CLionProjects/start/project/library/src/model/HighSpeedTrain.cpp -o CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.s
+
+library/CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.o: library/CMakeFiles/LibraryTester.dir/flags.make
+library/CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.o: /home/student/CLionProjects/start/project/library/src/model/PassagerTrain.cpp
+library/CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.o: library/CMakeFiles/LibraryTester.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CLionProjects/start/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object library/CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.o"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT library/CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.o -MF CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.o.d -o CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.o -c /home/student/CLionProjects/start/project/library/src/model/PassagerTrain.cpp
+
+library/CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.i"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/CLionProjects/start/project/library/src/model/PassagerTrain.cpp > CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.i
+
+library/CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.s"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/CLionProjects/start/project/library/src/model/PassagerTrain.cpp -o CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.s
+
+library/CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.o: library/CMakeFiles/LibraryTester.dir/flags.make
+library/CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.o: /home/student/CLionProjects/start/project/library/src/model/ClientType.cpp
+library/CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.o: library/CMakeFiles/LibraryTester.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CLionProjects/start/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object library/CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.o"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT library/CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.o -MF CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.o.d -o CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.o -c /home/student/CLionProjects/start/project/library/src/model/ClientType.cpp
+
+library/CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.i"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/CLionProjects/start/project/library/src/model/ClientType.cpp > CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.i
+
+library/CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.s"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/CLionProjects/start/project/library/src/model/ClientType.cpp -o CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.s
+
+library/CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.o: library/CMakeFiles/LibraryTester.dir/flags.make
+library/CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.o: /home/student/CLionProjects/start/project/library/test/TrainTest.cpp
+library/CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.o: library/CMakeFiles/LibraryTester.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/student/CLionProjects/start/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object library/CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.o"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT library/CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.o -MF CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.o.d -o CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.o -c /home/student/CLionProjects/start/project/library/test/TrainTest.cpp
+
+library/CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.i"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/student/CLionProjects/start/project/library/test/TrainTest.cpp > CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.i
+
+library/CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.s"
+	cd /home/student/CLionProjects/start/project/build/library && /usr/bin/g++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/student/CLionProjects/start/project/library/test/TrainTest.cpp -o CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.s
+
 # Object files for target LibraryTester
 LibraryTester_OBJECTS = \
-"CMakeFiles/LibraryTester.dir/test/master.cpp.o"
+"CMakeFiles/LibraryTester.dir/test/master.cpp.o" \
+"CMakeFiles/LibraryTester.dir/src/model/Client.cpp.o" \
+"CMakeFiles/LibraryTester.dir/src/model/Address.cpp.o" \
+"CMakeFiles/LibraryTester.dir/src/model/Train.cpp.o" \
+"CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.o" \
+"CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.o" \
+"CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.o" \
+"CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.o" \
+"CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.o" \
+"CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.o"
 
 # External object files for target LibraryTester
 LibraryTester_EXTERNAL_OBJECTS =
 
 library/LibraryTester: library/CMakeFiles/LibraryTester.dir/test/master.cpp.o
+library/LibraryTester: library/CMakeFiles/LibraryTester.dir/src/model/Client.cpp.o
+library/LibraryTester: library/CMakeFiles/LibraryTester.dir/src/model/Address.cpp.o
+library/LibraryTester: library/CMakeFiles/LibraryTester.dir/src/model/Train.cpp.o
+library/LibraryTester: library/CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.o
+library/LibraryTester: library/CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.o
+library/LibraryTester: library/CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.o
+library/LibraryTester: library/CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.o
+library/LibraryTester: library/CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.o
+library/LibraryTester: library/CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.o
 library/LibraryTester: library/CMakeFiles/LibraryTester.dir/build.make
 library/LibraryTester: library/libLibrary.a
 library/LibraryTester: /usr/lib/x86_64-linux-gnu/libboost_unit_test_framework.so.1.74.0
 library/LibraryTester: library/CMakeFiles/LibraryTester.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/CLionProjects/start/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable LibraryTester"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/student/CLionProjects/start/project/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Linking CXX executable LibraryTester"
 	cd /home/student/CLionProjects/start/project/build/library && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/LibraryTester.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -43,20 +43,15 @@ include_directories(
 set(SOURCE_TEST_FILES
     test/master.cpp
         src/model/Client.cpp
-        include/model/Train.h
         include/typedefs.h
-        include/model/Address.h
         src/model/Address.cpp
         src/model/Train.cpp
-        include/model/Handcar.h
         src/model/Handcar.cpp
-        include/model/MotorTrain.h
         src/model/MotorTrain.cpp
-        include/model/HighSpeedTrain.h
         src/model/HighSpeedTrain.cpp
-        include/model/PassagerTrain.h
         src/model/PassagerTrain.cpp
         src/model/ClientType.cpp
+        test/TrainTest.cpp
 ) # tu w przyszłości będą dodawane pliki źródłowe testów
 
 add_executable (LibraryTester ${SOURCE_TEST_FILES})

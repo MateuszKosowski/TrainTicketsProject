@@ -7,9 +7,15 @@ HighSpeedTrain::HighSpeedTrain(const std::string &trainID, int basePrice, const 
 HighSpeedTrain::~HighSpeedTrain(){};
 
 std::string HighSpeedTrain::getInfo() const {
-    return "Pociag HST: " + getTrainId() + " ,ilosc miejsc: " + getSeatNumber() + " ,predkosc: " + std::to_string(getVelocity()) + " ,aktualna cena: " + std::to_string(getActualRentalPrice());
+    std::stringstream stream;
+    stream << std::fixed << std::setprecision(2) << getActualRentalPrice();
+    return "Pociag HST: " + getTrainId() + ", ilosc miejsc: " + getSeatNumber() + ", predkosc: " + std::to_string(getVelocity()) + ", aktualna cena: " + stream.str();
 }
 
 double HighSpeedTrain::getActualRentalPrice() const {
-    return (getBasePrice()*1.4)+50;
+    double actualPrice = (getBasePrice()*1.4)+50;
+    std::stringstream stream;
+    stream << std::fixed << std::setprecision(2) << actualPrice;
+    actualPrice = std::stod(stream.str());
+    return actualPrice;
 }

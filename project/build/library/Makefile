@@ -171,12 +171,40 @@ check/fast:
 	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/check.dir/build.make library/CMakeFiles/check.dir/build
 .PHONY : check/fast
 
+src/model/Address.o: src/model/Address.cpp.o
+.PHONY : src/model/Address.o
+
+# target to build an object file
+src/model/Address.cpp.o:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Address.cpp.o
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/Address.cpp.o
+.PHONY : src/model/Address.cpp.o
+
+src/model/Address.i: src/model/Address.cpp.i
+.PHONY : src/model/Address.i
+
+# target to preprocess a source file
+src/model/Address.cpp.i:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Address.cpp.i
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/Address.cpp.i
+.PHONY : src/model/Address.cpp.i
+
+src/model/Address.s: src/model/Address.cpp.s
+.PHONY : src/model/Address.s
+
+# target to generate assembly for a file
+src/model/Address.cpp.s:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Address.cpp.s
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/Address.cpp.s
+.PHONY : src/model/Address.cpp.s
+
 src/model/Client.o: src/model/Client.cpp.o
 .PHONY : src/model/Client.o
 
 # target to build an object file
 src/model/Client.cpp.o:
 	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.o
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/Client.cpp.o
 .PHONY : src/model/Client.cpp.o
 
 src/model/Client.i: src/model/Client.cpp.i
@@ -185,6 +213,7 @@ src/model/Client.i: src/model/Client.cpp.i
 # target to preprocess a source file
 src/model/Client.cpp.i:
 	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.i
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/Client.cpp.i
 .PHONY : src/model/Client.cpp.i
 
 src/model/Client.s: src/model/Client.cpp.s
@@ -193,7 +222,194 @@ src/model/Client.s: src/model/Client.cpp.s
 # target to generate assembly for a file
 src/model/Client.cpp.s:
 	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Client.cpp.s
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/Client.cpp.s
 .PHONY : src/model/Client.cpp.s
+
+src/model/ClientType.o: src/model/ClientType.cpp.o
+.PHONY : src/model/ClientType.o
+
+# target to build an object file
+src/model/ClientType.cpp.o:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/ClientType.cpp.o
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.o
+.PHONY : src/model/ClientType.cpp.o
+
+src/model/ClientType.i: src/model/ClientType.cpp.i
+.PHONY : src/model/ClientType.i
+
+# target to preprocess a source file
+src/model/ClientType.cpp.i:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/ClientType.cpp.i
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.i
+.PHONY : src/model/ClientType.cpp.i
+
+src/model/ClientType.s: src/model/ClientType.cpp.s
+.PHONY : src/model/ClientType.s
+
+# target to generate assembly for a file
+src/model/ClientType.cpp.s:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/ClientType.cpp.s
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/ClientType.cpp.s
+.PHONY : src/model/ClientType.cpp.s
+
+src/model/Handcar.o: src/model/Handcar.cpp.o
+.PHONY : src/model/Handcar.o
+
+# target to build an object file
+src/model/Handcar.cpp.o:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Handcar.cpp.o
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.o
+.PHONY : src/model/Handcar.cpp.o
+
+src/model/Handcar.i: src/model/Handcar.cpp.i
+.PHONY : src/model/Handcar.i
+
+# target to preprocess a source file
+src/model/Handcar.cpp.i:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Handcar.cpp.i
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.i
+.PHONY : src/model/Handcar.cpp.i
+
+src/model/Handcar.s: src/model/Handcar.cpp.s
+.PHONY : src/model/Handcar.s
+
+# target to generate assembly for a file
+src/model/Handcar.cpp.s:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Handcar.cpp.s
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/Handcar.cpp.s
+.PHONY : src/model/Handcar.cpp.s
+
+src/model/HighSpeedTrain.o: src/model/HighSpeedTrain.cpp.o
+.PHONY : src/model/HighSpeedTrain.o
+
+# target to build an object file
+src/model/HighSpeedTrain.cpp.o:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/HighSpeedTrain.cpp.o
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.o
+.PHONY : src/model/HighSpeedTrain.cpp.o
+
+src/model/HighSpeedTrain.i: src/model/HighSpeedTrain.cpp.i
+.PHONY : src/model/HighSpeedTrain.i
+
+# target to preprocess a source file
+src/model/HighSpeedTrain.cpp.i:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/HighSpeedTrain.cpp.i
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.i
+.PHONY : src/model/HighSpeedTrain.cpp.i
+
+src/model/HighSpeedTrain.s: src/model/HighSpeedTrain.cpp.s
+.PHONY : src/model/HighSpeedTrain.s
+
+# target to generate assembly for a file
+src/model/HighSpeedTrain.cpp.s:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/HighSpeedTrain.cpp.s
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/HighSpeedTrain.cpp.s
+.PHONY : src/model/HighSpeedTrain.cpp.s
+
+src/model/MotorTrain.o: src/model/MotorTrain.cpp.o
+.PHONY : src/model/MotorTrain.o
+
+# target to build an object file
+src/model/MotorTrain.cpp.o:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/MotorTrain.cpp.o
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.o
+.PHONY : src/model/MotorTrain.cpp.o
+
+src/model/MotorTrain.i: src/model/MotorTrain.cpp.i
+.PHONY : src/model/MotorTrain.i
+
+# target to preprocess a source file
+src/model/MotorTrain.cpp.i:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/MotorTrain.cpp.i
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.i
+.PHONY : src/model/MotorTrain.cpp.i
+
+src/model/MotorTrain.s: src/model/MotorTrain.cpp.s
+.PHONY : src/model/MotorTrain.s
+
+# target to generate assembly for a file
+src/model/MotorTrain.cpp.s:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/MotorTrain.cpp.s
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/MotorTrain.cpp.s
+.PHONY : src/model/MotorTrain.cpp.s
+
+src/model/PassagerTrain.o: src/model/PassagerTrain.cpp.o
+.PHONY : src/model/PassagerTrain.o
+
+# target to build an object file
+src/model/PassagerTrain.cpp.o:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/PassagerTrain.cpp.o
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.o
+.PHONY : src/model/PassagerTrain.cpp.o
+
+src/model/PassagerTrain.i: src/model/PassagerTrain.cpp.i
+.PHONY : src/model/PassagerTrain.i
+
+# target to preprocess a source file
+src/model/PassagerTrain.cpp.i:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/PassagerTrain.cpp.i
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.i
+.PHONY : src/model/PassagerTrain.cpp.i
+
+src/model/PassagerTrain.s: src/model/PassagerTrain.cpp.s
+.PHONY : src/model/PassagerTrain.s
+
+# target to generate assembly for a file
+src/model/PassagerTrain.cpp.s:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/PassagerTrain.cpp.s
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/PassagerTrain.cpp.s
+.PHONY : src/model/PassagerTrain.cpp.s
+
+src/model/Train.o: src/model/Train.cpp.o
+.PHONY : src/model/Train.o
+
+# target to build an object file
+src/model/Train.cpp.o:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Train.cpp.o
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/Train.cpp.o
+.PHONY : src/model/Train.cpp.o
+
+src/model/Train.i: src/model/Train.cpp.i
+.PHONY : src/model/Train.i
+
+# target to preprocess a source file
+src/model/Train.cpp.i:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Train.cpp.i
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/Train.cpp.i
+.PHONY : src/model/Train.cpp.i
+
+src/model/Train.s: src/model/Train.cpp.s
+.PHONY : src/model/Train.s
+
+# target to generate assembly for a file
+src/model/Train.cpp.s:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/Library.dir/build.make library/CMakeFiles/Library.dir/src/model/Train.cpp.s
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/src/model/Train.cpp.s
+.PHONY : src/model/Train.cpp.s
+
+test/TrainTest.o: test/TrainTest.cpp.o
+.PHONY : test/TrainTest.o
+
+# target to build an object file
+test/TrainTest.cpp.o:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.o
+.PHONY : test/TrainTest.cpp.o
+
+test/TrainTest.i: test/TrainTest.cpp.i
+.PHONY : test/TrainTest.i
+
+# target to preprocess a source file
+test/TrainTest.cpp.i:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.i
+.PHONY : test/TrainTest.cpp.i
+
+test/TrainTest.s: test/TrainTest.cpp.s
+.PHONY : test/TrainTest.s
+
+# target to generate assembly for a file
+test/TrainTest.cpp.s:
+	cd /home/student/CLionProjects/start/project/build && $(MAKE) $(MAKESILENT) -f library/CMakeFiles/LibraryTester.dir/build.make library/CMakeFiles/LibraryTester.dir/test/TrainTest.cpp.s
+.PHONY : test/TrainTest.cpp.s
 
 test/master.o: test/master.cpp.o
 .PHONY : test/master.o
@@ -231,9 +447,33 @@ help:
 	@echo "... check"
 	@echo "... Library"
 	@echo "... LibraryTester"
+	@echo "... src/model/Address.o"
+	@echo "... src/model/Address.i"
+	@echo "... src/model/Address.s"
 	@echo "... src/model/Client.o"
 	@echo "... src/model/Client.i"
 	@echo "... src/model/Client.s"
+	@echo "... src/model/ClientType.o"
+	@echo "... src/model/ClientType.i"
+	@echo "... src/model/ClientType.s"
+	@echo "... src/model/Handcar.o"
+	@echo "... src/model/Handcar.i"
+	@echo "... src/model/Handcar.s"
+	@echo "... src/model/HighSpeedTrain.o"
+	@echo "... src/model/HighSpeedTrain.i"
+	@echo "... src/model/HighSpeedTrain.s"
+	@echo "... src/model/MotorTrain.o"
+	@echo "... src/model/MotorTrain.i"
+	@echo "... src/model/MotorTrain.s"
+	@echo "... src/model/PassagerTrain.o"
+	@echo "... src/model/PassagerTrain.i"
+	@echo "... src/model/PassagerTrain.s"
+	@echo "... src/model/Train.o"
+	@echo "... src/model/Train.i"
+	@echo "... src/model/Train.s"
+	@echo "... test/TrainTest.o"
+	@echo "... test/TrainTest.i"
+	@echo "... test/TrainTest.s"
 	@echo "... test/master.o"
 	@echo "... test/master.i"
 	@echo "... test/master.s"
