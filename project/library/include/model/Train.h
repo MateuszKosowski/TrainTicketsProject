@@ -15,12 +15,13 @@ protected:
 public:
     Train(const std::string &trainID, int basePrice, const std::string &seatNumber);
     virtual ~Train() = 0;
-    const std::string &getTrainID() const;
-    void setTrainID(const std::string &trainID);
+    const std::string &getTrainId() const;
+    void setTrainId(const std::string &trainIdP);
     int getBasePrice() const;
-    void setBasePrice(int basePrice);
+    void setBasePrice(int basePriceP);
     const std::string &getSeatNumber() const;
-    void setSeatNumber(const std::string &seatNumber);
+    void setSeatNumber(const std::string &seatNumberP);
+    const std::string &getTrainID() const;
     virtual std::string getInfo() const;
 };
 
