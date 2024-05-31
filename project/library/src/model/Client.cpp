@@ -1,6 +1,6 @@
 #include "model/Client.h"
 
-Client::Client(std::string &fName, std::string &lName, std::string &pId, AddressPtr &aAddress, ClientTypePtr &cType) :
+Client::Client(const std::string &fName,const std::string &lName,const std::string &pId,const AddressPtr &aAddress,const ClientTypePtr &cType) :
         firstName(fName), lastName(lName), personalID(pId), address(aAddress), clientType(cType) {}
 
 Client::~Client() {}
@@ -52,10 +52,25 @@ void Client::setClientType(const ClientTypePtr &cType) {
     }
 }
 
+int Client::getMaxTickets() const {
+    return clientType->getMaxTickets();
+}
+
+
 std::string Client::getInfo() const {
     return "\nImie: " + getFirstName() + " Nazwisko: " + lastName; // Usunięto Client:: przy lastName
 }
 
 std::string Client::getFullInfo() const {
-    return getInfo() + " PESEL: " + personalID + address->getInfo();// + clientType->getInfo();
+    return getInfo() + " PESEL: " + personalID + address->getInfo() + clientType->getTypeInfo();
+}
+
+double Client::applyDiscount(double price) const {
+    if(clientType->applyDiscount(price) >= 0){
+        return clientType->applyDiscount(price);
+    }
+    else{
+        return price;
+    }
+
 }

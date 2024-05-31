@@ -4,7 +4,7 @@
 ClientType::~ClientType() {}
 
 int Default::getMaxTickets() const {
-    return 1;
+    return 3;
 }
 
 double Default::applyDiscount(double price) const {

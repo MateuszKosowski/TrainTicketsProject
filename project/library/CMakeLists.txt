@@ -18,6 +18,7 @@ set(SOURCE_FILES
         include/model/PassagerTrain.h
         src/model/PassagerTrain.cpp
         src/model/ClientType.cpp
+        test/ClientTest.cpp
 
 )
 # Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h
@@ -42,6 +43,7 @@ include_directories(
 
 set(SOURCE_TEST_FILES
     test/master.cpp
+        test/ClientTest.cpp
         src/model/Client.cpp
         include/model/Train.h
         include/typedefs.h

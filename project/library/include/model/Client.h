@@ -8,6 +8,7 @@
 #include <string>
 #include "typedefs.h"
 #include "Address.h"
+#include "ClientType.h"
 
 class Client{
 private:
@@ -17,8 +18,8 @@ private:
     AddressPtr address; ///< Adres klienta.
     ClientTypePtr clientType; ///< Typ klienta.
 public:
-    Client(std::string &firstName, std::string &lastName, std::string &personalId,
-           AddressPtr &address, ClientTypePtr &clientType);
+    Client(const std::string &firstName,const std::string &lastName,const std::string &personalId,
+           const AddressPtr &address,const ClientTypePtr &clientType);
 
     ~Client();
 
