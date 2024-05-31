@@ -15,6 +15,8 @@ set(SOURCE_FILES
         src/model/MotorTrain.cpp
         include/model/HighSpeedTrain.h
         src/model/HighSpeedTrain.cpp
+        include/model/PassagerTrain.h
+        src/model/PassagerTrain.cpp
 
 )
 # Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h
