@@ -9,8 +9,15 @@
 #include <string>
 #include <vector>
 
-class Train;;
+class Train;
+class Client;
+class Address;
+class ClientType;
 
 typedef std::shared_ptr<Train> TrainPtr;
+typedef std::shared_ptr<Client> ClientPtr;
+typedef std::shared_ptr<Address> AddressPtr;
+typedef std::shared_ptr<ClientType> ClientTypePtr;
+
 
 #endif //TRAINTICKETS_TYPEDEFS_H

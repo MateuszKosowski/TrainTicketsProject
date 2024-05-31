@@ -6,6 +6,8 @@ set(SOURCE_FILES
         src/model/Client.cpp
         include/model/Train.h
         include/typedefs.h
+        include/model/Address.h
+        src/model/Address.cpp
 
 )
 # Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h
