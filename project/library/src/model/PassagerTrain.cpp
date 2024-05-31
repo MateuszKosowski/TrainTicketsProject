@@ -8,9 +8,15 @@ PassagerTrain::PassagerTrain(const std::string &trainID, int basePrice, const st
 PassagerTrain::~PassagerTrain(){};
 
 double PassagerTrain::getActualRentalPrice() const {
-    return (getBasePrice()*1.2)+20;
+    double actualPrice = (getBasePrice()*1.2)+20;
+    std::stringstream stream;
+    stream << std::fixed << std::setprecision(2) << actualPrice;
+    actualPrice = std::stod(stream.str());
+    return actualPrice;
 }
 
 std::string PassagerTrain::getInfo() const {
-    return "Pociag pasazerski: " + getTrainId() + " ,ilosc miejsc: " + getSeatNumber() + " ,predkosc: " + std::to_string(getVelocity()) + " ,aktualna cena: " + std::to_string(getActualRentalPrice());
+    std::stringstream stream;
+    stream << std::fixed << std::setprecision(2) << getActualRentalPrice();
+    return "Pociag pasazerski: " + getTrainId() + ", ilosc miejsc: " + getSeatNumber() + ", predkosc: " + std::to_string(getVelocity()) + ", aktualna cena: " + stream.str();
 }

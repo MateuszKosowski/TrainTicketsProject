@@ -9,9 +9,15 @@ Handcar::Handcar(const std::string &trainID, int basePrice, const std::string &s
 Handcar::~Handcar(){};
 
 double Handcar::getActualRentalPrice() const {
-    return getBasePrice()*0.2;
+    double actualPrice = getBasePrice()*0.2;
+    std::stringstream stream;
+    stream << std::fixed << std::setprecision(2) << actualPrice;
+    actualPrice = std::stod(stream.str());
+    return actualPrice;
 }
 
 std::string Handcar::getInfo() const {
-    return "Drezyna: " + getTrainId() + " ,ilosc miejsc: " + getSeatNumber() + " ,aktualna cena: " + std::to_string(getActualRentalPrice());
+    std::stringstream stream;
+    stream << std::fixed << std::setprecision(2) << getActualRentalPrice();
+    return "Drezyna: " + getTrainId() + ", ilosc miejsc: " + getSeatNumber() + ", aktualna cena: " + stream.str();
 }

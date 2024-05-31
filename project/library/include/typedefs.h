@@ -8,6 +8,10 @@
 #include <memory>
 #include <string>
 #include <vector>
+#include <iomanip>
+#include <sstream>
+#include <cmath>
+
 
 class Train;
 class Handcar;

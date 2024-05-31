@@ -22,7 +22,7 @@ public:
     const std::string &getSeatNumber() const;
     void setSeatNumber(const std::string &seatNumberP);
     const std::string &getTrainID() const;
-    virtual std::string getInfo() const;
+    virtual std::string getInfo() const = 0;
 };
 
 
