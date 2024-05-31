@@ -43,9 +43,25 @@ void Route::setDuration(int durationP) {
     }
 }
 
-Route::Route(const std::string &startStation, const std::string &endStation, int distance, int duration) : startStation(startStation), endStation(endStation), distance(distance), duration(duration) {};
+Route::Route(const std::string &startStation, const std::string &endStation, const std::string &routeID, int distance, int duration){
+
+    Route::startStation = startStation;
+    Route::endStation = endStation;
+    Route::routeID = routeID;
+    Route::distance = distance;
+    Route::duration = duration;
+
+};
 Route::~Route() = default;
 
 std::string Route::getInfo() const {
     return "Trasa z: " + startStation + " do " + endStation + ", dlugosc: " + std::to_string(distance) + ", czas: " + std::to_string(duration) + " min";
+}
+
+const std::string &Route::getRouteId() const {
+    return routeID;
+}
+
+void Route::setRouteId(const std::string &routeId) {
+    routeID = routeId;
 }

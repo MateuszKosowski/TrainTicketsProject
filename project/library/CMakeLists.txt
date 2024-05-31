@@ -58,6 +58,7 @@ set(SOURCE_TEST_FILES
         src/model/PassagerTrain.cpp
         src/model/ClientType.cpp
         test/TrainTest.cpp
+        test/StationTest.cpp
 ) # tu w przyszłości będą dodawane pliki źródłowe testów
 
 add_executable (LibraryTester ${SOURCE_TEST_FILES})
