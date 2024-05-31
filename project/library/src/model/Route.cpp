@@ -43,6 +43,9 @@ void Route::setDuration(int durationP) {
     }
 }
 
+Route::Route(const std::string &startStation, const std::string &endStation, int distance, int duration) : startStation(startStation), endStation(endStation), distance(distance), duration(duration) {};
+Route::~Route() = default;
+
 std::string Route::getInfo() const {
     return "Trasa z: " + startStation + " do " + endStation + ", dlugosc: " + std::to_string(distance) + ", czas: " + std::to_string(duration) + " min";
 }

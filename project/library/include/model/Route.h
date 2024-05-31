@@ -32,6 +32,10 @@ public:
 
     std::string getInfo() const;
 
+    Route(const std::string &startStation, const std::string &endStation, int distance, int duration);
+
+    ~Route();
+
 };
 
 #endif //TRAINTICKETS_ROUTE_H

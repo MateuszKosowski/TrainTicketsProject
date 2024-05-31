@@ -21,6 +21,8 @@ set(SOURCE_FILES
         test/ClientTest.cpp
         include/model/Route.h
         src/model/Route.cpp
+        include/model/Station.h
+        src/model/Station.cpp
 
 )
 # Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h
