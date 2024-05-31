@@ -10,11 +10,14 @@
 #include <vector>
 
 class Train;
+class Handcar;
+class Train;
 class Client;
 class Address;
 class ClientType;
 
 typedef std::shared_ptr<Train> TrainPtr;
+typedef std::shared_ptr<Handcar> HandcarPtr;
 typedef std::shared_ptr<Client> ClientPtr;
 typedef std::shared_ptr<Address> AddressPtr;
 typedef std::shared_ptr<ClientType> ClientTypePtr;
