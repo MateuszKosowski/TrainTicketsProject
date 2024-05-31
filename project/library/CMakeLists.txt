@@ -23,6 +23,8 @@ set(SOURCE_FILES
         src/model/Route.cpp
         include/model/Station.h
         src/model/Station.cpp
+        include/model/Ticket.h
+        src/model/Ticket.cpp
 
 )
 # Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h
@@ -59,6 +61,7 @@ set(SOURCE_TEST_FILES
         src/model/ClientType.cpp
         test/TrainTest.cpp
         test/StationTest.cpp
+        test/TicketTest.cpp
 ) # tu w przyszłości będą dodawane pliki źródłowe testów
 
 add_executable (LibraryTester ${SOURCE_TEST_FILES})
