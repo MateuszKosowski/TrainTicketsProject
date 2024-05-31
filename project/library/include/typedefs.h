@@ -9,8 +9,10 @@
 #include <string>
 #include <vector>
 
-class Train;;
+class Train;
+class Handcar;
 
 typedef std::shared_ptr<Train> TrainPtr;
+typedef std::shared_ptr<Handcar> HandcarPtr;
 
 #endif //TRAINTICKETS_TYPEDEFS_H
