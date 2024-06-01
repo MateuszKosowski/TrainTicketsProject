@@ -27,7 +27,7 @@ BOOST_AUTO_TEST_SUITE(TicketTestSuite)
         BOOST_CHECK_EQUAL(ticket->getBeginTime(), beginTime);
         BOOST_CHECK_EQUAL(ticket->getEndTime(), endTime);
         BOOST_CHECK_EQUAL(ticket->getStationCount(), stationCount);
-        BOOST_CHECK_EQUAL(1,1);
+        BOOST_CHECK_EQUAL(ticket->getTicketCost(),490.00);
     }
 
 BOOST_AUTO_TEST_SUITE_END()

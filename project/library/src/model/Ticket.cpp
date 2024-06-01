@@ -7,6 +7,7 @@
 #include "model/Handcar.h"
 #include "model/HighSpeedTrain.h"
 #include <sstream>
+#include <cmath>
 
 Ticket::Ticket(const std::string &sId, const ClientPtr &cClient, const TrainPtr &tTrain, const pt::ptime &bTime, const pt::ptime &eTime, const int &sCount)
 {
@@ -84,5 +85,6 @@ int Ticket::getTravelTime() const {
     return duration_in_minutes;
 }
 double Ticket::getTicketCost() const {
-    return client->applyDiscount(train->getActualRentalPrice() * this->getStationCount());
+    double cost = client->applyDiscount(train->getActualRentalPrice() * this->getStationCount());
+    return std::round(cost * 100) / 100;
 }
