@@ -31,6 +31,7 @@ class StationRepository;
 
 class TrainManager;
 class ClientManager;
+class StationManager;
 
 typedef std::shared_ptr<Train> TrainPtr;
 typedef std::shared_ptr<Handcar> HandcarPtr;
@@ -42,6 +43,7 @@ typedef std::shared_ptr<ClientType> ClientTypePtr;
 typedef std::shared_ptr<Route> RoutePtr;
 typedef std::shared_ptr<Station> StationPtr;
 typedef std::shared_ptr<Ticket> TicketPtr;
+
 typedef std::shared_ptr<ClientRepository> ClientRepositoryPtr;
 typedef std::shared_ptr<TrainRepository> TrainRepositoryPtr;
 typedef std::shared_ptr<TicketRepository> TicketRepositoryPtr;
@@ -49,6 +51,7 @@ typedef std::shared_ptr<StationRepository> StationRepositoryPtr;
 
 typedef std::shared_ptr<TrainManager> TrainManagerPtr;
 typedef std::shared_ptr<ClientManager> ClientManagerPtr;
+typedef std::shared_ptr<StationManager> StationManagerPtr;
 
 typedef bool (*ClientPredicate)(ClientPtr);
 typedef bool (*TrainPredicate)(TrainPtr);

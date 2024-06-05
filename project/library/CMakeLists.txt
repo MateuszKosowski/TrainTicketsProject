@@ -69,6 +69,7 @@ set(SOURCE_TEST_FILES
         test/ClientManagerTest.cpp
         test/TrainManagerTest.cpp
         src/managers/ClientManager.cpp
+        test/StationManagerTest.cpp
 ) # tu w przyszłości będą dodawane pliki źródłowe testów
 
 add_executable (LibraryTester ${SOURCE_TEST_FILES})
