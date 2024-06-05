@@ -10,7 +10,9 @@
 class TrainManager{
 private:
     TrainRepositoryPtr repository;
+
 public:
+    const TrainRepositoryPtr &getRepository() const;
     TrainPtr createTrain(const std::string& id, int basePrice, const std::string& seatNumber, const int option, int velocity = 0);
     void addTrain(const TrainPtr& train);
     void removeTrain(const TrainPtr& train);
