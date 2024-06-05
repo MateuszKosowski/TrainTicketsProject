@@ -30,7 +30,7 @@ public:
 
     ClientManager();
 
-    virtual ~ClientManager();
+    ~ClientManager();
 
 
 };

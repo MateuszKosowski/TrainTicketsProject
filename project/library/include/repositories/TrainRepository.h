@@ -1,7 +1,3 @@
-//
-// Created by student on 05.06.24.
-//
-
 #ifndef TRAINTICKETS_TRAINREPOSITORY_H
 #define TRAINTICKETS_TRAINREPOSITORY_H
 
