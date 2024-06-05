@@ -5,7 +5,6 @@
 #ifndef TRAINTICKETS_CLIENT_H
 #define TRAINTICKETS_CLIENT_H
 
-#include <string>
 #include "typedefs.h"
 #include "Address.h"
 #include "ClientType.h"
