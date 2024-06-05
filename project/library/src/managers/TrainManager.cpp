@@ -72,6 +72,10 @@ std::string TrainManager::generateReport() const {
     return this->repository->report();
 }
 
+const TrainRepositoryPtr &TrainManager::getRepository() const {
+    return repository;
+}
+
 
 
 
