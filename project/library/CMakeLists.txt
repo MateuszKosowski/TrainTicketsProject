@@ -19,10 +19,12 @@ set(SOURCE_FILES
         src/repositories/ClientRepository.cpp
         src/repositories/TrainRepository.cpp
         src/repositories/TicketRepository.cpp
+        src/repositories/StationRepository.cpp
 
         src/managers/ClientManager.cpp
         src/managers/TrainManager.cpp
         src/managers/TicketManager.cpp
+        src/managers/StationManager.cpp
 
 )
 # Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h
@@ -48,34 +50,27 @@ include_directories(
 set(SOURCE_TEST_FILES
     test/master.cpp
         test/ClientTest.cpp
-        test/TrainTest.cpp
-        test/StationTest.cpp
-        test/TicketTest.cpp
-        test/ClientManagerTest.cpp
-        test/TrainManagerTest.cpp
-        test/TicketManagerTest.cpp
-
-        include/typedefs.h
         src/model/Client.cpp
-        src/model/ClientType.cpp
+        include/typedefs.h
         src/model/Address.cpp
         src/model/Train.cpp
         src/model/Handcar.cpp
         src/model/MotorTrain.cpp
         src/model/HighSpeedTrain.cpp
         src/model/PassagerTrain.cpp
+        src/model/ClientType.cpp
         src/model/Route.cpp
         src/model/Station.cpp
         src/model/Ticket.cpp
-
         src/repositories/ClientRepository.cpp
         src/repositories/TrainRepository.cpp
-        src/repositories/TicketRepository.cpp
-
         src/managers/TrainManager.cpp
+        test/TrainTest.cpp
+        test/StationTest.cpp
+        test/TicketTest.cpp
+        test/ClientManagerTest.cpp
+        test/TrainManagerTest.cpp
         src/managers/ClientManager.cpp
-        src/managers/TicketManager.cpp
-
 ) # tu w przyszłości będą dodawane pliki źródłowe testów
 
 add_executable (LibraryTester ${SOURCE_TEST_FILES})

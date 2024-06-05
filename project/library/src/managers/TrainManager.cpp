@@ -57,7 +57,9 @@ TrainPtr TrainManager::getTrain(const std::string &id) {
     if(train == nullptr){
         throw std::invalid_argument("Train does not exist");
     }
-    return train;
+    else{
+        return train;
+    }
 }
 
 std::vector<TrainPtr> TrainManager::findTrainsBy(TrainPredicate predicate) const {
