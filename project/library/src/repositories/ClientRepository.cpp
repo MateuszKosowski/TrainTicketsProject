@@ -1,29 +1,30 @@
 #include "repositories/ClientRepository.h"
-#include "repositories/TrainRepository.h"
 #include <algorithm>
 
-ClientPtr ClientRepository::get(int index) {
+ClientPtr ClientRepository::get(const std::string& pid) {
     int size = clients.size();
-    if (index < 0 || index >= size) {
-        return nullptr;
+    for (int i = 0; i < size; i++) {
+        if (clients[i]->getPersonalId() == pid) {
+            return clients[i];
+        }
     }
-    return clients[index];
+    return nullptr;
 }
 
-void ClientRepository::add(ClientPtr client) {
+void ClientRepository::add(const ClientPtr& client) {
     if (client != nullptr) {
         clients.push_back(client);
     }
 }
 
-void ClientRepository::remove(ClientPtr client) {
+void ClientRepository::remove(const ClientPtr& client) {
     if (client != nullptr) {
         clients.erase(std::remove(clients.begin(), clients.end(), client), clients.end());
     }
 }
 
 std::string ClientRepository::report() {
-    std::string report;
+    std::string report = "\nAll clients in TicketRepository:\n";;
     for (const auto& client : clients) {
         report += client->getInfo() + "\n";
     }
@@ -46,4 +47,12 @@ std::vector<ClientPtr> ClientRepository::findBy(ClientPredicate predicate) const
 
 std::vector<ClientPtr> ClientRepository::findAll() const {
     return findBy([](ClientPtr client) { (void)client; return true; });
+}
+
+ClientRepository::ClientRepository() {
+    clients = std::vector<ClientPtr>();
+}
+
+ClientRepository::~ClientRepository() {
+    clients.clear();
 }

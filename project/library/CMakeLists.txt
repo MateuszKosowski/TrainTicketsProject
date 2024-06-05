@@ -18,7 +18,6 @@ set(SOURCE_FILES
         src/model/Ticket.cpp
         src/repositories/ClientRepository.cpp
         src/repositories/TrainRepository.cpp
-        include/managers/TrainManager.h
         src/managers/TranManager.cpp
 
 )
