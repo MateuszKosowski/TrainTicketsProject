@@ -18,8 +18,10 @@ BOOST_AUTO_TEST_SUITE(TicketTestSuite)
         boost::posix_time::ptime beginTime = boost::posix_time::second_clock::local_time();
         boost::posix_time::ptime endTime = beginTime + boost::posix_time::hours(1);
         int stationCount = 5;
+        StationPtr stacja1 = std::make_shared<Station>("Łódź Widzew");;
+        StationPtr stacja2 = std::make_shared<Station>("Warszawa Centralna");;
 
-        TicketPtr ticket = std::make_shared<Ticket>(id, client, train, beginTime, endTime, stationCount);
+        TicketPtr ticket = std::make_shared<Ticket>(id, client, train, beginTime, endTime, stationCount, stacja1, stacja2);
 
         BOOST_CHECK_EQUAL(ticket->getId(), id);
         BOOST_CHECK_EQUAL(ticket->getClient(), client);

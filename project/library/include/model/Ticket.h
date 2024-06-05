@@ -7,6 +7,8 @@
 
 #include "Client.h"
 #include "Train.h"
+#include "typedefs.h"
+#include "Station.h"
 
 #include <boost/date_time.hpp>
 
@@ -21,11 +23,20 @@ private:
     pt::ptime beginTime;
     pt::ptime endTime;
     int stationCount;
+    StationPtr startStation;
+    StationPtr endStation;
 public:
     Ticket(const std::string &id, const ClientPtr &client, const TrainPtr &train, const pt::ptime &beginTime,
-           const pt::ptime &endTime, const int &stationCount);
+           const pt::ptime &endTime, const int &stationCount, const StationPtr &sStation, const StationPtr &eStation);
     ~Ticket();
 
+    const StationPtr &getStartStation() const;
+
+    void setStartStation(const StationPtr &sStation);
+
+    const StationPtr &getEndStation() const;
+
+    void setEndStation(const StationPtr &eStation);
 
     std::string getInfo() const;
     int getTravelTime() const;
