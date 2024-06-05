@@ -4,30 +4,21 @@ project(Library)
 #Pliki do kompilacji aby powstały .obj
 set(SOURCE_FILES
         src/model/Client.cpp
-        include/model/Train.h
         include/typedefs.h
-        include/model/Address.h
         src/model/Address.cpp
         src/model/Train.cpp
-        include/model/Handcar.h
         src/model/Handcar.cpp
-        include/model/MotorTrain.h
         src/model/MotorTrain.cpp
-        include/model/HighSpeedTrain.h
         src/model/HighSpeedTrain.cpp
-        include/model/PassagerTrain.h
         src/model/PassagerTrain.cpp
         src/model/ClientType.cpp
         test/ClientTest.cpp
-        include/model/Route.h
         src/model/Route.cpp
-        include/model/Station.h
         src/model/Station.cpp
-        include/model/Ticket.h
         src/model/Ticket.cpp
-        include/repositories/ClientRepository.h
-        include/StorageConteiner.h
         src/repositories/ClientRepository.cpp
+        include/repositories/TrainRepository.h
+        src/repositories/TrainRepository.cpp
 
 )
 # Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h

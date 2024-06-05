@@ -1,4 +1,5 @@
 #include "repositories/ClientRepository.h"
+#include "repositories/TrainRepository.h"
 #include <algorithm>
 
 ClientPtr ClientRepository::get(int index) {

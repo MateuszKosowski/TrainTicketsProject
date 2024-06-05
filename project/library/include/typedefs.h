@@ -11,6 +11,7 @@
 #include <iomanip>
 #include <sstream>
 #include <cmath>
+#include <algorithm>
 
 
 class Train;
@@ -25,6 +26,7 @@ class Route;
 class Station;
 class Ticket;
 class ClientRepository;
+class TrainRepository;
 
 typedef std::shared_ptr<Train> TrainPtr;
 typedef std::shared_ptr<Handcar> HandcarPtr;
@@ -38,10 +40,10 @@ typedef std::shared_ptr<Route> RoutePtr;
 typedef std::shared_ptr<Station> StationPtr;
 typedef std::shared_ptr<Ticket> TicketPtr;
 typedef std::shared_ptr<ClientRepository> ClientRepositoryPtr;
+typedef std::shared_ptr<TrainRepository> TrainRepositoryPtr;
 
 typedef bool (*ClientPredicate)(ClientPtr);
-
-
+typedef bool (*TrainPredicate)(TrainPtr);
 
 
 #endif //TRAINTICKETS_TYPEDEFS_H
