@@ -8,6 +8,8 @@
 #include "repositories/ClientRepository.h"
 
 class ClientManager {
+private:
+    ClientRepositoryPtr repository;
 public:
     ClientPtr createClient(const std::string &firstName, const std::string &lastName, const std::string &personalId,
                         const std::string &city, const std::string &street,
@@ -27,6 +29,8 @@ public:
     void changeClientLastName(const std::string &personalId, const std::string &lastName);
 
     ClientManager();
+
+    virtual ~ClientManager();
 
 
 };

@@ -29,6 +29,7 @@ class ClientRepository;
 class TicketRepository;
 class TrainRepository;
 class TrainManager;
+class ClientManager;
 
 typedef std::shared_ptr<Train> TrainPtr;
 typedef std::shared_ptr<Handcar> HandcarPtr;
@@ -45,6 +46,7 @@ typedef std::shared_ptr<ClientRepository> ClientRepositoryPtr;
 typedef std::shared_ptr<TrainRepository> TrainRepositoryPtr;
 typedef std::shared_ptr<TicketRepository> TicketRepositoryPtr;
 typedef std::shared_ptr<TrainManager> TrainManagerPtr;
+typedef std::shared_ptr<ClientManager> ClientManagerPtr;
 
 typedef bool (*ClientPredicate)(ClientPtr);
 typedef bool (*TrainPredicate)(TrainPtr);

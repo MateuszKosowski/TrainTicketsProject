@@ -18,7 +18,6 @@ set(SOURCE_FILES
         src/model/Ticket.cpp
         src/repositories/ClientRepository.cpp
         src/repositories/TrainRepository.cpp
-        src/managers/TranManager.cpp
         src/managers/ClientManager.cpp
         src/managers/TrainManager.cpp
 
@@ -58,6 +57,7 @@ set(SOURCE_TEST_FILES
         test/TrainTest.cpp
         test/StationTest.cpp
         test/TicketTest.cpp
+        test/ClientManagerTest.cpp
 ) # tu w przyszłości będą dodawane pliki źródłowe testów
 
 add_executable (LibraryTester ${SOURCE_TEST_FILES})
