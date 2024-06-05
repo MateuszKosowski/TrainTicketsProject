@@ -29,7 +29,7 @@ void TrainManager::addTrain(const TrainPtr &train) {
     if(train == nullptr){
         throw std::invalid_argument("Train is nullptr");
     }
-    if(this->repository->get(train->getTrainID()) != nullptr){
+    if(this->repository->get(train->getTrainId()) != nullptr){
         throw std::invalid_argument("Train already exists");
     }
     else{
@@ -41,7 +41,7 @@ void TrainManager::removeTrain(const TrainPtr &train) {
     if(train == nullptr){
         throw std::invalid_argument("Train is nullptr");
     }
-    if(this->repository->get(train->getTrainID()) == nullptr){
+    if(this->repository->get(train->getTrainId()) == nullptr){
         throw std::invalid_argument("Train does not exist");
     }
     else{

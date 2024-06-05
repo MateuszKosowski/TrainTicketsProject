@@ -18,7 +18,7 @@ int TrainRepository::size() {
 
 TrainPtr TrainRepository::get(std::string index) {
     for (const auto &train: allTrains) {
-        if (train->getTrainID() == index) {
+        if (train->getTrainId() == index) {
             return train;
         }
     }

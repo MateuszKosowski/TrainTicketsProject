@@ -21,7 +21,6 @@ public:
     void setBasePrice(int basePriceP);
     const std::string &getSeatNumber() const;
     void setSeatNumber(const std::string &seatNumberP);
-    const std::string &getTrainID() const;
     virtual std::string getInfo() const = 0;
     virtual double getActualRentalPrice() const = 0;
 };
