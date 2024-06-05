@@ -39,7 +39,7 @@ ClientPtr ClientManager::createClient(const std::string &firstName, const std::s
 
 void ClientManager::addClient(const ClientPtr &client)
 {
-    if(client == nullptr && repository->get(client->getPersonalId()) != nullptr)
+    if(client == nullptr || repository->get(client->getPersonalId()) != nullptr)
     {
         throw std::invalid_argument("Invalid client");
     }
@@ -51,7 +51,7 @@ void ClientManager::addClient(const ClientPtr &client)
 
 void ClientManager::removeClient(const std::string &personalId)
 {
-    if(personalId.empty() && repository->get(personalId) == nullptr)
+    if(personalId.empty() || repository->get(personalId) == nullptr)
     {
         throw std::invalid_argument("Invalid personal ID");
     }
@@ -63,7 +63,7 @@ void ClientManager::removeClient(const std::string &personalId)
 
 void ClientManager::changeClientType(const std::string &personalId, const int &clientType)
 {
-    if(personalId.empty() && repository->get(personalId) == nullptr)
+    if(personalId.empty() || repository->get(personalId) == nullptr)
     {
         throw std::invalid_argument("Invalid personal ID");
     }
@@ -93,7 +93,7 @@ void ClientManager::changeClientType(const std::string &personalId, const int &c
 
 void ClientManager::changeClientAddress(const std::string &personalId, const std::string &city, const std::string &street, const std::string &number)
 {
-    if(personalId.empty() && city.empty() && street.empty() && number.empty() && repository->get(personalId) == nullptr)
+    if(personalId.empty() || city.empty() || street.empty() || number.empty() || repository->get(personalId) == nullptr)
     {
         throw std::invalid_argument("Invalid personal ID");
     }
@@ -105,7 +105,7 @@ void ClientManager::changeClientAddress(const std::string &personalId, const std
 
 void ClientManager::changeClientFirstName(const std::string &personalId, const std::string &firstName)
 {
-    if(personalId.empty() && firstName.empty() && repository->get(personalId) == nullptr)
+    if(personalId.empty() || firstName.empty() || repository->get(personalId) == nullptr)
     {
         throw std::invalid_argument("Invalid personal ID");
     }
@@ -117,7 +117,7 @@ void ClientManager::changeClientFirstName(const std::string &personalId, const s
 
 void ClientManager::changeClientLastName(const std::string &personalId, const std::string &lastName)
 {
-    if(personalId.empty() && lastName.empty() && repository->get(personalId) == nullptr)
+    if(personalId.empty() || lastName.empty() || repository->get(personalId) == nullptr)
     {
         throw std::invalid_argument("Invalid personal ID");
     }
@@ -125,6 +125,28 @@ void ClientManager::changeClientLastName(const std::string &personalId, const st
     {
         repository->get(personalId)->setLastName(lastName);
     }
+}
+
+ClientPtr ClientManager::getClient(const std::string &personalId)
+{
+    if(personalId.empty() || repository->get(personalId) == nullptr)
+    {
+        throw std::invalid_argument("Invalid personal ID");
+    }
+    else
+    {
+        return repository->get(personalId);
+    }
+}
+
+std::vector<ClientPtr> ClientManager::findClientsBy(ClientPredicate predicate) const
+{
+    return repository->findBy(predicate);
+}
+
+std::vector<ClientPtr> ClientManager::getAllClients() const
+{
+    return repository->findAll();
 }
 
 

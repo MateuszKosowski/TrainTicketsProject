@@ -28,6 +28,11 @@ public:
 
     void changeClientLastName(const std::string &personalId, const std::string &lastName);
 
+    ClientPtr getClient(const std::string& pid);
+    std::vector<ClientPtr> findClientsBy(ClientPredicate predicate) const;
+    std::vector<ClientPtr> getAllClients() const;
+    std::string generateReport() const;
+
     ClientManager();
 
     ~ClientManager();
