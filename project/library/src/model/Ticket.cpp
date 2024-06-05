@@ -9,7 +9,7 @@
 #include <sstream>
 #include <cmath>
 
-Ticket::Ticket(const std::string &sId, const ClientPtr &cClient, const TrainPtr &tTrain, const pt::ptime &bTime, const pt::ptime &eTime, const int &sCount)
+Ticket::Ticket(const std::string &sId, const ClientPtr &cClient, const TrainPtr &tTrain, const pt::ptime &bTime, const pt::ptime &eTime, const int &sCount, const StationPtr &sStation, const StationPtr &eStation)
 {
     this->id = sId;
     this->client = cClient;
@@ -17,7 +17,10 @@ Ticket::Ticket(const std::string &sId, const ClientPtr &cClient, const TrainPtr 
     this->beginTime = bTime;
     this->endTime = eTime;
     this->stationCount = sCount;
+    this->startStation = sStation;
+    this->endStation = eStation;
 }
+
 Ticket::~Ticket()
 {
 }
@@ -87,4 +90,20 @@ int Ticket::getTravelTime() const {
 double Ticket::getTicketCost() const {
     double cost = client->applyDiscount(train->getActualRentalPrice() * this->getStationCount());
     return std::round(cost * 100) / 100;
+}
+
+const StationPtr &Ticket::getStartStation() const {
+    return startStation;
+}
+
+void Ticket::setStartStation(const StationPtr &sStation) {
+    Ticket::startStation = sStation;
+}
+
+const StationPtr &Ticket::getEndStation() const {
+    return endStation;
+}
+
+void Ticket::setEndStation(const StationPtr &eStation) {
+    Ticket::endStation = eStation;
 }
