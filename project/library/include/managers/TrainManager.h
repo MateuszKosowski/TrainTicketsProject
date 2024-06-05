@@ -1,0 +1,8 @@
+//
+// Created by student on 05.06.24.
+//
+
+#ifndef TRAINTICKETS_TRAINMANAGER_H
+#define TRAINTICKETS_TRAINMANAGER_H
+
+#endif //TRAINTICKETS_TRAINMANAGER_H
