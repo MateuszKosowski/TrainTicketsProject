@@ -44,7 +44,6 @@ include_directories(
 
 set(SOURCE_TEST_FILES
     test/master.cpp
-        test/ClientTest.cpp
         src/model/Client.cpp
         include/typedefs.h
         src/model/Address.cpp
@@ -60,6 +59,7 @@ set(SOURCE_TEST_FILES
         src/repositories/ClientRepository.cpp
         src/repositories/TrainRepository.cpp
         src/managers/TrainManager.cpp
+        test/ClientTest.cpp
         test/TrainTest.cpp
         test/StationTest.cpp
         test/TicketTest.cpp

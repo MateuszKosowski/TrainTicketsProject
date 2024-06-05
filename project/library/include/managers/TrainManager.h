@@ -5,15 +5,12 @@
 #ifndef TRAINTICKETS_TRAINMANAGER_H
 #define TRAINTICKETS_TRAINMANAGER_H
 
-#include "typedefs.h"
 #include "repositories/TrainRepository.h"
 
-class TrainManager {
+class TrainManager{
 private:
     TrainRepositoryPtr repository;
 public:
-    TrainManager();
-    ~TrainManager();
     TrainPtr createTrain(const std::string& id, int basePrice, const std::string& seatNumber, const int option, int velocity = 0);
     void addTrain(const TrainPtr& train);
     void removeTrain(const TrainPtr& train);
@@ -21,6 +18,8 @@ public:
     std::vector<TrainPtr> findTrainsBy(TrainPredicate predicate) const;
     std::vector<TrainPtr> getAllTrains() const;
     std::string generateReport() const;
+    TrainManager();
+    ~TrainManager();
 };
 
 #endif //TRAINTICKETS_TRAINMANAGER_H

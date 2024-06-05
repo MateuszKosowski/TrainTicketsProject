@@ -8,7 +8,7 @@ TrainManager::TrainManager(){
     this->repository = std::make_shared<TrainRepository>();
 }
 
-TrainManager::~TrainManager() = default;
+TrainManager::~TrainManager(){};
 
 TrainPtr TrainManager::createTrain(const std::string &id, int basePrice, const std::string &seatNumber, int option, int velocity) {
     if(!id.empty()&& basePrice > 0 && !seatNumber.empty() && option > 0 && option < 4 && velocity >= 0){
