@@ -12,6 +12,16 @@ StationManager::~StationManager() {
     repository.reset();
 }
 
+void StationManager::addRouteToStation(const std::string& stationName,const std::string &from, const std::string &to, std::string &routeID, int distance, int duration ) {
+    if(from.empty() || to.empty() || routeID.empty() || distance < 0 || duration < 0 || from == to || stationName != this->repository->get(stationName)->getName()){
+        throw std::invalid_argument("Invalid arguments");
+    }
+    else{
+        RoutePtr route = std::make_shared<Route>(from, to, routeID, distance, duration);
+        this->repository->get(stationName)->addRoute(route);
+    }
+}
+
 const StationRepositoryPtr &StationManager::getRepository() const {
     return repository;
 }
