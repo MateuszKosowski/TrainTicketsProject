@@ -12,7 +12,7 @@ StationManager::~StationManager() {
     repository.reset();
 }
 
-void StationManager::addRouteToStation(const std::string& stationName,const std::string &from, const std::string &to, std::string &routeID, int distance, int duration ) {
+void StationManager::addRouteToStation(const std::string& stationName,const std::string &from, const std::string &to, const std::string &routeID, int distance, int duration ) {
     if(from.empty() || to.empty() || routeID.empty() || distance < 0 || duration < 0 || from == to || stationName != this->repository->get(stationName)->getName()){
         throw std::invalid_argument("Invalid arguments");
     }

@@ -13,7 +13,7 @@ private:
 public:
     const StationRepositoryPtr &getRepository() const;
     StationPtr createStation(const std::string& name);
-    void addRouteToStation(const std::string& stationName ,const std::string& from, const std::string& to, std::string& routeID, int distance, int duration);
+    void addRouteToStation(const std::string& stationName ,const std::string& from, const std::string& to, const std::string& routeID, int distance, int duration);
     void addStation(const StationPtr& station);
     void removeStation(const StationPtr& station);
     StationPtr getStation(const std::string& id);
