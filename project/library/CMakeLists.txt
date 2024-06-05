@@ -54,12 +54,19 @@ set(SOURCE_TEST_FILES
         src/model/HighSpeedTrain.cpp
         src/model/PassagerTrain.cpp
         src/model/ClientType.cpp
+        src/model/Route.cpp
+        src/model/Station.cpp
+        src/model/Ticket.cpp
+        src/repositories/ClientRepository.cpp
+        src/repositories/TrainRepository.cpp
+        src/managers/TrainManager.cpp
+        test/ClientTest.cpp
         test/TrainTest.cpp
         test/StationTest.cpp
         test/TicketTest.cpp
         test/ClientManagerTest.cpp
+        test/TrainManagerTest.cpp
         managers/ClientManager.cpp
-        managers/TrainManager.cpp
 ) # tu w przyszłości będą dodawane pliki źródłowe testów
 
 add_executable (LibraryTester ${SOURCE_TEST_FILES})
