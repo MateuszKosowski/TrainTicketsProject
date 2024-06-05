@@ -18,6 +18,8 @@ set(SOURCE_FILES
         src/model/Ticket.cpp
         src/repositories/ClientRepository.cpp
         src/repositories/TicketRepository.cpp
+        include/repositories/TrainRepository.h
+        src/repositories/TrainRepository.cpp
 
 )
 # Utwórz bibliotekę Client_Lib zawierającą kod Client.cpp i Client.h

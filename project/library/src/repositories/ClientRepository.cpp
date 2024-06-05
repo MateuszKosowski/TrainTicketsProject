@@ -1,4 +1,5 @@
 #include "repositories/ClientRepository.h"
+#include <algorithm>
 
 ClientPtr ClientRepository::get(const std::string& pid) {
     int size = clients.size();
