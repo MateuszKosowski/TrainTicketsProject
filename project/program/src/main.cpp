@@ -67,26 +67,39 @@ bool addCreateRouteForStation(){
         return false;
 }
 
-// PRACE TRWAJA
-//bool stationNameEquale(StationPtr ptr)
-//{
-//    return ptr->getName() == "Warszawa Centralna";
-//}
+bool stationMaxRoutes(StationPtr ptr)
+{
+//    StationPtr maxStation = nullptr;
+//    size_t maxRoutes = 0;
 //
-//bool stationRaport(){
-//    cout << "Podaj nazwe stacji: ";
-//    string name;
-//    cin >> name;
-//    stationManager->findStationsBy(stationNameEquale);
-//    if(station != nullptr){
-//        cout << "Raport stacji: " << name << endl;
-//        cout << station->getInfo() << endl;
-//        return true;
-//    } else{
-//        cout << "Stacja nie istnieje\n";
-//        return false;
+//    for(const auto &station: stationManager->getRepository()->findAll()){
+//        size_t numRoutes = station->getRoutes().size();
+//        if(numRoutes > maxRoutes){
+//            maxRoutes = numRoutes;
+//            maxStation = station;
+//        }
 //    }
-//}
+//
+//    return (maxStation == ptr);
+    size_t maxRoutes = 0;
+
+    for(const auto &station: stationManager->getRepository()->findAll()){
+        size_t numRoutes = station->getRoutes().size();
+        if(numRoutes > maxRoutes){
+            maxRoutes = numRoutes;
+        }
+    }
+    return (ptr->getRoutes().size() == maxRoutes);
+}
+
+string getStationWithMaxRoutes(){
+    string odp;
+    std::vector<StationPtr> stations = stationManager->findStationsBy(stationMaxRoutes);
+    for(const auto& station : stations){
+        odp += station->getInfo() + "\n";
+    }
+    return odp;
+}
 
 int main()
 {
@@ -113,7 +126,7 @@ int main()
                     cout << "2. Usun stacje\n";
                     cout << "3. Utworz i dodaj trase do stacji\n";
                     cout << "4. Wyswietl raport wszystkich stacji\n";
-                    cout << "5. Wyswietl raport wybranej stacji\n";
+                    cout << "5. Wyswietl raport stacji o najwiekszej ilosci tras\n";
                     cout << "6. Cofnij sie\n";
                     cout << "----------------------\n";
 
@@ -147,7 +160,7 @@ int main()
                             break;
 
                         case '5':
-                            cout << "PRACE DEVELOPERSKIE WCIAZ TRWAJA\n";
+                            cout << getStationWithMaxRoutes() << endl;
                             break;
 
                         case '6':

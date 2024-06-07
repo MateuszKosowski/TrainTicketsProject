@@ -27,8 +27,8 @@ const StationRepositoryPtr &StationManager::getRepository() const {
 }
 
 StationPtr StationManager::createStation(const std::string &name) {
-    if(name.empty()){
-        throw std::invalid_argument("Name is empty");
+    if(name.empty() || (this->repository->get(name) != nullptr && this->repository->get(name)->getName() == name)){
+        throw std::invalid_argument("Wrong name or station already exists");
     }
     else{
         return std::make_shared<Station>(name);
