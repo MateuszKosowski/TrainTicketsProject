@@ -69,18 +69,6 @@ bool addCreateRouteForStation(){
 
 bool stationMaxRoutes(StationPtr ptr)
 {
-//    StationPtr maxStation = nullptr;
-//    size_t maxRoutes = 0;
-//
-//    for(const auto &station: stationManager->getRepository()->findAll()){
-//        size_t numRoutes = station->getRoutes().size();
-//        if(numRoutes > maxRoutes){
-//            maxRoutes = numRoutes;
-//            maxStation = station;
-//        }
-//    }
-//
-//    return (maxStation == ptr);
     size_t maxRoutes = 0;
 
     for(const auto &station: stationManager->getRepository()->findAll()){

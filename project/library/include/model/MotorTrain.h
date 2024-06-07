@@ -7,15 +7,55 @@
 
 #include "Train.h"
 
+
+/**
+ * @class MotorTrain
+ * @brief Klasa reprezentująca pociąg z silnikiem w systemie.
+ */
 class MotorTrain : public Train {
 protected:
+    /**
+     * @brief Prędkość pociągu.
+     */
     int velocity;
 public:
+
+    /**
+     * @brief Konstruktor klasy MotorTrain.
+     * @param trainID - unikalny identyfikator pociągu.
+     * @param basePrice - bazowa cena biletu na ten pociąg.
+     * @param seatNumber - liczba miejsc w pociągu.
+     * @param velocity - prędkość pociągu.
+     */
     MotorTrain(const std::string &trainID, int basePrice, const std::string &seatNumber, int velocity);
+
+    /**
+     * @brief Destruktor klasy MotorTrain.
+     */
     virtual ~MotorTrain() = 0;
+
+    /**
+     * @brief Metoda zwracająca prędkość pociągu.
+     * @return Prędkość pociągu.
+     */
     int getVelocity() const;
+
+    /**
+     * @brief Metoda ustawiająca prędkość pociągu.
+     * @param velocityP - prędkość pociągu.
+     */
     void setVelocity(int velocityP);
+
+    /**
+   * @brief Metoda zwracająca informacje o drezynie.
+   * @return Informacje o drezynie.
+   */
     virtual std::string getInfo() const = 0;
+
+    /**
+   * @brief Metoda zwracająca aktualną cenę biletu na pociąg.
+   * @return Aktualna cena biletu na pociąg.
+   */
     virtual double getActualRentalPrice() const = 0;
 };
 
