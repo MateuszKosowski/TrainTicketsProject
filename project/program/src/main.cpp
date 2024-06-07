@@ -71,7 +71,7 @@ bool stationMaxRoutes(StationPtr ptr)
 {
     size_t maxRoutes = 0;
 
-    for(const auto &station: stationManager->getRepository()->findAll()){
+    for(const auto &station: stationManager->getAllStations()){
         size_t numRoutes = station->getRoutes().size();
         if(numRoutes > maxRoutes){
             maxRoutes = numRoutes;
