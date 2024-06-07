@@ -13,6 +13,81 @@ TrainManagerPtr trainManager = std::make_shared<TrainManager>();
 ClientManagerPtr clientManager = std::make_shared<ClientManager>();
 TicketManagerPtr ticketManager = std::make_shared<TicketManager>();
 
+bool createStation(){
+    string name;
+    cout << "Podaj nazwe stacji: ";
+    getline(cin, name);
+    StationPtr station = stationManager->createStation(name);
+    stationManager->addStation(station);
+    if(stationManager->getStation(name) != nullptr){
+        cin.clear();
+        return true;
+    }
+    else{
+        cin.clear();
+        return false;
+    }
+}
+
+bool deleteStation(){
+    string name;
+    cout << "Podaj nazwe stacji: ";
+    getline(cin, name);
+    StationPtr station = stationManager->getStation(name);
+    if(station != nullptr){
+        stationManager->removeStation(station);
+        return true;
+    } else
+        return false;
+}
+
+bool addCreateRouteForStation(){
+    string stationName, from, to, routeID;
+    int distance, duration;
+    cout << "Dostepne stacje: \n";
+    cout << stationManager->generateReport() << endl;
+    cout << "----------------------\n";
+    cout << "Podaj nazwe stacji do ktorej chcesz dodac trase: ";
+    getline(cin, stationName);
+    cout << "Tworzenie trasy dla stacji: " << stationName << "\n";
+    cout << "Podaj nazwe stacji poczatkowej: ";
+    getline(cin, from);
+    cout << "Podaj nazwe stacji koncowej: ";
+    getline(cin, to);
+    cout << "Podaj ID trasy: ";
+    getline(cin, routeID);
+    cout << "Podaj odleglosc: ";
+    cin >> distance;
+    cout << "Podaj czas trwania: ";
+    cin >> duration;
+    stationManager->addRouteToStation(stationName, from, to, routeID, distance, duration);
+    if(stationManager->getStation(stationName)->getRoute(routeID) != nullptr)
+        return true;
+    else
+        return false;
+}
+
+// PRACE TRWAJA
+//bool stationNameEquale(StationPtr ptr)
+//{
+//    return ptr->getName() == "Warszawa Centralna";
+//}
+//
+//bool stationRaport(){
+//    cout << "Podaj nazwe stacji: ";
+//    string name;
+//    cin >> name;
+//    stationManager->findStationsBy(stationNameEquale);
+//    if(station != nullptr){
+//        cout << "Raport stacji: " << name << endl;
+//        cout << station->getInfo() << endl;
+//        return true;
+//    } else{
+//        cout << "Stacja nie istnieje\n";
+//        return false;
+//    }
+//}
+
 int main()
 {
     char choice, choice2;
@@ -43,6 +118,46 @@ int main()
                     cout << "----------------------\n";
 
                     cin >> choice2;
+                    cin.ignore();
+
+                    switch(choice2){
+                        case '1':
+                            if(createStation())
+                                cout << "Stacja zostala utworzona\n";
+                            else
+                                cout << "Stacja nie zostala utworzona\n";
+                            break;
+
+                        case '2':
+                            if(deleteStation())
+                                cout << "Stacja zostala usunieta\n";
+                            else
+                                cout << "Stacja nie zostala usunieta\n";
+                            break;
+
+                        case '3':
+                            if(addCreateRouteForStation())
+                                cout << "Trasa zostala dodana\n";
+                            else
+                                cout << "Trasa nie zostala dodana\n";
+                            break;
+
+                        case '4':
+                            cout << stationManager->generateReport() << endl;
+                            break;
+
+                        case '5':
+                            cout << "PRACE DEVELOPERSKIE WCIAZ TRWAJA\n";
+                            break;
+
+                        case '6':
+                            cout << "Cofanie...\n";
+                            break;
+
+                        default:
+                            cout << "Niepoprawny wybor\n";
+                            break;
+                    }
 
                 } while (choice2 != '6');
                 break;

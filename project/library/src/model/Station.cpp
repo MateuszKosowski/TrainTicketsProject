@@ -47,3 +47,12 @@ Station::Station(const std::string &name){
 Station::~Station() {
     routes.clear();
 }
+
+RoutePtr Station::getRoute(const std::string &routeID) const {
+    for (const auto &route : routes) {
+        if (route->getRouteId() == routeID) {
+            return route;
+        }
+    }
+    return nullptr;
+}

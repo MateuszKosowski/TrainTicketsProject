@@ -18,6 +18,8 @@ public:
 
     const std::vector<RoutePtr> &getRoutes() const;
 
+    RoutePtr getRoute(const std::string &routeID) const;
+
     void addRoute(const RoutePtr &route);
 
     void deleteRoute(const RoutePtr &route);
