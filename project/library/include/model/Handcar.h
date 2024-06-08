@@ -38,6 +38,13 @@ public:
      */
     double getActualRentalPrice() const override;
 
+
+    /**
+     * @brief Metoda zwracająca prędkość drezyny.
+     * @return Prędkość drezyny.
+     */
+    int getVelocity() const override;
+
 };
 
 #endif //TRAINTICKETS_HANDCAR_H

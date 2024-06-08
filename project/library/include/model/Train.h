@@ -89,6 +89,12 @@ public:
      * @return Aktualna cena biletu na pociąg.
      */
     virtual double getActualRentalPrice() const = 0;
+
+    /**
+     * @brief Metoda zwracająca typ pociągu.
+     * @return Typ pociągu.
+     */
+    virtual int getVelocity() const = 0;
 };
 
 

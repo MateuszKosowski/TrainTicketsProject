@@ -13,6 +13,73 @@ TrainManagerPtr trainManager = std::make_shared<TrainManager>();
 ClientManagerPtr clientManager = std::make_shared<ClientManager>();
 TicketManagerPtr ticketManager = std::make_shared<TicketManager>();
 
+bool creatTrain(){
+    string id, sNum;
+    int basePrice, option, velocity = 0;
+    cout << "Podaj ID pociagu: \n";
+    getline(cin, id);
+    cout << "Podaj ilosc miejsc: \n";
+    getline(cin, sNum);
+    cout << "Wybierz rodzaj pociagu: \n";
+    cout << "1. Drezyna reczna\n";
+    cout << "2. Pociag pasazerski\n";
+    cout << "3. Pociag szybki\n";
+    cin >> option;
+    cout << "Podaj bazowa cene przejazdu: \n";
+    cin >> basePrice;
+    if(option == 2 || option == 3){
+        cout << "Podaj predkosc: \n";
+        cin >> velocity;
+    }
+    TrainPtr train = trainManager->createTrain(id, basePrice, sNum, option, velocity);
+    trainManager->addTrain(train);
+    if(trainManager->getTrain(id) != nullptr){
+        cin.clear();
+        return true;
+    }
+    else{
+        cin.clear();
+        return false;
+    }
+}
+
+bool deleteTrain(){
+    string id;
+    cout << "Podaj ID pociagu: ";
+    getline(cin, id);
+    TrainPtr train = trainManager->getTrain(id);
+    if(train != nullptr){
+        trainManager->removeTrain(train);
+        return true;
+    } else
+        return false;
+
+}
+
+bool fastestTrain(TrainPtr ptr)
+{
+    int maxSpeed = 0;
+
+    for(const auto &train: trainManager->getAllTrains()){
+        if(train != nullptr){
+            int speed = train->getVelocity();
+            if(speed > maxSpeed){
+                maxSpeed = speed;
+            }
+        }
+    }
+    return (ptr->getVelocity() == maxSpeed);
+}
+
+string getFastestTrain(){
+    string odp;
+    std::vector<TrainPtr> trains = trainManager->findTrainsBy(fastestTrain);
+    for(const auto& train : trains){
+        odp += train->getInfo() + "\n";
+    }
+    return odp;
+}
+
 bool createStation(){
     string name;
     cout << "Podaj nazwe stacji: ";
@@ -170,14 +237,48 @@ int main()
                     cout << "1. Utworz pociag\n";
                     cout << "2. Usun pociag\n";
                     cout << "3. Wyswietl raport wszystkich pociagow\n";
-                    cout << "4. Wyswietl raport wybranego pociagu\n";
+                    cout << "4. Wyswietl najszybszy pociag\n";
                     cout << "5. Cofnij sie\n";
                     cout << "----------------------\n";
 
                     cin >> choice2;
+                    cin.ignore();
+
+                    switch(choice2){
+                        case '1':
+                            if(creatTrain())
+                                cout << "Pociag zostal utworzony\n";
+                            else
+                                cout << "Pociag nie zostal utworzony\n";
+                            break;
+
+                        case '2':
+                            if(deleteTrain())
+                                cout << "Pociag zostal usuniety\n";
+                            else
+                                cout << "Pociag nie zostal usuniety\n";
+                            break;
+
+                        case '3':
+                            cout << trainManager->generateReport() << endl;
+                            break;
+
+                        case '4':
+                            cout << getFastestTrain() << endl;
+                            break;
+
+                        case '5':
+                            cout << "Cofanie...\n";
+                            break;
+
+                        default:
+                            cout << "Niepoprawny wybor\n";
+                            break;
+                    }
 
                 } while (choice2 != '5');
                 break;
+
 
             case '3':
                 do{

@@ -21,3 +21,7 @@ std::string Handcar::getInfo() const {
     stream << std::fixed << std::setprecision(2) << getActualRentalPrice();
     return "Drezyna: " + getTrainId() + ", ilosc miejsc: " + getSeatNumber() + ", aktualna cena: " + stream.str();
 }
+
+int Handcar::getVelocity() const {
+    return 0;
+}

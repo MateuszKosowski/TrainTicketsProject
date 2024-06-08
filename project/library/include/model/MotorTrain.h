@@ -38,7 +38,7 @@ public:
      * @brief Metoda zwracająca prędkość pociągu.
      * @return Prędkość pociągu.
      */
-    int getVelocity() const;
+    int getVelocity() const override;
 
     /**
      * @brief Metoda ustawiająca prędkość pociągu.
