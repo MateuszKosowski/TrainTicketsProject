@@ -1,7 +1,3 @@
-//
-// Created by mateu on 31.05.2024.
-//
-
 #ifndef TRAINTICKETS_ADDRESS_H
 #define TRAINTICKETS_ADDRESS_H
 
