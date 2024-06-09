@@ -588,7 +588,9 @@ int main()
                         case '0':
                             cout << "Cofanie...\n";
                             break;
-
+                        default:
+                            cout << "Niepoprawny wybor\n";
+                            break;
                     }
                 } while (choice2 != '0');
                 break;
@@ -657,7 +659,9 @@ int main()
                         case '0':
                             cout << "Cofanie...\n";
                             break;
-
+                        default:
+                            cout << "Niepoprawny wybor\n";
+                            break;
                     }
 
                 } while (choice2 != '0');
