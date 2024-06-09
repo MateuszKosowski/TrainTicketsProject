@@ -330,6 +330,72 @@ string findClientsBy() {
 std::string reportAllClients(){
     return clientManager->generateReport();
 }
+
+bool createTicket(){
+    std::string id, personalId, trainId, startStation, endStation;
+    int countStation;
+    cout << "Proszę podać pesel klienta: ";
+    cin >> personalId;
+    cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+    cout << "Prosze podać id pociagu:";
+    getline(cin, trainId);
+    cout << "Prosze podać stacje początkową:";
+    getline(cin, startStation);
+    cout << "Prosze podać stacje końcową:";
+    getline(cin, endStation);
+    cout << "Prosze podać ilosc stacji";
+    cin >> countStation;
+    ClientPtr ticketClient = clientManager->getClient(personalId);
+    TrainPtr ticketTrain = trainManager->getTrain(trainId);
+    StationPtr ticketStartStation = stationManager->getStation(startStation);
+    StationPtr ticketEndStation = stationManager->getStation(endStation);
+    TicketPtr ticket = ticketManager->createTicket(ticketClient, ticketTrain, countStation, ticketStartStation, ticketEndStation);
+    ticketManager->addTicket(ticket);
+    if(ticketManager->getTicket(to_string(ticketManager->getAllTickets().size())) != nullptr){
+        cin.clear();
+        return true;
+    }
+    else{
+        cin.clear();
+        return false;
+    }
+}
+bool deleteTicket(){
+    string id;
+    cout << "Podaj ID biletu: ";
+    cin >> id;
+    ticketManager->removeTicket(id);
+    if(ticketManager->getTicket(id) == nullptr){
+        return true;
+    } else
+        return false;
+}
+void raportTicket(){
+    cout << ticketManager->generateReport() << endl;
+}
+bool expensiveTicket(TicketPtr ptr)
+{   double costMax = 0;
+    for(const auto &ticket: ticketManager->getAllTickets()){
+        if(ticket != nullptr){
+            double costing = ticket->getTicketCost();
+            if(costMax < costing){
+                costMax = costing;
+            }
+        }
+    }
+    return (ptr->getTicketCost() == costMax);
+}
+
+string findTicketsBy() {
+    string odp;
+    vector<TicketPtr> tickets = ticketManager->findTicketsBy(expensiveTicket);
+    for (const auto& ticket : tickets) {
+        odp += ticket->getInfo() + "\n";
+    }
+    return odp;
+}
+
+
 int main()
 {
     char choice, choice2;
@@ -531,11 +597,68 @@ int main()
                 do{
                     cout << "--- Menager Biletow ---\n";
                     cout << "Dostepne akcje:\n";
-                    cout << "PRACE DEVELOPERSKIE WCIAZ TRWAJA\n";
+                    cout << "1. Sprzedaj bilet\n";
+                    cout << "2. Usun bilet\n";
+                    cout << "3. Wyswietl raport wszystkich biletow\n";
+                    cout << "4. Wyswietl najdrozszy bilet\n";
                     cout << "0. Cofnij sie\n";
                     cout << "----------------------\n";
 
                     cin >> choice2;
+                    switch (choice2) {
+                        case '1':
+                            char choice3;
+                            cout << "--- Sprzedaj bilet ---\n";
+                            if(clientManager->getAllClients().empty() || trainManager->getAllTrains().empty() || stationManager->getAllStations().empty()){
+                                cout << "Brak klientow, pociagow lub stacji.\n\n";
+                                break;
+                            }
+                            else
+                            {
+                                cout << "Dostepni klienci:\n";
+                                cout << clientManager->generateReport() << endl;
+                                cout << "Dostepne pociagi:\n";
+                                cout << trainManager->generateReport() << endl;
+                                cout << "Dostepne stacje:\n";
+                                cout << stationManager->generateReport() << endl;
+                            }
+                            cout << "1. Sprzedaj bilet\n";
+                            cout << "0. Cofnij sie\n";
+                            cin >> choice3;
+                            switch (choice3) {
+                                case '1':
+                                    if(createTicket())
+                                        cout << "Bilet zostal sprzedany\n";
+                                    else
+                                        cout << "Bilet nie zostal sprzedany\n";
+                                    break;
+                                case '0':
+                                    cout << "Cofanie...\n";
+                                    break;
+                                default:
+                                    cout << "Niepoprawny wybor\n";
+                                    break;
+                            }
+                            break;
+                        case '2':
+                            if(deleteTicket())
+                                cout << "Bilet zostal usuniety\n";
+                            else
+                                cout << "Bilet nie zostal usuniety\n";
+                            break;
+                        case '3':
+                            cout << "Wyswietl raport wszystkich biletow\n";
+                            raportTicket();
+                            break;
+                        case '4':
+                            cout << "Wyswietl najdrozszy bilet\n";
+                            cout << findTicketsBy() << endl;
+                            break;
+                        case '0':
+                            cout << "Cofanie...\n";
+                            break;
+
+                    }
 
                 } while (choice2 != '0');
                 break;

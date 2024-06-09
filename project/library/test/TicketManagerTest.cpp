@@ -22,11 +22,11 @@ struct TicketManagerFixture {
         testAddress = std::make_shared<Address>("Zgierz", "Parzeczewska", "1");
         stacja1 = std::make_shared<Station>("Łódź Widzew");
         stacja2 = std::make_shared<Station>("Warszawa Centralna");
-        ClientPtr client = clientManager->createClient("Mateusz", "Urbaniak", "1", "Zgierz", "Parzeczewska", "1", 2);
+        ClientPtr client = clientManager->createClient("Mateusz", "Urbaniak", "12312312312", "Zgierz", "Parzeczewska", "1", 2);
         clientManager->addClient(client);
         TrainPtr train = trainManagerc->createTrain("1", 100, "50", 3, 200);
         trainManagerc->addTrain(train);
-        TicketPtr ticket = ticketManager->createTicket("testId", client, train, boost::posix_time::second_clock::local_time(), boost::posix_time::second_clock::local_time() + boost::posix_time::hours(1), 5, stacja1, stacja2);
+        TicketPtr ticket = ticketManager->createTicket(client, train, 5, stacja1, stacja2);
         ticketManager->addTicket(ticket);
     }
     ~TicketManagerFixture()
@@ -37,13 +37,18 @@ struct TicketManagerFixture {
 
 BOOST_FIXTURE_TEST_SUITE(TicketManagerTest, TicketManagerFixture)
     BOOST_AUTO_TEST_CASE(ConstructorTest) {
-        BOOST_TEST(ticketManager->getTicket("testId")->getClient()->getFirstName() == "Mateusz");
-        BOOST_TEST(ticketManager->getTicket("testId")->getTrain()->getBasePrice() == 100);
-        BOOST_TEST(ticketManager->getTicket("testId")->getStationCount() == 5);
-        BOOST_TEST(ticketManager->getTicket("testId")->getStartStation()->getName() == "Łódź Widzew");
-        BOOST_TEST(ticketManager->getTicket("testId")->getEndStation()->getName() == "Warszawa Centralna");
-        BOOST_TEST(ticketManager->getTicket("testId")->getTravelTime() == 60);
-        BOOST_TEST(ticketManager->getTicket("testId")->getTicketCost() == 665);
+        BOOST_TEST(ticketManager->getTicket("1")->getClient()->getFirstName() == "Mateusz");
+        BOOST_TEST(ticketManager->getTicket("1")->getClient()->getLastName() == "Urbaniak");
+        BOOST_TEST(ticketManager->getTicket("1")->getClient()->getPersonalId() == "12312312312");
+        BOOST_TEST(ticketManager->getTicket("1")->getClient()->getAddress()->getCity() == "Zgierz");
+        BOOST_TEST(ticketManager->getTicket("1")->getClient()->getAddress()->getStreet() == "Parzeczewska");
+        BOOST_TEST(ticketManager->getTicket("1")->getClient()->getAddress()->getNumber() == "1");
+        BOOST_TEST(ticketManager->getTicket("1")->getTrain()->getBasePrice() == 100);
+        BOOST_TEST(ticketManager->getTicket("1")->getStationCount() == 5);
+        BOOST_TEST(ticketManager->getTicket("1")->getStartStation()->getName() == "Łódź Widzew");
+        BOOST_TEST(ticketManager->getTicket("1")->getEndStation()->getName() == "Warszawa Centralna");
+        BOOST_TEST(ticketManager->getTicket("1")->getTravelTime() == 50);
+        BOOST_TEST(ticketManager->getTicket("1")->getTicketCost() == 665);
     }
     BOOST_AUTO_TEST_CASE(ConstructorTestNegative) {
 

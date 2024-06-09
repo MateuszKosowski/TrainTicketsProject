@@ -11,8 +11,7 @@ class TicketManager {
 private:
     TicketRepositoryPtr repository;
 public:
-    TicketPtr createTicket(const std::string &id, const ClientPtr &client, const TrainPtr &train, const pt::ptime &beginTime,
-                           const pt::ptime &endTime, const int &stationCount, const StationPtr &sStationName, const StationPtr &eStationName);
+    TicketPtr createTicket(const ClientPtr &client, const TrainPtr &train, const int &stationCount, const StationPtr &sStationName, const StationPtr &eStationName);
     void addTicket(const TicketPtr &ticket);
     void removeTicket(const std::string &id);
     TicketPtr getTicket(const std::string &id);

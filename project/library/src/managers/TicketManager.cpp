@@ -9,14 +9,16 @@ TicketManager::TicketManager() {
 TicketManager::~TicketManager() {
 }
 
-TicketPtr TicketManager::createTicket(const std::string &id, const ClientPtr &client, const TrainPtr &train, const pt::ptime &beginTime,
-                                      const pt::ptime &endTime, const int &stationCount, const StationPtr &sStation, const StationPtr &eStation) {
+TicketPtr TicketManager::createTicket(const ClientPtr &client, const TrainPtr &train, const int &stationCount, const StationPtr &sStation, const StationPtr &eStation) {
 
 
-    if (id.empty() || client == nullptr || train == nullptr || beginTime.is_not_a_date_time() || endTime.is_not_a_date_time() || stationCount < 0 || sStation == nullptr || eStation == nullptr){
+    if (client == nullptr || train == nullptr || stationCount < 0 || sStation == nullptr || eStation == nullptr){
         throw std::invalid_argument("Invalid input");
     }
     else {
+        pt::ptime beginTime = pt::second_clock::local_time();
+        pt::ptime endTime = pt::second_clock::local_time() + pt::hours(24);
+        std::string id = std::to_string(repository->size()+1);
         return std::make_shared<Ticket>(id, client, train, beginTime, endTime, stationCount, sStation, eStation);
     }
 }
@@ -44,11 +46,13 @@ TicketPtr TicketManager::getTicket(const std::string &id) {
     if (id.empty()) {
         throw std::invalid_argument("Invalid ticket ID");
     }
-    TicketPtr ticket = repository->get(id);
-    if (ticket == nullptr) {
+    else if (repository->get(id) == nullptr) {
         throw std::invalid_argument("Ticket does not exist");
     }
-    return ticket;
+    else
+    {
+        return repository->get(id);
+    }
 }
 
 std::vector<TicketPtr> TicketManager::findTicketsBy(TicketPredicate predicate) const {

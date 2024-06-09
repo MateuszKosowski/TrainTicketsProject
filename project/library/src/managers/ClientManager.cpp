@@ -12,7 +12,13 @@ ClientPtr ClientManager::createClient(const std::string &firstName, const std::s
 {
     if(firstName.empty() || lastName.empty() || personalId.empty() || city.empty() || street.empty() || number.empty())
     {
-        throw std::invalid_argument("Invalid input");
+        if(personalId.size() != 11)
+        {
+            throw std::invalid_argument("Invalid personal ID");
+        }
+        else{
+            throw std::invalid_argument("Invalid input");
+        }
     }
     else
     {
@@ -51,7 +57,7 @@ void ClientManager::addClient(const ClientPtr &client)
 
 void ClientManager::removeClient(const std::string &personalId)
 {
-    if(personalId.empty() || repository->get(personalId) == nullptr)
+    if(personalId.size() != 11 || repository->get(personalId) == nullptr)
     {
         throw std::invalid_argument("Invalid personal ID");
     }
@@ -63,7 +69,7 @@ void ClientManager::removeClient(const std::string &personalId)
 
 void ClientManager::changeClientType(const std::string &personalId, const int &clientType)
 {
-    if(personalId.empty() || repository->get(personalId) == nullptr)
+    if(personalId.size() != 11 || repository->get(personalId) == nullptr)
     {
         throw std::invalid_argument("Invalid personal ID");
     }
@@ -93,9 +99,9 @@ void ClientManager::changeClientType(const std::string &personalId, const int &c
 
 void ClientManager::changeClientAddress(const std::string &personalId, const std::string &city, const std::string &street, const std::string &number)
 {
-    if(personalId.empty() || city.empty() || street.empty() || number.empty() || repository->get(personalId) == nullptr)
+    if(personalId.size() != 11 || city.empty() || street.empty() || number.empty() || repository->get(personalId) == nullptr)
     {
-        throw std::invalid_argument("Invalid personal ID");
+        throw std::invalid_argument("Invalid input");
     }
     else
     {
@@ -105,9 +111,9 @@ void ClientManager::changeClientAddress(const std::string &personalId, const std
 
 void ClientManager::changeClientFirstName(const std::string &personalId, const std::string &firstName)
 {
-    if(personalId.empty() || firstName.empty() || repository->get(personalId) == nullptr)
+    if(personalId.size() != 11 || firstName.empty() || repository->get(personalId) == nullptr)
     {
-        throw std::invalid_argument("Invalid personal ID");
+        throw std::invalid_argument("Invalid input");
     }
     else
     {
@@ -117,9 +123,9 @@ void ClientManager::changeClientFirstName(const std::string &personalId, const s
 
 void ClientManager::changeClientLastName(const std::string &personalId, const std::string &lastName)
 {
-    if(personalId.empty() || lastName.empty() || repository->get(personalId) == nullptr)
+    if(personalId.size() != 11 || lastName.empty() || repository->get(personalId) == nullptr)
     {
-        throw std::invalid_argument("Invalid personal ID");
+        throw std::invalid_argument("Invalid input");
     }
     else
     {
@@ -129,7 +135,7 @@ void ClientManager::changeClientLastName(const std::string &personalId, const st
 
 ClientPtr ClientManager::getClient(const std::string &personalId)
 {
-    if(personalId.empty() || repository->get(personalId) == nullptr)
+    if(personalId.size() != 11 || repository->get(personalId) == nullptr)
     {
         throw std::invalid_argument("Invalid personal ID");
     }

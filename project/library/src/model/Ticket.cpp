@@ -83,8 +83,7 @@ std::string Ticket::getInfo() const {
     return "Bilet: " + id + ", klient: " + client->getInfo() + ", pociag: " + train->getInfo() + ", czas rozpoczecia: " + b + ", czas zakonczenia: " + e + ", czas przejazdu: "+ std::to_string(getTravelTime()) + ", koszt: " + std::to_string(getTicketCost());
 }
 int Ticket::getTravelTime() const {
-    pt::time_duration td = endTime - beginTime;
-    int duration_in_minutes = td.hours() * 60 + td.minutes();
+    int duration_in_minutes = stationCount * 10;
     return duration_in_minutes;
 }
 double Ticket::getTicketCost() const {
