@@ -22,7 +22,7 @@ struct TicketManagerFixture {
         testAddress = std::make_shared<Address>("Zgierz", "Parzeczewska", "1");
         stacja1 = std::make_shared<Station>("Łódź Widzew");
         stacja2 = std::make_shared<Station>("Warszawa Centralna");
-        ClientPtr client = clientManager->createClient("Mateusz", "Urbaniak", "1", "Zgierz", "Parzeczewska", "1", 1);
+        ClientPtr client = clientManager->createClient("Mateusz", "Urbaniak", "1", "Zgierz", "Parzeczewska", "1", 2);
         clientManager->addClient(client);
         TrainPtr train = trainManagerc->createTrain("1", 100, "50", 3, 200);
         trainManagerc->addTrain(train);

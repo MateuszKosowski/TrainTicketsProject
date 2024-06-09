@@ -62,7 +62,7 @@ std::string Client::getInfo() const {
 }
 
 std::string Client::getFullInfo() const {
-    return getInfo() + " PESEL: " + personalID + address->getInfo() + clientType->getTypeInfo();
+    return getInfo() + " PESEL: " + personalID + address->getInfo() + " " + clientType->getTypeInfo();
 }
 
 double Client::applyDiscount(double price) const {

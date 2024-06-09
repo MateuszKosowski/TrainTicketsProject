@@ -28,14 +28,14 @@ BOOST_FIXTURE_TEST_SUITE(ClientManagerTest, ClientManagerFixture)
         BOOST_TEST(clientManager->getClient("1")->getAddress()->getCity() == "Zgierz");
         BOOST_TEST(clientManager->getClient("1")->getAddress()->getStreet() == "Parzeczewska");
         BOOST_TEST(clientManager->getClient("1")->getAddress()->getNumber() == "1");
-        BOOST_TEST(clientManager->getClient("1")->getMaxTickets() == 1);
+        BOOST_TEST(clientManager->getClient("1")->getMaxTickets() == 3);
     }
     // Test setera (pozytywny przypadek)
     BOOST_AUTO_TEST_CASE(SetterPositiveTest) {
         clientManager->changeClientFirstName("1","Atomek");
         clientManager->changeClientLastName("1","Romek");
         clientManager->changeClientAddress("1","Zgierz", "Parzeczewska", "2");
-        clientManager->changeClientType("1",4);
+        clientManager->changeClientType("1",5);
         BOOST_TEST(clientManager->getClient("1")->getFirstName() == "Atomek");
         BOOST_TEST(clientManager->getClient("1")->getLastName() == "Romek");
         BOOST_TEST(clientManager->getClient("1")->getAddress()->getCity() == "Zgierz");

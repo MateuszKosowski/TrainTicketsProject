@@ -1,5 +1,6 @@
 #include "managers/TicketManager.h"
 #include "managers/TrainManager.h"
+#include "managers/ClientManager.h"
 
 TicketManager::TicketManager() {
     this->repository = std::make_shared<TicketRepository>();
@@ -12,7 +13,7 @@ TicketPtr TicketManager::createTicket(const std::string &id, const ClientPtr &cl
                                       const pt::ptime &endTime, const int &stationCount, const StationPtr &sStation, const StationPtr &eStation) {
 
 
-    if (id.empty() || client == nullptr || train == nullptr || beginTime.is_not_a_date_time() || endTime.is_not_a_date_time() || stationCount < 0 || sStation == nullptr || eStation == nullptr) {
+    if (id.empty() || client == nullptr || train == nullptr || beginTime.is_not_a_date_time() || endTime.is_not_a_date_time() || stationCount < 0 || sStation == nullptr || eStation == nullptr){
         throw std::invalid_argument("Invalid input");
     }
     else {
@@ -21,6 +22,7 @@ TicketPtr TicketManager::createTicket(const std::string &id, const ClientPtr &cl
 }
 
 void TicketManager::addTicket(const TicketPtr &ticket) {
+
     if (ticket == nullptr || repository->get(ticket->getId()) != nullptr) {
         throw std::invalid_argument("Invalid ticket");
     }

@@ -17,15 +17,15 @@ ClientPtr ClientManager::createClient(const std::string &firstName, const std::s
     else
     {
         switch (clientType) {
-            case 0:
-                return std::make_shared<Client>(firstName, lastName, personalId, std::make_shared<Address>(city,street,number) ,std::make_shared<Default>());
             case 1:
-                return std::make_shared<Client>(firstName, lastName, personalId, std::make_shared<Address>(city,street,number), std::make_shared<Junior>());
+                return std::make_shared<Client>(firstName, lastName, personalId, std::make_shared<Address>(city,street,number) ,std::make_shared<Default>());
             case 2:
-                return std::make_shared<Client>(firstName, lastName, personalId, std::make_shared<Address>(city,street,number), std::make_shared<Student>());
+                return std::make_shared<Client>(firstName, lastName, personalId, std::make_shared<Address>(city,street,number), std::make_shared<Junior>());
             case 3:
-                return std::make_shared<Client>(firstName, lastName, personalId, std::make_shared<Address>(city,street,number), std::make_shared<Senior>());
+                return std::make_shared<Client>(firstName, lastName, personalId, std::make_shared<Address>(city,street,number), std::make_shared<Student>());
             case 4:
+                return std::make_shared<Client>(firstName, lastName, personalId, std::make_shared<Address>(city,street,number), std::make_shared<Senior>());
+            case 5:
                 return std::make_shared<Client>(firstName, lastName, personalId, std::make_shared<Address>(city,street,number), std::make_shared<Veteran>());
             default:
                 throw std::invalid_argument("Invalid client type");
@@ -70,19 +70,19 @@ void ClientManager::changeClientType(const std::string &personalId, const int &c
     else
     {
         switch (clientType) {
-            case 0:
+            case 1:
                 repository->get(personalId)->setClientType(std::make_shared<Default>());
                 break;
-            case 1:
+            case 2:
                 repository->get(personalId)->setClientType(std::make_shared<Junior>());
                 break;
-            case 2:
+            case 3:
                 repository->get(personalId)->setClientType(std::make_shared<Student>());
                 break;
-            case 3:
+            case 4:
                 repository->get(personalId)->setClientType(std::make_shared<Senior>());
                 break;
-            case 4:
+            case 5:
                 repository->get(personalId)->setClientType(std::make_shared<Veteran>());
                 break;
             default:
@@ -138,7 +138,6 @@ ClientPtr ClientManager::getClient(const std::string &personalId)
         return repository->get(personalId);
     }
 }
-
 std::vector<ClientPtr> ClientManager::findClientsBy(ClientPredicate predicate) const
 {
     return repository->findBy(predicate);
@@ -148,5 +147,8 @@ std::vector<ClientPtr> ClientManager::getAllClients() const
 {
     return repository->findAll();
 }
-
+std::string ClientManager::generateReport() const
+{
+    return repository->report();
+}
 
