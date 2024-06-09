@@ -50,13 +50,13 @@ public:
    * @brief Metoda zwracająca informacje o drezynie.
    * @return Informacje o drezynie.
    */
-    virtual std::string getInfo() const = 0;
+    std::string getInfo() const override;
 
     /**
    * @brief Metoda zwracająca aktualną cenę biletu na pociąg.
    * @return Aktualna cena biletu na pociąg.
    */
-    virtual double getActualRentalPrice() const = 0;
+    double getActualRentalPrice() const override;
 };
 
 #endif //TRAINTICKETS_MOTORTRAIN_H

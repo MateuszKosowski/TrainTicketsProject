@@ -23,6 +23,17 @@ private:
     ClientRepositoryPtr repository; ///< Wskaźnik na repozytorium klientów.
 
 public:
+
+    /**
+     * Konstruktor.
+     */
+    ClientManager();
+
+    /**
+     * Destruktor.
+     */
+    ~ClientManager();
+
     /**
      * Tworzy nowego klienta.
      *
@@ -118,17 +129,7 @@ public:
      */
     std::string generateReport() const;
 
-    /**
-     * Konstruktor.
-     */
-    ClientManager();
 
-    /**
-     * Destruktor.
-     */
-    ~ClientManager();
 
 };
-
 #endif //TRAINTICKETS_CLIENTMANAGER_H
-*

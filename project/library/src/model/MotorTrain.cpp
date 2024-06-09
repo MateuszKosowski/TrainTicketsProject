@@ -17,3 +17,10 @@ void MotorTrain::setVelocity(int velocityP) {
         MotorTrain::velocity = velocityP;
     }
 }
+double MotorTrain::getActualRentalPrice() const {
+    return 0;
+}
+
+std::string MotorTrain::getInfo() const {
+    return "";
+}

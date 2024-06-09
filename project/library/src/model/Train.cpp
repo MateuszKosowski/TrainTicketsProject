@@ -42,5 +42,13 @@ void Train::setSeatNumber(const std::string &seatNumberP) {
     }
 }
 
+double Train::getActualRentalPrice() const {
+    return 0;
+}
+
+std::string Train::getInfo() const {
+    return "";
+}
+
 
 
